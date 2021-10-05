@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+
+<!-- we add some classes for prism.js, for global plugins -->
+<body class="match-braces">
+    <div class="main">
+        {% include tbar.html %}
+
+        <hr>
+
+        <!-- this is where your content goes -->
+        {{ content }}
+
+        <hr>
+
+        {% include bbar.html %}
+    </div>
+</body>
+
+{% include footer.html %}
+
+</html>

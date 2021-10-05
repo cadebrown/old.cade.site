@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<!-- Series TOC -->
+{% if page.series %}
+    <aside class="series">
+        <h4>Series: <em>{{ page.series }}</em></h4>
+        <ul>
+            {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
+            {% for post in series-posts %}
+            <li>
+            {% if post.url == page.url %}
+            <strong>{{ post.title }}</strong>
+            {% else %}
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% if series-posts.size == 1 %}
+        <p>More posts coming soon!</p>
+        {% endif %}
+    </aside>
+    <hr>
+{% endif %}
+
+<h1>{{ page.title }}</h1>
+
+{% if page.thumb %}
+<!-- thumnail image -->
+<img src="{{ site.url }}{{ page.thumb }}"/>
+{% endif %}
+
+<!-- Article Content -->
+{{ content }}
+
+<!-- Links left/right articles in series -->
+{% if page.series %}
+
+    {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
+    {% for post in series-posts %}
+    {% if post.url == page.url %}
+        {% assign prev_post_index = forloop.index | minus: 1 %}
+        {% assign curr_post_index = forloop.index %}
+        {% assign next_post_index = forloop.index | plus: 1 %}
+    {% endif %}
+    {% endfor %}
+
+
+    {% for post in series-posts %}
+    {% if prev_post_index == forloop.index %}
+        <a class="btn" rel="prev" href="{{ site.baseurl }}{{ post.url }}">&larr; prev <strong>{{ page.series }}</strong> post</a>
+    {% endif %}
+
+    {% if next_post_index == forloop.index %}
+        <a class="btn" rel="next" href="{{ site.baseurl }}{{ post.url }}">next <strong>{{ page.series }}</strong> post &rarr;</a>
+    {% endif %}
+    {% endfor %}
+{% endif %}
+
+<!-- Comments -->
+{% if site.disqus-id %} {% include comments.html %} {% endif %}

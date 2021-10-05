@@ -1,0 +1,45 @@
+<head>
+    <!-- head.html - header/meta/shared resources used by 
+
+-->
+
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- You can change the favicon at this path! -->
+    <link rel="shortcut icon" type="image/png" href="/files/favicon.png">
+
+    <!-- RSS feed -->
+    <link rel="alternate" type="application/atom+xml" title="{{ site.description }}" href="/feed.xml">
+
+    <title>
+        {% if page.title %}
+        {{ page.title }} | {{ site.name }}
+        {% else %}
+        {{ site.description }} | {{ site.name }}
+        {% endif %}
+    </title>
+
+    <!-- Site CSS -->
+    <link rel='stylesheet' href='/css/main.css' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- prism.js - stylesheet -->
+    <link rel="stylesheet" href="/css/prism.css">
+
+    <!-- MathJax, for math formatting -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>

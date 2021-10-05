@@ -1,0 +1,62 @@
+# _config.yml - configuration for my personal blog (cade.site)
+#
+# feel free to copy my entire project, under terms of the KPL (kpl.kata.tools)
+#   * https://github.com/cadebrown/cadebrown.github.io
+#
+# @author: Cade Brown <me@cade.site>
+
+
+# -*- SITE -*-
+
+# your name
+name: "Cade Brown"
+
+# your primary email
+email: "me@cade.site"
+
+# the URL of this blog (normally <user>.github.io, but may be a custom URL too)
+displayurl: "cade.site"
+
+# description of this blog (i.e. a short text for SEO)
+title: "Cade Brown's personal blog"
+
+# description of this blog (i.e. a medium text for SEO)
+desc: "I write about programming, music, and math with DIY-tutorials and language design"
+
+
+# -*- RENDERING -*-
+
+# renderer settings
+highlighter: none
+markdown: kramdown
+kramdown:
+  # disable the default syntax highligher (since we use Prism.js)
+  syntax_highlighter_opts:
+      disable: true
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+# -*- POSTS -*-
+
+# permalink format for a title
+permalink: /:year/:month/:day/:title
+
+
+# pagination settings
+paginate: 16
+paginate_path: /page-:num
+
+
+
+
+# seperator that tells where the 'more' text ends for description generation
+# NOTE: should be an HTML comment
+sep_more: <!--more-->
+
+
+#plugins:
+#  - jekyll-paginate
+#  - jekyll-feed
+

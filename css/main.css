@@ -1,0 +1,206 @@
+/* main.css - primary CSS for cade.site
+ *
+ *  
+ * 
+ * 
+ * 
+ * SEE: 
+ *   * https://github.com/richleland/pygments-css
+ *
+ * @author:    Cade Brown <cade@kscript.org>
+ */
+
+:root {
+    --col-bg0: #fafafa;
+    --col-bg1: #e0e0e0;
+    --col-shadow: #aaaaaa;
+
+    --col-link: #366fca;
+
+    --col-textA: #eeeeee;
+    --col-textB: #2a2a2a;
+
+    --col-borderA: white;
+    --col-borderB: black;
+}
+
+/* dark theme: mine is a dark theme, but the same variable names should be used by all themes 
+ * '--col-*' indicates a color choice
+ * '--*A' is for primary content (i.e. same color as theme), and '--*B' is for secondary content (i.e. color of content,
+ *          which should stand out). these are typically inverted colors
+ */
+html[data-theme='dark'] {
+    --col-bg0: #0e0e0e;
+    --col-bg1: #2a2a2a;
+    --col-shadow: #161616;
+
+    /* for URL/hyperlinks */
+    --col-link: #82c7ff;
+
+    /* for a dark theme, textA should be dark, and textB should be light */
+    --col-textA: #2a2a2a;
+    --col-textB: #eeeeee;
+
+    /* used for the borders around content, so that black images on a black background,
+     *   for example, have a white border between them
+     */
+    --col-borderA: black;
+    --col-borderB: white;
+}
+
+
+/*** HTML STD ***/
+
+h1 {
+    line-height: 2.39rem;
+}
+
+h2 {
+    line-height: 1.9rem;
+}
+h3 {
+    line-height: 1.7rem;
+}
+
+
+a:link {
+    color: var(--col-link);
+}
+
+a:visited {
+    color: var(--col-link);
+}
+
+/*
+h2 a:link {
+    color: var(--col-text);
+}
+
+h2 a:visited {
+    color: var(--col-text);
+}
+
+*/
+
+body {
+    margin: 1em;
+    line-height: 1.32rem;
+    /* font-family: monospace; */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-size: 17px;
+    tab-size: 4;
+
+    background-color: var(--col-bg0);
+    color: var(--col-textB);
+    
+    scrollbar-width: none;  
+}
+
+/* used for horizontal break in page */
+hr {
+    margin: 1.2em 0.01em 0.9em 0.01em;
+}
+
+img {
+    display: block;
+    border: solid 1px var(--col-borderB);
+    margin: auto;
+
+    /* limit the size... I've been tweaking these values */
+    max-width: 90%;
+    max-height: 28em;
+}
+
+
+
+/* TODO: table? */
+
+table {
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 0.2em;
+}
+
+
+
+/* for any clickable elemtn, set it to a pointer */
+.clickable {
+    cursor: pointer;
+}
+
+
+/*** POSTS ***/
+
+.post-section {
+    overflow: hidden;
+}
+
+/* thumbnail container */
+.post-thumb-container {
+    float: left;
+
+    padding: 0.3em;
+    margin: 0.2em;
+
+    /* limit the size to something reasonable */
+    width: 20em;
+    max-height: 16em;
+}
+
+
+
+.post-thumb {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main {
+    background-color: var(--col-bg1);
+    border-radius: 18px;
+    box-shadow: 0px 0px 12px var(--col-shadow);
+    padding: 1em;
+}
+
+/** Code Highlighting **/
+
+
+/* inline code */
+p > code {
+    background-color: var(--col-bg0);
+    border: 1px solid gray;
+    padding-left: 0.8px;
+    padding-right: 0.8px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+}
+
+
+
+/* Mobile/Web */
+
+@media screen and (min-width: 992px) {
+    body {
+        margin: 1em 12vw;
+    }
+
+}
+
+@media screen and (max-width: 668px) {
+    .post-thumb-container {
+        max-width: 90%;
+        float: none;
+        margin: 0 auto;
+        padding: 0em;
+    }
+}
+
+
+
+
