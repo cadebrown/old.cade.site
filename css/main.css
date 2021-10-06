@@ -214,6 +214,25 @@ td {
 }
 
 
+/** FontAwesome logos **/
+
+
+/* all FontAwesome */
+.fa {
+    margin-left: 0.24em;
+    margin-right: 0.1em;
+}
+
+/* Custom container class */
+.fa-container {
+    text-align: center; 
+    font-family: monospace;
+    color: var(--col-text);
+    text-decoration: none;
+    margin-right: 0.48em;
+
+}
+
 
 /** Code Highlighting **/
 

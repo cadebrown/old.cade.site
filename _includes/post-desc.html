@@ -14,5 +14,5 @@
     </a>
     <p>{{ post.excerpt | strip_html | truncate: 420 }}</p>
 
-    <em>posted {{ post.date | date: '%Y-%m-%d' }}, by <a href='mailto:{{ site.email }}'>{{ site.name }}</a></em>
+    <em>posted {{ post.date | date: '%Y-%m-%d' }}, by <a href='mailto:{{ site.links.email }}'>{{ site.name }}</a></em>
 </section>

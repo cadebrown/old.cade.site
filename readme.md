@@ -48,5 +48,5 @@ this is all the software that I use, with some helpful links to show you how to 
   * [kramdown](https://kramdown.gettalong.org/syntax.html), for markdown parsing
     * you can specify custom classes with `{:.<name>}` (for example, `{:.command-line}`)
   * [git.io](https://git.io/), GitHub's URL shortener
-
+  * FontAwesome
   

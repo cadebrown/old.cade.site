@@ -26,17 +26,9 @@ the basic parsing algorithm uses a single expandable list of NFA states, which h
 {:.command-line .no-line-numbers data-prompt="{{ site.shellprompt }}" data-filter-output="out:"}
 ```bash
 # if you have wget
-wget -O mg.c https://git.io/JVyEb
+wget -O mg.c https://git.io/JVyoT
 out:--2021-10-05 23:07:20--  https://git.io/JVyoT
-out:Resolving git.io (git.io)... 54.157.58.70, 18.205.36.100, 54.162.128.250, ...
-out:Connecting to git.io (git.io)|54.157.58.70|:443... connected.
-out:HTTP request sent, awaiting response... 302 Found
-out:Location: https://gist.githubusercontent.com/cadebrown/a949ed37fe15022c101cfe92f7abc72f/raw/dd6d0f9a5c144ddaba75e6e96ee829049f39ed79/mg.c [following]
-out:--2021-10-05 23:07:20--  https://gist.githubusercontent.com/cadebrown/a949ed37fe15022c101cfe92f7abc72f/raw/dd6d0f9a5c144ddaba75e6e96ee829049f39ed79/mg.c
-out:Resolving gist.githubusercontent.com (gist.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.110.133, ...
-out:Connecting to gist.githubusercontent.com (gist.githubusercontent.com)|185.199.111.133|:443... connected.
-out:HTTP request sent, awaiting response... 200 OK
-out:Length: 29962 (29K) [text/plain]
+out:...
 out:Saving to: ‘mg.c’
 out:
 out:mg.c                                 100%[====================================================================>]  29.26K  --.-KB/s    in 0.002s  
@@ -59,15 +51,7 @@ and, if you want to run it I also include a test file:
 ```bash
 wget -O mgtest.txt https://git.io/JVyMp
 out:--2021-10-05 23:11:25--  https://git.io/JVyMp
-out:Resolving git.io (git.io)... 54.162.128.250, 54.157.58.70, 18.205.36.100, ...
-out:Connecting to git.io (git.io)|54.162.128.250|:443... connected.
-out:HTTP request sent, awaiting response... 302 Found
-out:Location: https://gist.githubusercontent.com/cadebrown/a949ed37fe15022c101cfe92f7abc72f/raw/08d1664aef4280bf0d39523caaae8bb2ac456080/mgtest.txt [following]
-out:--2021-10-05 23:11:25--  https://gist.githubusercontent.com/cadebrown/a949ed37fe15022c101cfe92f7abc72f/raw/08d1664aef4280bf0d39523caaae8bb2ac456080/mgtest.txt
-out:Resolving gist.githubusercontent.com (gist.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.110.133, ...
-out:Connecting to gist.githubusercontent.com (gist.githubusercontent.com)|185.199.111.133|:443... connected.
-out:HTTP request sent, awaiting response... 200 OK
-out:Length: 90 [text/plain]
+out:...
 out:Saving to: ‘mgtest.txt’
 out:
 out:mgtest.txt                           100%[====================================================================>]      90  --.-KB/s    in 0s      

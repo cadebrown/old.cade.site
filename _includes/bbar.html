@@ -3,11 +3,21 @@
 
 -->
 
-<p>
-    <small><i>
-        personal blog of <a href="mailto:{{ site.email }}">{{ site.name }} &lt;{{ site.email }}&gt;</a>, licensed under <a rel="license" href="http://kpl.kata.tools">KPL</a>. <br/>
-    </i></small>
-    <!--
-    <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
-    -->
-</p>
+
+
+<!-- Accounts/links -->
+{%- if site.links.github -%}
+    | <a class="fa-container" href="https://github.com/{{ site.links.github }}"><span class="fa fa-lg fa-github"></span>/{{ site.links.github }}</a>
+{%- endif -%}
+{%- if site.links.twitter -%}
+    | <a class="fa-container" href="https://twitter.com/{{ site.links.twitter }}"><span class="fa fa-lg fa-twitter"></span>/{{ site.links.twitter }}</a>
+{%- endif -%}
+{%- if site.links.instagram -%}
+    | <a class="fa-container" href="https://instagram.com/{{ site.links.instagram }}"><span class="fa fa-lg fa-instagram"></span>/{{ site.links.instagram }}</a>
+{%- endif -%}
+
+<p><small><i>
+    personal blog of <a href="mailto:{{ site.links.email }}">{{ site.name }} &lt;{{ site.links.email }}&gt;</a>
+    <br/>
+    all content licensed under <a rel="license" href="http://kata.tools/kpl">kpl</a>, unless otherwise noted
+</i></small></p>
