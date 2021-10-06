@@ -85,7 +85,7 @@ my_modpow(size_t a, size_t b, size_t m) {
 
 // (internal) perform a witness check in Miller-Rabin, returns whether it is probably prime
 //   a: the witness being tested
-//   n: the number being checked for primality, n := 2**r * d + 1
+//   n: the number being checked for primality, n := 2**r * d + 1 (i.e. within the 2-adic number system)
 //   r: see 'n'
 //   d: see 'n', must be ODD
 static bool
@@ -93,15 +93,17 @@ my_witness(size_t a, size_t n, size_t r, size_t d) {
     // compute a ** d (mod n)
     size_t x = my_modpow(a, d, n);
 
+    // special case that it's probably true for this witness
     if (x == 1 || x == n - 1) {
         return true;
     }
 
-    // repeat r times
+    // repeat (r-1) times
     size_t ct;
     for (ct = 0; ct < r - 1; ct++) {
         x = (x * x) % n;
-        if (x == n - 1){
+        if (x == n - 1) {
+            // probably true as well
             return true;
         }
     }
@@ -117,7 +119,7 @@ isprime(size_t n) {
     if (n % 2 == 0) return n == 2;
 
     // compute: n := 2 ** r * d + 1
-    // (i.e. decompose into factored form w.r.t 2)
+    // (i.e. decompose into 2-adic number)
     size_t d = n - 1;
     size_t r = 0;
     while (d % 2 == 0) {
@@ -157,6 +159,4 @@ here's a comparison of even larger (> 32 bit values) trends in performance:
 as you can see, both implementations have similar performance (with naive being a little faster), until $2^{14}$, at which point the trend reverses. the trends become even more pronounced after $2^{32}$, where the Miller-Rabin implementation essentially hits the 'else' case, and plateaus.
 
 For large values, the Miller-Rabin implementation 30x-50x faster than the naive one! I know this implementation has helped many of my other projects efficiently implement prime checking
-
-
 
