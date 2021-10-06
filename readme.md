@@ -27,6 +27,7 @@ $ bundle exec jekyll serve
 
 and navigate to `localhost:4000` in your browser
 
+
 ## software used
 
 this is all the software that I use, with some helpful links to show you how to use/tweak them:

@@ -28,15 +28,12 @@ currently, I'm working on:
 
 ## Projects
 
-### kscript (Programming Language)
-
-On my own time, I have been working on [kscript](https://kscript.org), which is a dynamic programming language with a rich standard library. I am responsible for >95% of the code, and am the owner of the project. I have high hopes for reaching a large audience after an alpha release is done as a proof of concept, alongside tutorials showing how easy it is to use.
-
 
 ### MAGMA (Matrix Algebra on GPU and Many-core Architectures)
 
-At ICL, I have been working on the [MAGMA](https://icl.utk.edu/magma/) project, specifically adding the abilitity to run on AMD GPUs via the HIP platform (right now it is NVIDIA/CUDA only).
+At ICL, I have been working on the [MAGMA](https://icl.utk.edu/magma/) project, specifically adding the abilitity to run on AMD GPUs via the HIP platform (previously, it was primarily CUDA-focused). I also worked on tuning our algorithms for better performance on the new hardware.
 
+[check out my paper!](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf)
 
 ### "Know It All", an A.I. writer
 

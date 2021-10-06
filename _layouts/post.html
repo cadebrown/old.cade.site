@@ -13,7 +13,7 @@ layout: default
             {% if post.url == page.url %}
             <strong>{{ post.title }}</strong>
             {% else %}
-            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a>
             {% endif %}
             </li>
             {% endfor %}
@@ -29,7 +29,7 @@ layout: default
 
 {% if page.thumb %}
 <!-- thumnail image -->
-<img src="{{ site.url }}{{ page.thumb }}"/>
+<img src="{{ page.thumb }}"/>
 {% endif %}
 
 <!-- Article Content -->

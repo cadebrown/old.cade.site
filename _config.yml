@@ -23,6 +23,9 @@ title: "Cade Brown's personal blog"
 # description of this blog (i.e. a medium text for SEO)
 desc: "I write about programming, music, and math with DIY-tutorials and language design"
 
+# the shell prompt to use while highlighting
+shellprompt: "sh $"
+
 
 # -*- RENDERING -*-
 

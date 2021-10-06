@@ -23,7 +23,7 @@ so, it's a little different than normal regex syntax, but in my opinion more str
 the basic parsing algorithm uses a single expandable list of NFA states, which have edges to other NFA states, or a special value (-1 means no edge, -2 means edge into 'accept' state). the NFA is then simulated by input file data, and when a match is encountered, the line is printed out (like `grep`). just compile [the code, `mg.c`](https://gist.github.com/CadeBrown/a949ed37fe15022c101cfe92f7abc72f) and run it yourself:
 
 
-{:.command-line .no-line-numbers data-prompt="me@home $" data-filter-output="out:"}
+{:.command-line .no-line-numbers data-prompt="{{ site.shellprompt }}" data-filter-output="out:"}
 ```bash
 # if you have wget
 wget -O mg.c https://git.io/JVyEb
@@ -55,7 +55,7 @@ out:author: Cade Brown <cade@cade.site>
 
 and, if you want to run it I also include a test file:
 
-{:.command-line .no-line-numbers data-prompt="me@home $" data-filter-output="out:"}
+{:.command-line .no-line-numbers data-prompt="{{ site.shellprompt }}" data-filter-output="out:"}
 ```bash
 wget -O mgtest.txt https://git.io/JVyMp
 out:--2021-10-05 23:11:25--  https://git.io/JVyMp

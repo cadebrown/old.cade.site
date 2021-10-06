@@ -1,11 +1,11 @@
 
 <section class='post-section'>
-    <a style='color: inherit; text-decoration: inherit;' href='{{ site.url }}{{ post.url }}' title='{{ post.title }}'>
+    <a style='color: inherit; text-decoration: inherit;' href='{{ post.url }}' title='{{ post.title }}'>
         <div class='post-thumb-container'>
             {% if post.thumb %}
-            <img class='post-thumb' src='{{ site.url }}{{ post.thumb }}'>
+            <img class='post-thumb' src='{{ post.thumb }}'>
             {% else %}
-            <img class='post-thumb' src='{{ site.url }}/files/favicon.png'>
+            <img class='post-thumb' src='/files/favicon.png'>
             {% endif %}
         </div>
         <h2>

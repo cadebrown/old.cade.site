@@ -153,7 +153,7 @@ Therefore minimizing and simplifying the resulting code? Yes it would! But how d
 
 Well; we view the summation as a [Partial Fraction Summation](https://www.purplemath.com/modules/partfrac.htm); think of the following equation:
 
-$ \frac{1}{x+1} + \frac{1}{x+2} = \frac{(x + 1) + (x + 2)}{(x+1)(x+2)} = \frac{2x+3}{(x+1)(x+2)}$
+$$ \frac{1}{x+1} + \frac{1}{x+2} = \frac{(x + 1) + (x + 2)}{(x+1)(x+2)} = \frac{2x+3}{(x+1)(x+2)}$$
 
 We can algebraically manipulate the rational expression to yield either a summation of divisions, or a division of products & sums. This is actually very similar to our above expression that we want for $A_g'(x)$
 
@@ -602,7 +602,7 @@ The real code goes up to $2^{10}$, but you get the point; essentially, the small
 
 To test this, I wrote a small program using the generated code. You can check out the full source code used [here](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335). I tested values of $x=\sigma+it$, for $\sigma, t \in \[0, 256\)$, and compared the time. I also compared the built in `tgamma` function discussed earlier, and measured how accurate my implementation was relative to it; here are the results summarized:
 
-{:.command-line .no-line-numbers data-prompt="me@home $" data-filter-output="out:"}
+{:.command-line .no-line-numbers data-prompt="{{ site.shellprompt }}" data-filter-output="out:"}
 ```bash
 gcc -std=c99 -Ofast -fno-math-errno t.c -lm -o test_gz
 ./test_gz
@@ -638,7 +638,7 @@ Feel free to compile it on your machine and email me results; I'd be happy to in
 
 My implementation and glibc's implementation of the gamma function agree everywhere up to `14` digits, which is plenty accurate (we could check Wolfram alpha exactly to see whether I was closer or they were, but they are both fine for our purposes).
 
-The generated source code I use in kscript (as well as for the demo) is available at [https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335), feel free to use in non-commercial projects.
+The generated source code I use in kscript (as well as for the demo) is available [here](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335), feel free to use in non-commercial projects.
 
 I hope you've enjoyed the blog, and can use these implementations for your own project. The C code is very simple and should be pretty easy to port to other languages (JavaScript, Python, C#, etc, etc).
 

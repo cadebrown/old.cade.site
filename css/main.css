@@ -12,7 +12,7 @@
 
 :root {
     /*--img-backtile: url("/files/backtile-grid0.png");*/
-    /*--img-backtile: url("/files/backtile-grid2.jpg");*/
+    --img-backtile: url("/files/backtile-grid3.jpg");
 
     --col-back0: #0e0e0e;
     --col-back1: #2a2a2a;
@@ -59,7 +59,7 @@ html[data-theme='dark'] {
 
 
 body {
-    margin: 1em;
+    margin: 0.6em;
     line-height: 1.32rem;
     /* font-family: monospace; */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -67,7 +67,9 @@ body {
     font-size: 18px;
     tab-size: 4;
 
-    background-position: 1.2em;
+    /* NOTE: you might have to tweak this for your background */
+    /*background-position: 1.2em;*/
+    background-position: -1.2em;
 
     color: var(--col-textB);
     background-color: var(--col-back0);
@@ -159,7 +161,6 @@ dd img {
 }
 
 
-
 /* TODO: table? */
 
 table {
@@ -200,8 +201,6 @@ td {
     max-height: 16em;
 }
 
-
-
 .post-thumb {
     max-width: 100%;
     max-height: 100%;
@@ -219,9 +218,17 @@ td {
 /** Code Highlighting **/
 
 /* mathjax math */
+mjx-container {
+    overflow-x: auto;
+    width: 100%;
+    padding: 0.2em;
+}
+/*
 .MJX-TEX {
     font-size: 110%;
+
 }
+*/
 /* inline code */
 p > code {
     background-color: var(--col-back0);
