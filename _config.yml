@@ -41,12 +41,11 @@ links:
 # -*- RENDERING -*-
 
 # renderer settings
-highlighter: none
 markdown: kramdown
 kramdown:
   # disable the default syntax highligher (since we use Prism.js)
   syntax_highlighter_opts:
-      disable: true
+    disable: true
 
 plugins:
   - jekyll-paginate
