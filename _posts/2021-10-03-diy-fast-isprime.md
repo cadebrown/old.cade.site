@@ -18,7 +18,6 @@ Most programmers, when asked to check whether a number is prime, would probably 
 
 
 ```c
-
 // check whether 'n' is prime, using a naive method
 bool
 isprime_naive(size_t n) {
@@ -48,7 +47,6 @@ while there's nothing wrong with this code, and it arguably is the best solution
 I'm just going to include the full implementation here, so you can copy and paste, and read the comments to understand how it works:
 
 ```c
-
 /* Miller-Rabin 'isprime()' implementation
  *
  *

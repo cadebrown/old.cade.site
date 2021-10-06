@@ -38,6 +38,14 @@ this is all the software that I use, with some helpful links to show you how to 
     * [https://prismjs.com/plugins/autoloader/](https://prismjs.com/plugins/autoloader/), in `./`
     * [https://prismjs.com/plugins/keep-markup/](https://prismjs.com/plugins/keep-markup/)
     * [https://prismjs.com/plugins/command-line/](https://prismjs.com/plugins/command-line/)
+      * use `command-line` in your code blocks (see below with kramdown)
+    * [https://prismjs.com/plugins/treeview/](https://prismjs.com/plugins/treeview/)
+      * for tree/directory structures
     * [https://prismjs.com/plugins/diff-highlight/](https://prismjs.com/plugins/diff-highlight/)
-     
+  * [MathJAX](https://www.mathjax.org/), for Math highlighting/stylizations
+    * to use it in a post, do something like `$ x^2 + x + 5 $`
+  * [kramdown](https://kramdown.gettalong.org/syntax.html), for markdown parsing
+    * you can specify custom classes with `{:.<name>}` (for example, `{:.command-line}`)
+  * [git.io](https://git.io/), GitHub's URL shortener
 
+  

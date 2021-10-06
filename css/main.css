@@ -11,34 +11,19 @@
  */
 
 :root {
-    --col-bg0: #fafafa;
-    --col-bg1: #e0e0e0;
-    --col-shadow: #aaaaaa;
+    /*--img-backtile: url("/files/backtile-grid0.png");*/
+    /*--img-backtile: url("/files/backtile-grid2.jpg");*/
 
-    --col-link: #366fca;
-
-    --col-textA: #eeeeee;
-    --col-textB: #2a2a2a;
-
-    --col-borderA: white;
-    --col-borderB: black;
-}
-
-/* dark theme: mine is a dark theme, but the same variable names should be used by all themes 
- * '--col-*' indicates a color choice
- * '--*A' is for primary content (i.e. same color as theme), and '--*B' is for secondary content (i.e. color of content,
- *          which should stand out). these are typically inverted colors
- */
-html[data-theme='dark'] {
-    --col-bg0: #0e0e0e;
-    --col-bg1: #2a2a2a;
+    --col-back0: #0e0e0e;
+    --col-back1: #2a2a2a;
+    
     --col-shadow: #161616;
 
     /* for URL/hyperlinks */
     --col-link: #82c7ff;
 
     /* for a dark theme, textA should be dark, and textB should be light */
-    --col-textA: #2a2a2a;
+    --col-textA: #111111;
     --col-textB: #eeeeee;
 
     /* used for the borders around content, so that black images on a black background,
@@ -48,11 +33,56 @@ html[data-theme='dark'] {
     --col-borderB: white;
 }
 
+/* dark theme: mine is a dark theme, but the same variable names should be used by all themes 
+ * '--col-*' indicates a color choice
+ * '--*A' is for primary content (i.e. same color as theme), and '--*B' is for secondary content (i.e. color of content,
+ *          which should stand out). these are typically inverted colors
+ */
+html[data-theme='dark'] {
+
+    --col-back0: #fafafa;
+    --col-back1: #e0e0e0;
+
+    --col-shadow: #aaaaaa;
+
+    --col-link: #366fca;
+
+    --col-textA: #eeeeee;
+    --col-textB: #111111;
+
+    --col-borderA: white;
+    --col-borderB: black;
+}
+
 
 /*** HTML STD ***/
 
+
+body {
+    margin: 1em;
+    line-height: 1.32rem;
+    /* font-family: monospace; */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-size: 18px;
+    tab-size: 4;
+
+    background-position: 1.2em;
+
+    color: var(--col-textB);
+    background-color: var(--col-back0);
+
+    background-attachment: fixed;
+    background-image: var(--img-backtile);
+    background-repeat: repeat;
+    background-size: var(--size-backtile);
+    
+    scrollbar-width: none;  
+}
+
+
 h1 {
-    line-height: 2.39rem;
+    line-height: 2.35rem;
 }
 
 h2 {
@@ -71,7 +101,14 @@ a:visited {
     color: var(--col-link);
 }
 
-/*
+h1 a:link {
+    color: var(--col-text);
+}
+
+h1 a:visited {
+    color: var(--col-text);
+}
+
 h2 a:link {
     color: var(--col-text);
 }
@@ -80,21 +117,12 @@ h2 a:visited {
     color: var(--col-text);
 }
 
-*/
+h3 a:link {
+    color: var(--col-text);
+}
 
-body {
-    margin: 1em;
-    line-height: 1.32rem;
-    /* font-family: monospace; */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    font-size: 17px;
-    tab-size: 4;
-
-    background-color: var(--col-bg0);
-    color: var(--col-textB);
-    
-    scrollbar-width: none;  
+h3 a:visited {
+    color: var(--col-text);
 }
 
 /* used for horizontal break in page */
@@ -110,6 +138,24 @@ img {
     /* limit the size... I've been tweaking these values */
     max-width: 90%;
     max-height: 28em;
+}
+
+
+/* images within dl/dd text */
+dd img {
+    /* limit the size... I've been tweaking these values */
+    max-width: 60%;
+    max-height: 24em;
+}
+
+
+/* inline small image */
+.inline-img {
+    display: inline-block;
+
+    /* limit the size... I've been tweaking these values */
+    max-width: 40%;
+    max-height: 26em;
 }
 
 
@@ -162,18 +208,23 @@ td {
 }
 
 .main {
-    background-color: var(--col-bg1);
-    border-radius: 18px;
-    box-shadow: 0px 0px 12px var(--col-shadow);
+    background-color: var(--col-back1);
+    border-radius: 14px;
+    box-shadow: 0px 0px 0px var(--col-shadow);
     padding: 1em;
 }
 
+
+
 /** Code Highlighting **/
 
-
+/* mathjax math */
+.MJX-TEX {
+    font-size: 110%;
+}
 /* inline code */
 p > code {
-    background-color: var(--col-bg0);
+    background-color: var(--col-back0);
     border: 1px solid gray;
     padding-left: 0.8px;
     padding-right: 0.8px;
@@ -182,14 +233,12 @@ p > code {
 }
 
 
-
 /* Mobile/Web */
 
 @media screen and (min-width: 992px) {
     body {
         margin: 1em 12vw;
     }
-
 }
 
 @media screen and (max-width: 668px) {

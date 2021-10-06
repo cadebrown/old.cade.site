@@ -25,7 +25,7 @@ We use the following reflection formulas to define the value elsewhere:
 
 $$\zeta(x) = 2 (2 \pi) ^ {x - 1} \sin(\frac{x \pi}{2}) \Gamma(1 - x) \zeta(1 - x)$$
 
-$$\Gamma(x) = \sin(\pi z) \Gamma(1 - x)$$
+$$\Gamma(x) = \sin(\pi x) \Gamma(1 - x)$$
 
 
 ## Goal
@@ -602,33 +602,37 @@ The real code goes up to $2^{10}$, but you get the point; essentially, the small
 
 To test this, I wrote a small program using the generated code. You can check out the full source code used [here](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335). I tested values of $x=\sigma+it$, for $\sigma, t \in \[0, 256\)$, and compared the time. I also compared the built in `tgamma` function discussed earlier, and measured how accurate my implementation was relative to it; here are the results summarized:
 
+{:.command-line .no-line-numbers data-prompt="me@home $" data-filter-output="out:"}
+```bash
+gcc -std=c99 -Ofast -fno-math-errno t.c -lm -o test_gz
+./test_gz
+out:# -- ACCURACY
+out:|my_gamma(x)-tgamma(x)| <= 0.000000 , at x=0.000480, accurate to 14.76 digits
+out:
+out:# -- SPEED
+out:my_gamma(x), x in [0, 1)      :    0.039 us/iter
+out:my_gamma(x), x in [0, 4)      :    0.038 us/iter
+out:my_gamma(x), x in [0, 16)     :    0.037 us/iter
+out:my_gamma(x), x in [0, 256)    :    0.052 us/iter
+out:my_cgamma(x), x in [0i, 1i)   :    0.137 us/iter
+out:my_cgamma(x), x in [0i, 4i)   :    0.135 us/iter
+out:my_cgamma(x), x in [0i, 16i)  :    0.139 us/iter
+out:my_cgamma(x), x in [0i, 256i) :    0.155 us/iter
+out:my_zeta(x), x in [0, 1)       :    0.395 us/iter
+out:my_zeta(x), x in [0, 4)       :    0.396 us/iter
+out:my_zeta(x), x in [0, 16)      :    0.397 us/iter
+out:my_zeta(x), x in [0, 256)     :    0.416 us/iter
+out:my_czeta(x), x in [0i, 1i)    :    1.356 us/iter
+out:my_czeta(x), x in [0i, 4i)    :    1.494 us/iter
+out:my_czeta(x), x in [0i, 16i)   :    2.005 us/iter
+out:my_czeta(x), x in [0i, 256i)  :   11.456 us/iter
+out:tgamma(x), x in [0, 1)        :    0.029 us/iter
+out:tgamma(x), x in [0, 4)        :    0.036 us/iter
+out:tgamma(x), x in [0, 16)       :    0.058 us/iter
+out:tgamma(x), x in [0, 256)      :    0.050 us/iter
 ```
-$ gcc -std=c99 -Ofast -fno-math-errno t.c -lm -o test_gz && ./test_gz
-# -- ACCURACY
-|my_gamma(x)-tgamma(x)| <= 0.000000 , at x=0.000480, accurate to 14.76 digits
 
-# -- SPEED
-my_gamma(x), x in [0, 1)      :    0.039 us/iter
-my_gamma(x), x in [0, 4)      :    0.038 us/iter
-my_gamma(x), x in [0, 16)     :    0.037 us/iter
-my_gamma(x), x in [0, 256)    :    0.052 us/iter
-my_cgamma(x), x in [0i, 1i)   :    0.137 us/iter
-my_cgamma(x), x in [0i, 4i)   :    0.135 us/iter
-my_cgamma(x), x in [0i, 16i)  :    0.139 us/iter
-my_cgamma(x), x in [0i, 256i) :    0.155 us/iter
-my_zeta(x), x in [0, 1)       :    0.395 us/iter
-my_zeta(x), x in [0, 4)       :    0.396 us/iter
-my_zeta(x), x in [0, 16)      :    0.397 us/iter
-my_zeta(x), x in [0, 256)     :    0.416 us/iter
-my_czeta(x), x in [0i, 1i)    :    1.356 us/iter
-my_czeta(x), x in [0i, 4i)    :    1.494 us/iter
-my_czeta(x), x in [0i, 16i)   :    2.005 us/iter
-my_czeta(x), x in [0i, 256i)  :   11.456 us/iter
-tgamma(x), x in [0, 1)        :    0.029 us/iter
-tgamma(x), x in [0, 4)        :    0.036 us/iter
-tgamma(x), x in [0, 16)       :    0.058 us/iter
-tgamma(x), x in [0, 256)      :    0.050 us/iter
-```
+
 
 Feel free to compile it on your machine and email me results; I'd be happy to include them.
 

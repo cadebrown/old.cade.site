@@ -22,15 +22,90 @@ so, it's a little different than normal regex syntax, but in my opinion more str
 
 the basic parsing algorithm uses a single expandable list of NFA states, which have edges to other NFA states, or a special value (-1 means no edge, -2 means edge into 'accept' state). the NFA is then simulated by input file data, and when a match is encountered, the line is printed out (like `grep`). just compile [the code, `mg.c`](https://gist.github.com/CadeBrown/a949ed37fe15022c101cfe92f7abc72f) and run it yourself:
 
+
+{:.command-line .no-line-numbers data-prompt="me@home $" data-filter-output="out:"}
+```bash
+# if you have wget
+wget -O mg.c https://git.io/JVyEb
+out:--2021-10-05 23:07:20--  https://git.io/JVyoT
+out:Resolving git.io (git.io)... 54.157.58.70, 18.205.36.100, 54.162.128.250, ...
+out:Connecting to git.io (git.io)|54.157.58.70|:443... connected.
+out:HTTP request sent, awaiting response... 302 Found
+out:Location: https://gist.githubusercontent.com/cadebrown/a949ed37fe15022c101cfe92f7abc72f/raw/dd6d0f9a5c144ddaba75e6e96ee829049f39ed79/mg.c [following]
+out:--2021-10-05 23:07:20--  https://gist.githubusercontent.com/cadebrown/a949ed37fe15022c101cfe92f7abc72f/raw/dd6d0f9a5c144ddaba75e6e96ee829049f39ed79/mg.c
+out:Resolving gist.githubusercontent.com (gist.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.110.133, ...
+out:Connecting to gist.githubusercontent.com (gist.githubusercontent.com)|185.199.111.133|:443... connected.
+out:HTTP request sent, awaiting response... 200 OK
+out:Length: 29962 (29K) [text/plain]
+out:Saving to: ‘mg.c’
+out:
+out:mg.c                                 100%[====================================================================>]  29.26K  --.-KB/s    in 0.002s  
+out:
+out:2021-10-05 23:07:21 (13.5 MB/s) - ‘mg.c’ saved [29962/29962]
+cc -o mg mg.c
+mg -h
+out:usage: mg [re] [src...=./]
+out:
+out:  -h,--help            prints this help/usage menu and exits
+out:  -[DNLS]              set the format columns ([Dd]ate, [Nn]ame, [Ll]ineno, [Ss]ource)
+out:
+out:see: https://cade.site/2021/09/28/diy-regex-engine
+out:author: Cade Brown <cade@cade.site>
 ```
-$ mg -h
-usage: mg [re] [src...=./]
 
-  -h,--help            prints this help/usage menu and exits
-  -[DNLS]              set the format columns ([Dd]ate, [Nn]ame, [Ll]ineno, [Ss]ource)
+and, if you want to run it I also include a test file:
 
-see: https://cade.site/2021/09/28/DIY-Regex-Engine
-author: Cade Brown <cade@cade.site>
+{:.command-line .no-line-numbers data-prompt="me@home $" data-filter-output="out:"}
+```bash
+wget -O mgtest.txt https://git.io/JVyMp
+out:--2021-10-05 23:11:25--  https://git.io/JVyMp
+out:Resolving git.io (git.io)... 54.162.128.250, 54.157.58.70, 18.205.36.100, ...
+out:Connecting to git.io (git.io)|54.162.128.250|:443... connected.
+out:HTTP request sent, awaiting response... 302 Found
+out:Location: https://gist.githubusercontent.com/cadebrown/a949ed37fe15022c101cfe92f7abc72f/raw/08d1664aef4280bf0d39523caaae8bb2ac456080/mgtest.txt [following]
+out:--2021-10-05 23:11:25--  https://gist.githubusercontent.com/cadebrown/a949ed37fe15022c101cfe92f7abc72f/raw/08d1664aef4280bf0d39523caaae8bb2ac456080/mgtest.txt
+out:Resolving gist.githubusercontent.com (gist.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.110.133, ...
+out:Connecting to gist.githubusercontent.com (gist.githubusercontent.com)|185.199.111.133|:443... connected.
+out:HTTP request sent, awaiting response... 200 OK
+out:Length: 90 [text/plain]
+out:Saving to: ‘mgtest.txt’
+out:
+out:mgtest.txt                           100%[====================================================================>]      90  --.-KB/s    in 0s      
+out:
+out:2021-10-05 23:11:25 (8.59 MB/s) - ‘mgtest.txt’ saved [90/90]
+out:
+# format is 'filename | lineno | linesrc'
+./mg 'a' mgtest.txt                                                                                                                         ─╯
+out:mgtest.txt       |    2 | a
+out:mgtest.txt       |    3 | aa
+out:mgtest.txt       |    4 | aaa
+out:mgtest.txt       |    5 | aaaa
+out:mgtest.txt       |    6 | aaaaa
+out:mgtest.txt       |    9 | ab
+out:mgtest.txt       |   10 | ac
+out:mgtest.txt       |   12 | abc
+out:mgtest.txt       |   13 | aaabbb
+out:mgtest.txt       |   14 | cat
+out:mgtest.txt       |   15 | bat
+out:mgtest.txt       |   16 | rat
+out:mgtest.txt       |   17 | mat
+out:mgtest.txt       |   18 | map
+out:mgtest.txt       |   19 | trap
+out:mgtest.txt       |   20 | crap
+out:mgtest.txt       |   21 | back
+out:mgtest.txt       |   22 | wack
+out:mgtest.txt       |   23 | stack
+# words that end with 't'
+./mg 't$' mgtest.txt                                                                                                                        ─╯
+out:mgtest.txt       |   14 | cat
+out:mgtest.txt       |   15 | bat
+out:mgtest.txt       |   16 | rat
+out:mgtest.txt       |   17 | mat
+# lines with exactly 1, 2, or 4 'a's
+./mg '^a**{1,2,4}$' mgtest.txt                                                                                                                        ─╯
+out:mgtest.txt       |    2 | a
+out:mgtest.txt       |    3 | aa
+out:mgtest.txt       |    5 | aaaa
 ```
 
 ## "It's 2021, all regexes have backreferences bruh"
