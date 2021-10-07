@@ -32,12 +32,14 @@ and navigate to `localhost:4000` in your browser
 
 here are some tips that may make your blog more responsive/efficient:
 
+  * check your website with [a tool](https://developers.google.com/speed/pagespeed/insights/)
   * use `.webp` files for images
   * to check your images, use [imagemagick](https://imagemagick.org/script/identify.php)
     * for example, `for f in files/*; do identify -format '%f %wx%y\n' $f; done`
   * in your front matter, use these options to speed up some places (for example, your index/about typically don't need math and this can speed them up!)
     * `nomathjax: true` if the page won't need math formatting
     * `noprism: true` if the page won't need code formatting
+    * `nojquery: true` if the page won't need jQuery
 
 ## software used
 

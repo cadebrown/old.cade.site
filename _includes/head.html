@@ -11,6 +11,10 @@
     <!-- You can change the favicon at this path! -->
     <link rel="shortcut icon" type="image/png" href="/files/favicon.webp">
 
+    <!-- HTML description -->
+    <meta name="description" content="{{ site.desc }}">
+
+
     <!-- RSS feed -->
     <link rel="alternate" type="application/atom+xml" title="{{ site.description }}" href="/feed.xml">
 
@@ -29,13 +33,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+{% if jekyll.environment == 'production' %}
+
+  {% if site.googleanalytics %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleanalytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ site.googleanalytics }}');
+    </script>
+  {% else %}
+    <!-- no Google Analytics ID given -->
+  {% endif %}
+
+{% else %}
+    <!-- WARN: not in production mode (so things like Google Analytics won't work) -->
+{% endif%}
 
 
+{% if page.nojquery %}
+    <!-- no jQuery support support -->
+{% else %}
+    <!-- jQuery - impl -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+{% endif %}
 
-    
-{% if page.nomathjax %}
+
+{% if page.noprism %}
     <!-- no prism.js support -->
 {% else %}
 
@@ -44,7 +74,6 @@
 
     <!-- prism.js - impl -->
     <script async src="/js/prism.js"></script>
-
 {% endif %}
 
 {% if page.nomathjax %}

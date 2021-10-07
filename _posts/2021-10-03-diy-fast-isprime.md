@@ -149,12 +149,12 @@ isprime(size_t n) {
 
 here's how they perform on my machine, calculating whether 10 million random numbers are prime, within different bounds:
 
-![](/files/diy-fast-isprime-0.webp)
+![performance graph up to `2**32`](/files/diy-fast-isprime-0.webp)
 
 
 here's a comparison of even larger (> 32 bit values) trends in performance:
 
-![](/files/diy-fast-isprime-1.webp)
+![performance graph up to `2**48`](/files/diy-fast-isprime-1.webp)
 
 as you can see, both implementations have similar performance (with naive being a little faster), until $2^{14}$, at which point the trend reverses. the trends become even more pronounced after $2^{32}$, where the Miller-Rabin implementation essentially hits the 'else' case, and plateaus.
 

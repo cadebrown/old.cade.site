@@ -37,7 +37,10 @@ links:
   # Instagram username
   instagram: dev_ceb
 
+# Google Analytics ID (comment to disable)
+googleanalytics: G-DB8V1YFP76
 
+  
 # -*- RENDERING -*-
 
 # renderer settings

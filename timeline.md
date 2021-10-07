@@ -18,7 +18,7 @@ this page contains a timeline of my contributions, personal projects, and signif
 
   : Deep dreaming, optical flow, and other ML/AI art implementations
 
-  : ![](/files/album-societas-de-machinarum-xiii.webp)
+  : ![Album Art for "Societas de Machinarum XIII"](/files/album-societas-de-machinarum-xiii.webp)
 
 2021-05-** - [Dysmorphic Demiurge - DEREALIZATION](https://www.youtube.com/watch?v=ugiHrij0CfY)
 
@@ -38,7 +38,7 @@ this page contains a timeline of my contributions, personal projects, and signif
 
   : [free pdf](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf)
 
-  : ![](/files/paper-icl0-chart0.webp)
+  : ![chart from paper](/files/paper-icl0-chart0.webp)
 
 2019-09-** - ["Know It All", an A.I. Writer](https://www.youtube.com/watch?v=PwGsRskWN-I&t=3s)
 
@@ -60,7 +60,7 @@ this page contains a timeline of my contributions, personal projects, and signif
 
   : I was the primary software developer for the interactive fractal exploring simulation
 
-  : ![](/files/fractalexplorer0.webp)
+  : ![screenshot of fractalexplorer](/files/fractalexplorer0.webp)
 
 
 2017-02-** - [GNU MPFR](https://www.mpfr.org/)

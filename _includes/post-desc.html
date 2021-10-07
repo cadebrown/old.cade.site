@@ -3,9 +3,9 @@
     <a style='color: inherit; text-decoration: inherit;' href='{{ post.url }}' title='{{ post.title }}'>
         <div class='post-thumb-container'>
             {% if post.thumb %}
-            <img class='post-thumb' src='{{ post.thumb }}'>
+            <img alt='' class='post-thumb' src='{{ post.thumb }}'>
             {% else %}
-            <img class='post-thumb' src='/files/favicon.webp'>
+            <img alt='' class='post-thumb' src='/files/favicon.webp'>
             {% endif %}
         </div>
         <h2>
