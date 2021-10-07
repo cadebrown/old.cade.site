@@ -3,7 +3,7 @@ layout: post
 title: "Adding Extra Information To Hashes"
 categories: [math]
 tags: [kata, hacks]
-thumb: /files/katastringhash.png
+thumb: /files/katastringhash.webp
 ---
 
 in a long programming session working on [kata.tools](https://kata.tools), specifically the implementation of the `string` type in the builtin namespace.
@@ -22,7 +22,7 @@ well, I was implementing printf-like IO on duck-typed reference-counted objects.
 
 while implementing the dictionary format, which looks like `{ a: 1, b: 2, "c invalid-ident": 3 }`. notice how keys can be unquoted (for valid identifiers), or can be quoted if they have invalid characters (so that any string can be used). I realized that every string-print would potentially add O(len(s)) time and I wasn't satisfied (I'm trying to provide Python-style type system operating at native speeds). I realized that I was already including a 32/64 bit hash value as an unsigned as integer, which is computed with a [djb2-like](http://www.cse.yorku.ca/~oz/hash.html) function. so, what if we included that information in the hash? for example:
 
-![/files/katastringhash.png](/files/katastringhash.png)
+![](/files/katastringhash.webp)
 
 ### But... What about exceptions? If there is arbitrary code executed with string conversion
 

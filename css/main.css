@@ -11,8 +11,8 @@
  */
 
 :root {
-    /*--img-backtile: url("/files/backtile-grid0.png");*/
-    --img-backtile: url("/files/backtile-grid3.jpg");
+    /*--img-backtile: url("/files/backtile-grid0.webp");*/
+    /*--img-backtile: url("/files/backtile-grid3.webp");*/
 
     --col-back0: #0e0e0e;
     --col-back1: #2a2a2a;

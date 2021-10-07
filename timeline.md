@@ -16,7 +16,7 @@ this page contains a timeline of my contributions, personal projects, and signif
 
   : Deep dreaming, optical flow, and other ML/AI art implementations
 
-  : ![](/files/album-societas-de-machinarum-xiii.jpg)
+  : ![](/files/album-societas-de-machinarum-xiii.webp)
 
 2021-05-** - [Dysmorphic Demiurge - DEREALIZATION](https://www.youtube.com/watch?v=ugiHrij0CfY)
 
@@ -36,7 +36,7 @@ this page contains a timeline of my contributions, personal projects, and signif
 
   : [free pdf](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf)
 
-  : ![](/files/paper-icl0-chart0.jpg)
+  : ![](/files/paper-icl0-chart0.webp)
 
 2019-09-** - ["Know It All", an A.I. Writer](https://www.youtube.com/watch?v=PwGsRskWN-I&t=3s)
 
@@ -58,7 +58,7 @@ this page contains a timeline of my contributions, personal projects, and signif
 
   : I was the primary software developer for the interactive fractal exploring simulation
 
-  : ![](/files/fractalexplorer0.jpg)
+  : ![](/files/fractalexplorer0.webp)
 
 
 2017-02-** - [GNU MPFR](https://www.mpfr.org/)
@@ -91,7 +91,7 @@ this page contains a timeline of my contributions, personal projects, and signif
 
   : [some cool photos here](https://www.instagram.com/lnstempunks)
 
-  : <div class="inline-img"><img src='/files/cade-frc3966-thumbs0.jpg'/></div> <div class="inline-img"><img src='/files/cade-frc3966-thumbs1.jpg'/></div>
+  : <div class="inline-img"><img src='/files/cade-frc3966-thumbs0.webp'/></div> <div class="inline-img"><img src='/files/cade-frc3966-thumbs1.webp'/></div>
 
 2014-11-06 - [Bukkit/Spigot Plugins](https://dev.bukkit.org/projects/cade-gamble)
 

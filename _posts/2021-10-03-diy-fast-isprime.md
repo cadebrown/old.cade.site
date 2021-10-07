@@ -3,7 +3,7 @@ layout: post
 title: "DIY: Fast 'isprime()' for Primality Testing (using Miller-Rabin)"
 categories: [math]
 tags: [math, kata]
-thumb: /files/diy-fast-isprime-0.png
+thumb: /files/diy-fast-isprime-0.webp
 ---
 
 We've all had to include a little `isprime()` function in our code, right? (well, most people reading my blog probably have). 
@@ -149,12 +149,12 @@ isprime(size_t n) {
 
 here's how they perform on my machine, calculating whether 10 million random numbers are prime, within different bounds:
 
-![](/files/diy-fast-isprime-0.png)
+![](/files/diy-fast-isprime-0.webp)
 
 
 here's a comparison of even larger (> 32 bit values) trends in performance:
 
-![](/files/diy-fast-isprime-1.png)
+![](/files/diy-fast-isprime-1.webp)
 
 as you can see, both implementations have similar performance (with naive being a little faster), until $2^{14}$, at which point the trend reverses. the trends become even more pronounced after $2^{32}$, where the Miller-Rabin implementation essentially hits the 'else' case, and plateaus.
 

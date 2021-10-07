@@ -3,7 +3,7 @@ layout: post
 title: "DIY: Regex Engine"
 categories: [diy]
 tags: [regex, hacks]
-thumb: /files/diy-regex-engine.png
+thumb: /files/diy-regex-engine.webp
 ---
 
 I was in need of a regex engine... so I decided I would write my own. In a single file, we implement a regex engine (including a regex pattern parser, compiler, and matching engine), and an implementation of a `mg` (for `my-grep`) in C, in a single file: 
@@ -16,7 +16,7 @@ I was in need of a regex engine... so I decided I would write my own. In a singl
 
 to implement the regex compiler and matcher, we will use [Thompson's construction](https://en.wikipedia.org/wiki/Thompson%27s_construction), with a straightforward NFA implementation for various operations. Here's the syntax we're aiming for:
 
-![/files/diy-regex-engine.png](/files/diy-regex-engine.png)
+![](/files/diy-regex-engine.webp)
 
 so, it's a little different than normal regex syntax, but in my opinion more straightforward. also, the double-star (`**`) operator that repeats a specific number of time that can be any within a set is something I've not seen... it could be useful for searching for specific depth of functions (for example, `^\t**{1,3,5}func` would look for functions defined at those indentation levels)
 
