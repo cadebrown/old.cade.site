@@ -36,10 +36,8 @@ here are some tips that may make your blog more responsive/efficient:
   * use `.webp` files for images
   * to check your images, use [imagemagick](https://imagemagick.org/script/identify.php)
     * for example, `for f in files/*; do identify -format '%f %wx%y\n' $f; done`
-  * in your front matter, use these options to speed up some places (for example, your index/about typically don't need math and this can speed them up!)
-    * `nomathjax: true` if the page won't need math formatting
-    * `noprism: true` if the page won't need code formatting
-    * `nojquery: true` if the page won't need jQuery
+  * specify only the software you need for a file with the `use_*` settings (see `_config.yml` for specifics)
+    * by default, posts use MathJax and Prism.js, while pages *don't even load them in*
 
 ## software used
 

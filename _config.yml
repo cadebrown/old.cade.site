@@ -23,6 +23,38 @@ desc: "I write about programming, music, and math with DIY-tutorials and languag
 # the shell prompt to use while highlighting
 shellprompt: "sh $"
 
+# here's some default settings (these can be overridden by specific pages)
+defaults:
+  # default settings for all pages (i.e. /about, ...)
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      use_jquery: false
+      use_mathjax: false
+      use_prism: false
+  # default settings for all posts
+  -
+    scope:
+      # apply to all posts
+      path: ""
+      type: "posts"
+    values:
+      use_jquery: false
+      use_mathjax: true
+      use_prism: true
+  # default settings for all drafts
+  -
+    scope:
+      # apply to all posts
+      path: ""
+      type: "drafts"
+    values:
+      use_jquery: false
+      use_mathjax: true
+      use_prism: true
+
 
 # -*- ACCOUNTS/LINKS -*-
 

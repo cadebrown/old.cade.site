@@ -2,8 +2,6 @@
 layout: default
 title: Timeline
 permalink: /timeline
-nomathjax: true
-noprism: true
 ---
 
 ## Timeline
@@ -93,7 +91,7 @@ this page contains a timeline of my contributions, personal projects, and signif
 
   : [some cool photos here](https://www.instagram.com/lnstempunks)
 
-  : <div class="inline-img"><img src='/files/cade-frc3966-thumbs0.webp'/></div> <div class="inline-img"><img src='/files/cade-frc3966-thumbs1.webp'/></div>
+  : <div class="inline-img"><img alt='me giving thumbs up' src='/files/cade-frc3966-thumbs0.webp'/></div> <div class="inline-img"><img alt='also me giving thumbs up' src='/files/cade-frc3966-thumbs1.webp'/></div>
 
 2014-11-06 - [Bukkit/Spigot Plugins](https://dev.bukkit.org/projects/cade-gamble)
 

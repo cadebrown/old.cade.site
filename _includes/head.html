@@ -54,31 +54,28 @@
 {% endif%}
 
 
-{% if page.nojquery %}
-    <!-- no jQuery support support -->
-{% else %}
+{% if page.use_jquery %}
     <!-- jQuery - impl -->
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
+{% else %}
+    <!-- no jQuery support support -->
 {% endif %}
 
-
-{% if page.noprism %}
-    <!-- no prism.js support -->
-{% else %}
-
+{% if page.use_prism %}
     <!-- prism.js - stylesheet -->
     <link rel="stylesheet" href="/css/prism.css">
 
     <!-- prism.js - impl -->
     <script async src="/js/prism.js"></script>
+{% else %}
+    <!-- no prism.js support -->
 {% endif %}
 
-{% if page.nomathjax %}
-    <!-- no MathJax support -->
-{% else %}
+
+{% if page.use_mathjax %}
     <!-- MathJax, for math formatting -->
     <script>
         MathJax = {
@@ -91,11 +88,18 @@
         };
     </script>
 
-    <!-- Actually load scripts -->
+    <!-- TODO: is polyfill needed for es6? -->
+    <!--
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    -->
+
+    <!-- load MathJax, async -->
+    
     <script async type="text/javascript" id="MathJax-script"
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     </script>
+{% else %}
+    <!-- no MathJax support -->
 {% endif %}
 
 
