@@ -84,7 +84,7 @@ plugins:
 
 # the default theme to use for the site (see 'css/main.css')
 # other nice values are: 'chalkboard' (dark theme), 'whiteboard' (light theme)
-theme_default: '1337'
+theme_default: 'chalkboard'
 
 
 # -*- POSTS -*-

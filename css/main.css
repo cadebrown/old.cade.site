@@ -36,13 +36,10 @@ html[data-theme='1337'] {
     --col-shadow: #161616;
     --col-link: #1f8cd4;
 
-
-
     /* 1337 uses mono! (this causes a layout shift sometimes when switching, but since the
      *   switcher is at the top, no problem!
      */
-    --font: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
-
+    --font: Consolas,monospace;
 }
 
 /* have themes for the buttons at the bottom bar */
@@ -284,8 +281,8 @@ td {
     margin: 0.2em;
 
     /* limit the size to something reasonable */
-    width: 20em;
-    max-height: 16em;
+    width: 21em;
+    max-height: 18.5em;
 }
 
 .post-thumb {
@@ -369,7 +366,7 @@ p > code {
     }
 
     .post-thumb-container {
-        max-width: 90%;
+        max-width: 98%;
         float: none;
         margin: 0 auto;
         padding: 0em;
