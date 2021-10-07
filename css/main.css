@@ -1,83 +1,173 @@
 /* main.css - primary CSS for cade.site
  *
  * 
- * SEE: 
- *   * https://github.com/richleland/pygments-css
+ * some useful links: 
+ *   * https://coolors.co/
  *
  * @author:    Cade Brown <cade@kscript.org>
  */
 
+
+/* defaults for all themes */
 :root {
-    /*--img-backtile: url("/files/backtile-grid0.webp");*/
-    /*--img-backtile: url("/files/backtile-grid3.webp");*/
 
-    --col-back0: #0e0e0e;
-    --col-back1: #2a2a2a;
-    
-    --col-shadow: #161616;
+    /* Which font-family selection should be used (other themes typically don't need this) */
+    /*--font: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    --font: monospace;
 
-    /* for URL/hyperlinks */
-    --col-link: #82c7ff;
-
-    /* for a dark theme, textA should be dark, and textB should be light */
-    --col-textA: #111111;
-    --col-textB: #eeeeee;
-
-    /* used for the borders around content, so that black images on a black background,
-     *   for example, have a white border between them
-     */
-    --col-borderA: black;
-    --col-borderB: white;
 }
 
-/* dark theme: mine is a dark theme, but the same variable names should be used by all themes 
- * '--col-*' indicates a color choice
- * '--*A' is for primary content (i.e. same color as theme), and '--*B' is for secondary content (i.e. color of content,
- *          which should stand out). these are typically inverted colors
- */
-html[data-theme='dark'] {
+ /* '1337': my personal theme
+  *
+  * for changing themes, see 'js/main.js' and '_includes/footer.html'
+  */
+html[data-theme='1337'] {
+    --img-back: url('/files/backtile-grid1.webp');
 
-    --col-back0: #fafafa;
-    --col-back1: #e0e0e0;
+    --col-back0: #2a2a2a;
+    --col-back1: #0e0e0e;
 
-    --col-shadow: #aaaaaa;
+    --col-borderA: #ffc0cb88;
+    --col-borderB: #94bfa788;
 
-    --col-link: #366fca;
+    --col-textA: pink;
+    --col-textB: #16c516;
+
+    --col-shadow: #161616;
+    --col-link: #1f8cd4;
+
+
+
+    /* 1337 uses mono! (this causes a layout shift sometimes when switching, but since the
+     *   switcher is at the top, no problem!
+     */
+    --font: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+
+}
+
+/* have themes for the buttons at the bottom bar */
+.themebutton-1337 {
+    background-image: linear-gradient(-45deg, #0e0e0e 40%, #16c516 60%);
+}
+
+
+/* 'chalkboard' theme */
+html[data-theme='chalkboard'] {
+    /* (optional): what image should the background be? */
+    /*--img-back: url('/files/backtile-grid1.webp') repeat;*/
+
+    /* what color should be the background for the whole site? */
+    --col-back0: #0e0e0e;
+
+    /* what color should be the background for text? */
+    --col-back1: #2a2a2a;
+
+    /* what color should borders around images/figures be (borderA should blend in with the theme) */
+    --col-borderA: #11111188;
+    /* what color should borders around images/figures be (borderB should stand out against the theme) */
+    --col-borderB: #eeeeee88;
+
+
+    /* what color should text that matches the theme be? (for example, a black theme should have textA as black) */
+    --col-textA: #111111;
+    /* what color should text that DOESN'T match the theme be? (this should stand out against the theme, used for most content) */
+    --col-textB: #eeeeee;
+
+    /* what color should shadows/highlights be? */
+    --col-shadow: #161616;
+    /* what color should clickable links be? */
+    --col-link: #82c7ff;
+
+}
+
+
+.themebutton-chalkboard {
+    background-image: linear-gradient(-45deg, #0e0e0e 40%, #2a2a2a 60%);
+}
+
+
+/* 'whiteboard' theme */
+html[data-theme='whiteboard'] {
+    --col-back0: #b4b4b4;
+    --col-back1: #ffffff;
+
+    --col-borderA: #eeeeee88;
+    --col-borderB: #11111188;
 
     --col-textA: #eeeeee;
     --col-textB: #111111;
 
-    --col-borderA: white;
-    --col-borderB: black;
+    --col-shadow: #161616;
+    --col-link: #366fca;
+}
+
+.themebutton-whiteboard {
+    background-image: linear-gradient(-45deg, #b4b4b4 40%, #ffffff 60%);
+}
+
+
+/* 'salmon' theme (kinda crazy LOL) */
+html[data-theme='salmon'] {
+    --img-back: url('/files/backtile-salmon0.webp');
+
+    --col-back0: #cf71a5;
+    --col-back1: #e0b7b7;
+
+    --col-borderA: pink;
+    --col-borderB: #94bfa7;
+
+    --col-textA: #eeeeee;
+    --col-textB: #111111;
+
+    --col-shadow: #161616;
+    --col-link: #2c69cc;
+}
+
+.themebutton-salmon {
+    background-image: linear-gradient(-45deg, #cf71a5 40%, #e0b7b7 60%);
+}
+
+
+
+/* 'none' theme, i.e. basically no special formatting */
+html[data-theme='none'] {
+
+    /* what color should clickable links be? */
+    --col-link: #366fca;
+}
+
+
+.themebutton-none {
+    background-image: linear-gradient(-45deg, #ffffff 40%, #ffffff 60%);
 }
 
 
 /*** HTML STD ***/
 
 
-body {
-    margin: 0.6em;
-    line-height: 1.32rem;
-    /* font-family: monospace; */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+body {
+    margin: 1em 12vw;
+    line-height: 1.32rem;
+
+    scrollbar-width: none;  
+
+    /* background settings */
+    background-color: var(--col-back0); 
+    background-image: var(--img-back);
+    background-repeat: repeat;
+    background-position: -0.5em;
+    background-attachment: fixed;
+
+    /* text settings */
+    /* font-family: monospace; */
+    font-family: var(--font);
+    color: var(--col-textB);
     font-size: 18px;
     tab-size: 4;
 
-    /* NOTE: you might have to tweak this for your background */
-    /*background-position: 1.2em;*/
-    background-position: -1.2em;
-
-    color: var(--col-textB);
-    background-color: var(--col-back0);
-
-    background-attachment: fixed;
-    background-image: var(--img-backtile);
-    background-repeat: repeat;
-    background-size: var(--size-backtile);
-    
-    scrollbar-width: none;  
 }
+
 
 
 h1 {
@@ -199,18 +289,30 @@ td {
 }
 
 .post-thumb {
-    max-width: 20em;
-    max-height: 20em;
-    
+    max-width: 100%;
+    max-height: 100%;
+
+    width: 640;
+    height: 400;
 }
 
 .main {
     background-color: var(--col-back1);
-    border-radius: 14px;
-    box-shadow: 0px 0px 0px var(--col-shadow);
     padding: 1em;
+
+    border-radius: 14px;
+    border: 1px solid var(--col-borderB);
+    box-shadow: 0px 0px 0px var(--col-shadow);
 }
 
+
+/* All theme buttons */
+.themebutton {
+    width: 24px;
+    height: 24px;
+    border-color: var(--col-borderB);
+    vertical-align: middle;
+}
 
 /** FontAwesome logos **/
 
@@ -257,15 +359,15 @@ p > code {
 }
 
 
-/* Mobile/Web */
 
-@media screen and (min-width: 992px) {
+/** Mobile/Web **/
+
+@media screen and (max-width: 1100px) {
+
     body {
-        margin: 1em 12vw;
+        margin: 0.6em;
     }
-}
 
-@media screen and (max-width: 668px) {
     .post-thumb-container {
         max-width: 90%;
         float: none;

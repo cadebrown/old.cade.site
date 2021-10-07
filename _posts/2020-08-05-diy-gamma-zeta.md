@@ -6,22 +6,27 @@ tags: [math, kscript]
 thumb: /files/diy-gamma-zeta.webp
 ---
 
-In developing [my language, kscript](https://github.com/chemicaldevelopment/kscript), I wanted to have the [Riemann Zeta Function](https://en.wikipedia.org/wiki/Riemann_zeta_function) and [Gamma Function](https://en.wikipedia.org/wiki/Gamma_function) available as part of the standard library. So, I implemented it!
+in developing [my language, kscript](https://github.com/chemicaldevelopment/kscript), I wanted to have the [Riemann Zeta Function](https://en.wikipedia.org/wiki/Riemann_zeta_function) and [Gamma Function](https://en.wikipedia.org/wiki/Gamma_function) available as part of the standard library. so, I implemented it!
 
-We program a code generator in Python, which generates C code, which can then be used in another project with no dependencies.
+our basic workflow is:
+
+  * write a python script that can generate some C code that corresponds to both functions
+  * run that python script with enough precision for `double` in C, with correct error bounds
+
+let's get to it!
 
 <!--more-->
 
 ## Definitions
 
-I'll assume you're more or less familiar with what the Zeta and Gamma functions are, but I'll also provide a definition we'll work with:
+I'll assume you're more or less familiar with what the Zeta and Gamma functions are, but I'll also provide a definition we can work with:
 
 $$\Gamma(x) = (x - 1)! = \int_{0}^{\infty} t^{x-1} e^{-t} dt$$
 
 $$\zeta(x) = \sum_{n=1}^{\infty} \frac{1}{n^x} $$
 
 
-We use the following reflection formulas to define the value elsewhere: 
+we use the following reflection formulas to define the value elsewhere: 
 
 $$\zeta(x) = 2 (2 \pi) ^ {x - 1} \sin(\frac{x \pi}{2}) \Gamma(1 - x) \zeta(1 - x)$$
 
@@ -30,7 +35,7 @@ $$\Gamma(x) = \sin(\pi x) \Gamma(1 - x)$$
 
 ## Goal
 
-Our goal is to define `C` functions with the following signatures, which evaluate the specific function at a particular point:
+our goal is to define `C` functions with the following signatures, which evaluate the specific function at a particular point:
 
 ```c
 
@@ -46,17 +51,17 @@ double complex my_lcgamma(double complex x);
 
 ```
 
-We would like this to be self contained, and distributable to any other C99 project. Further, the results should be accurate to the requested precision (`double` in C is typically IEEE 64 bit)
+we would like this to be self contained, and distributable to any other C99 project. further, the results should be accurate to the requested precision (`double` in C is typically IEEE 64 bit)
 
-We include `lgamma` functions to compute the logarithm of the gamma function; we won't go into optimizing for this case too much, but I need this for kscript so we will also generate it (to generate it yourself, include `--lgamma` in your arguments to the script)
+we include `lgamma` functions to compute the logarithm of the gamma function; we won't go into optimizing for this case too much, but I need this for kscript so we will also generate it (to generate it yourself, include `--lgamma` in your arguments to the script)
 
 ## Implementation
 
-You can see the source code for this generator available online here: [view on GitHub](https://gist.github.com/CadeBrown/f60d234cbfae1fc3cc1dcb114b93d538)
+the source code I used is available for free: [view on GitHub](https://gist.github.com/CadeBrown/f60d234cbfae1fc3cc1dcb114b93d538)
 
-I used [this paper](http://numbers.computation.free.fr/Constants/Miscellaneous/zetaevaluations.pdf) to form the basis of my implementation for the Zeta function. Specifically, section `1.2` entitled `Convergence of alternating series method`. We'll also need an implementation of the Gamma Function, which I've linked papers to help us. Note that we can use C's `tgamma` function for real number computations, but we'll have to roll our own for complex numbers (we'll implement both, for completeness). I won't go into all of the derivations for all the formula (those are covered in the papers I linked if you're interested); I'll try and just breifly cover the motivation and basic algebra between formulas
+I used [this paper](http://numbers.computation.free.fr/Constants/Miscellaneous/zetaevaluations.pdf) to form the basis of my implementation for the Zeta function. specifically, section `1.2` entitled `Convergence of alternating series method`. we'll also need an implementation of the Gamma Function, which I've linked papers to help us. note that we can use C's `tgamma` function for real number computations, but we'll have to roll our own for complex numbers (we'll implement both, for completeness). I won't go into all of the derivations for all the formula (those are covered in the papers I linked if you're interested); I'll try and just breifly cover the motivation and basic algebra between formulas
 
-References:
+references:
 
   * 0: [Numerical Evaluation of the Riemann Zeta Function](http://numbers.computation.free.fr/Constants/Miscellaneous/zetaevaluations.pdf)
   * 1: [Lanczos approximation](https://en.wikipedia.org/wiki/Lanczos_approximation)
@@ -64,9 +69,9 @@ References:
   * 3: [An Analysis of the Lanczos Gamma Approximation](https://web.viu.ca/pughg/phdThesis/phdThesis.pdf)
 
 
-We will dynamically generate C99 code that will be suitable to machine precision via a `Python` script, which will use the Python package `gmpy2` (`pip3 install gmpy2`)
+we will dynamically generate C99 code that will be suitable to machine precision via a `Python` script, which will use the Python package `gmpy2` (`pip3 install gmpy2`)
 
-We start by importing things, declaring an argument format, and having some built ins:
+we start by importing things, declaring an argument format, and having some built ins:
 
 ```python
 # std library
@@ -124,11 +129,11 @@ def digits_accurate(x):
 
 ```
 
-These are all pretty self explanatory; especially with the comments. We use `@lru_cache` to cache results of functions to reduce overhead when repeatedly calling with the same arguments.
+these are all pretty self explanatory; especially with the comments. we use `@lru_cache` to cache results of functions to reduce overhead when repeatedly calling with the same arguments.
 
 ## Gamma Function
 
-To create a table-based approximation (specifically, the [Lanczos Approximation](https://en.wikipedia.org/wiki/Lanczos_approximation)), we start with an observation that the Gamma function can be written as:
+to create a table-based approximation (specifically, the [Lanczos Approximation](https://en.wikipedia.org/wiki/Lanczos_approximation)), we start with an observation that the Gamma function can be written as:
 
 $$\Gamma(x+1) \approx \sqrt{2 \pi} (x+g+\frac{1}{2})^{x+\frac{1}{2}} e^{-(x+g+\frac{1}{2})} A_g(x)$$
 
@@ -138,40 +143,40 @@ $$A_g(x) = \frac{1}{2}p_0(g) + p_1(g)\frac{x}{x+1} + p_2(g)\frac{x(x-1)}{(x+1)(x
 
 where $g$ is a specifically chosen number to maximize accuracy, $n$ is the number of terms, and the $p_i$ are coefficients computed for the best fit
 
-This works fine on paper, but when actually implementing the C code there is a number of problems:
+this works fine on paper, but when actually implementing the C code there is a number of problems:
 
-  * The number of floating-point multiplies is $O(n^2)$ at run time (think about all the fractions in $A_g$), which will make it slower to execute, as well as introduce more error 
-  * Those multiplications will result in fractions which have very different magnitudes; doing that and summing their results will make roundoff errors much more prevalent
-  * More intermediate adds $x, x+1, x+2, ...$, means more register usage and for large tables, maybe even stack variables (that's really bad for performance!)
+  * the number of floating-point multiplies is $O(n^2)$ at run time (think about all the fractions in $A_g$), which will make it slower to execute, as well as introduce more error 
+  * those multiplications will result in fractions which have very different magnitudes; doing that and summing their results will make roundoff errors much more prevalent
+  * tore intermediate adds $x, x+1, x+2, ...$, means more register usage and for large tables, maybe even stack variables (that's really bad for performance!)
 
 
-Wouldn't it be nice to re-arrange the $A_g$ function into something that looks like the following:
+wouldn't it be nice to re-arrange the $A_g$ function into something that looks like the following:
 
 $$A_g'(x) = a_0 + \frac{a_1}{x+1} + \frac{a_2}{x+2} + ... \frac{a_{n-1}}{x+n-1}$$
 
-Therefore minimizing and simplifying the resulting code? Yes it would! But how do we do that?
+therefore minimizing and simplifying the resulting code? Yes it would! But how do we do that?
 
-Well; we view the summation as a [Partial Fraction Summation](https://www.purplemath.com/modules/partfrac.htm); think of the following equation:
+well; we view the summation as a [Partial Fraction Summation](https://www.purplemath.com/modules/partfrac.htm); think of the following equation:
 
 $$ \frac{1}{x+1} + \frac{1}{x+2} = \frac{(x + 1) + (x + 2)}{(x+1)(x+2)} = \frac{2x+3}{(x+1)(x+2)}$$
 
-We can algebraically manipulate the rational expression to yield either a summation of divisions, or a division of products & sums. This is actually very similar to our above expression that we want for $A_g'(x)$
+We can algebraically manipulate the rational expression to yield either a summation of divisions, or a division of products & sums. this is actually very similar to our above expression that we want for $A_g'(x)$
 
-I'll skip all the murky details here, but essentially we'll end up solving a matrix equation that will tell us what our $a_i$ should be (similar to how, in the simple expression, if we are given $\frac{2x+3}{(x+1)(x+2)}$, our result $a_i$ should be $\[1, 1\]$). That matrix equation is defined via:
+I'll skip all the murky details here, but essentially we'll end up solving a matrix equation that will tell us what our $a_i$ should be (similar to how, in the simple expression, if we are given $\frac{2x+3}{(x+1)(x+2)}$, our result $a_i$ should be $\[1, 1\]$). that matrix equation is defined via:
 
 $$ a = \mathbf{B} \mathbf{C} \mathbf{D_c} \mathbf{D_r} p $$
 
 Where $a, p$ are vectors of the coefficients mentioned in the above formulas, and the rest are $n \times n$ matrices generated to describe the partial fraction decomposition. 
 
 
-Further, the error may be calculated as:
+further, the error may be calculated as:
 
 $$ \textrm{err} = |\Gamma(x) - approx(x)| \leq |\frac{\pi}{2}(\frac{e^g}{\sqrt{2}} - (\frac{p_0}{2} + \sum_{j=1}^{n}(-1)^{j} p_j))| $$
 
-We would like to ensure that $$ \textrm{err} \leq 10^{-14} $$, which is among the limits of IEEE 64 bit floating point (i.e. a `double` in C)
+we would like to ensure that $$ \textrm{err} \leq 10^{-14} $$, which is among the limits of IEEE 64 bit floating point (i.e. a `double` in C)
 
 
-Here's my code implementing the actual formulae:
+here's my code implementing the actual formulae:
 
 ```python
 # generates a table for the Gamma function, used for approximation
@@ -277,7 +282,7 @@ def get_gamma_table(n, g):
     return a, errbound
 ```
 
-Great! Now we can generate a function (in `C` code), that should look like:
+great! Now we can generate a function (in `C` code), that should look like:
 
 I define macros for constants such as `PI` for kscript; but you may want to use your own; check the script to see how I precompute constants. The script will generate constants for $\pi$, $\log \pi$, $\sqrt{2 \pi}$, $\log\sqrt{2 \pi}$ in full precision, so we don't have to worry about that (defines them as `MY_PI`, `MY_LOG_PI`, etc)
 
@@ -358,27 +363,27 @@ double complex my_cgamma(double complex x) {
 }
 ```
 
-For the sake of brevity; I won't post the implementation of `my_*lgamma`; it is very similar to these. Run the script yourself to see it's output for that!
+for the sake of brevity; I won't post the implementation of `my_*lgamma`; it is very similar to these. run the script yourself to see it's output for that!
 
 ## Zeta Function
 
-The hard part is over; the Zeta function is actually (in my opinion) easier to generate a table for. It is based on a (quite) simple formula:
+the hard part is over; the Zeta function is actually (in my opinion) easier to generate a table for. it is based on a (quite) simple formula:
 
 $$\zeta(x) = \frac{1}{d_0(1 - 2^{1-x})} \sum_{k=1}^{n}\frac{(-1)^{k-1}d_k}{k^x} + \gamma_n(x)$$
 
-Where:
+where:
 
 $n$ is the number of terms in the approximation, $d$ is a vector of coefficients (similar to $a$ in the Gamma approximation) best fit for a particular model, and $gamma_n(x)$ is the error term
 
-The form of $d_k$ is much simpler to compute; it is given by: 
+the form of $d_k$ is much simpler to compute; it is given by: 
 
 $$d_k = n \sum_{j=k}^{n}\frac{(n+j-1)!4^j}{(n-j)!(2j)!}$$
 
-The error term is bounded by:
+the error term is bounded by:
 
 $$|\gamma_n(x)| \leq \frac{2}{(3+\sqrt{8})^n|\Gamma(x)||1-2^{1-x}|} \leq \frac{3(1+2|\Im(x)|e^{\frac{|\Im(x)|\pi}{2}})}{(3+\sqrt{8})^n|1-2^{1-x}|} $$
 
-And, therefore, again in this approximation, we would require that $ \gamma_n(x) \leq 10^{-14}$, to give us a sufficiently accurate approximation
+and, therefore, again in this approximation, we would require that $ \gamma_n(x) \leq 10^{-14}$, to give us a sufficiently accurate approximation
 
 
 ```python
@@ -420,7 +425,7 @@ def get_zeta_table(n):
 ```
 
 
-To generate C code for real inputs, we can generate a single table (since, the errbound() function relies on the imaginary component of the input, and does not change significantly with the real portion).
+to generate C code for real inputs, we can generate a single table (since, the errbound() function relies on the imaginary component of the input, and does not change significantly with the real portion).
 
 ```c
 double my_zeta(double x) {
@@ -461,9 +466,9 @@ double my_zeta(double x) {
 }
 ```
 
-Note that our zeta function may call the gamma function we defined; this is neccessary due to the fact that the summation will not converge for negative values of $x$
+note that our zeta function may call the gamma function we defined; this is neccessary due to the fact that the summation will not converge for negative values of $x$
 
-For complex inputs; we need to realize that the maximum error term increases as the imaginary component; for example, the author estimates that it is required that $n \geq 1.3d + 0.9\Im(x)$, if $d$ digits are required for accuracy. However; for $x$ with small imaginary components, we should use the smallest $n$ that will work:
+for complex inputs; we need to realize that the maximum error term increases as the imaginary component; for example, the author estimates that it is required that $n \geq 1.3d + 0.9\Im(x)$, if $d$ digits are required for accuracy. however; for $x$ with small imaginary components, we should use the smallest $n$ that will work:
 
 ```python
 
@@ -595,12 +600,12 @@ double complex my_czeta(double complex x) {
 }
 ```
 
-The real code goes up to $2^{10}$, but you get the point; essentially, the smallest possible table is generated for every power of two threshold of the imaginary component. For example, $n = 144$ is required for $\Im(x) \leq 128$. If we used that for all numbers, we would be $\frac{144}{28} \approx 5.14$ times slower than we need to be! This will help in performance.
+the real code goes up to $2^{10}$, but you get the point; essentially, the smallest possible table is generated for every power of two threshold of the imaginary component. for example, $n = 144$ is required for $\Im(x) \leq 128$. if we used that for all numbers, we would be $\frac{144}{28} \approx 5.14$ times slower than we need to be! This will help in performance.
 
 
 ## Testing
 
-To test this, I wrote a small program using the generated code. You can check out the [full source code (mg.c)](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335). I tested values of $x=\sigma+it$, for $\sigma, t \in \[0, 256\)$, and compared the time. I also compared the built in `tgamma` function discussed earlier, and measured how accurate my implementation was relative to it; here are the results summarized:
+to test this, I wrote a small program using the generated code. you can check out the [full source code (mg.c)](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335). I tested values of $x=\sigma+it$, for $\sigma, t \in \[0, 256\)$, and compared the time. I also compared the built in `tgamma` function discussed earlier, and measured how accurate my implementation was relative to it; here are the results summarized:
 
 {:.command-line .no-line-numbers data-prompt="{{ site.shellprompt }}" data-filter-output="out:"}
 ```bash
@@ -634,15 +639,15 @@ out:tgamma(x), x in [0, 256)      :    0.050 us/iter
 
 
 
-Feel free to compile it on your machine and email me results; I'd be happy to include them.
+feel free to compile it on your machine and email me results; I'd be happy to include them.
 
-My implementation and glibc's implementation of the gamma function agree everywhere up to `14` digits, which is plenty accurate (we could check Wolfram alpha exactly to see whether I was closer or they were, but they are both fine for our purposes).
+my implementation and glibc's implementation of the gamma function agree everywhere up to `14` digits, which is plenty accurate (we could check Wolfram alpha exactly to see whether I was closer or they were, but they are both fine for our purposes).
 
-The generated source code I use in kscript (as well as for the demo) is available [here, as a single file](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335), feel free to use in non-commercial projects.
+the generated source code I use in kscript (as well as for the demo) is available [here, as a single file](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335), feel free to use in non-commercial projects.
 
-I hope you've enjoyed the blog, and can use these implementations for your own project. The C code is very simple and should be pretty easy to port to other languages (JavaScript, Python, C#, etc, etc).
+I hope you've enjoyed the blog, and can use these implementations for your own project. the C code is very simple and should be pretty easy to port to other languages (JavaScript, Python, C#, etc, etc).
 
-Thanks for reading!
+thanks for reading!
 
 
 

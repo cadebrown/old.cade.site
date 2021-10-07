@@ -6,15 +6,13 @@ tags: [math, kata]
 thumb: /files/diy-fast-isprime-0.webp
 ---
 
-We've all had to include a little `isprime()` function in our code, right? (well, most people reading my blog probably have). 
-
-In this article I present an implementation that is quite a bit faster than the naive implementation I came up with for larger values, and is easy to include in your own projects. I show the implementation in C, but it is designed to be portable to any other language (albeit with different performance charactersistics... please contact me if you have found an improvement/problem on your hardware)
+we've all had to include a little `isprime()` function in our code, right? (well, most people reading my blog probably have). in this article I provide an implementation of a primality test (in C) that is quite a bit faster for larger values, and is still easily embeddable and usable within existing applications
 
 <!--more-->
 
 ## Naive Implementation
 
-Most programmers, when asked to check whether a number is prime, would probably write some code like the following:
+most programmers, when asked to check whether a number is prime, would probably write some code like the following (myself included):
 
 
 ```c
@@ -158,5 +156,5 @@ here's a comparison of even larger (> 32 bit values) trends in performance:
 
 as you can see, both implementations have similar performance (with naive being a little faster), until $2^{14}$, at which point the trend reverses. the trends become even more pronounced after $2^{32}$, where the Miller-Rabin implementation essentially hits the 'else' case, and plateaus.
 
-For large values, the Miller-Rabin implementation 30x-50x faster than the naive one! I know this implementation has helped many of my other projects efficiently implement prime checking
+for large values, the Miller-Rabin implementation 30x-50x faster than the naive one! I know this implementation has helped many of my other projects efficiently implement prime checking (check out [PGS](https://github.com/chemicaldevelopment/pgs))
 

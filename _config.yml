@@ -29,9 +29,8 @@ defaults:
       path: ""
       type: "pages"
     values:
-      use_jquery: false
-      use_mathjax: false
-      use_prism: false
+      blahblahblah: myval
+      #use_jquery: true
   # default settings for all posts
   -
     scope:
@@ -39,7 +38,6 @@ defaults:
       path: ""
       type: "posts"
     values:
-      use_jquery: false
       use_mathjax: true
       use_prism: true
   # default settings for all drafts
@@ -49,7 +47,6 @@ defaults:
       path: ""
       type: "drafts"
     values:
-      use_jquery: false
       use_mathjax: true
       use_prism: true
 
@@ -83,6 +80,12 @@ kramdown:
 plugins:
   - jekyll-paginate
   - jekyll-feed
+
+
+# the default theme to use for the site (see 'css/main.css')
+# other nice values are: 'chalkboard' (dark theme), 'whiteboard' (light theme)
+theme_default: '1337'
+
 
 # -*- POSTS -*-
 

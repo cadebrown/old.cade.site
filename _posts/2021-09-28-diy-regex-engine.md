@@ -6,9 +6,7 @@ tags: [regex, hacks]
 thumb: /files/diy-regex-engine.webp
 ---
 
-I was in need of a regex engine... so I decided I would write my own. In a single file, we implement a regex engine (including a regex pattern parser, compiler, and matching engine), and an implementation of a `mg` (for `my-grep`) in C, in a single file: 
-
-  * [check out `mg.c` on GitHub](https://gist.github.com/CadeBrown/a949ed37fe15022c101cfe92f7abc72f)
+I was in need of a regex engine... so I decided I would write my own. In a single file, we implement a regex engine (including a regex pattern parser, compiler, and matching engine), and an implementation of a `mg` (for `my-grep`) in C, in a single file: [`mg.c` on GitHub](https://gist.github.com/CadeBrown/a949ed37fe15022c101cfe92f7abc72f)
 
 <!--more-->
 
@@ -18,7 +16,7 @@ to implement the regex compiler and matcher, we will use [Thompson's constructio
 
 ![comment block](/files/diy-regex-engine.webp)
 
-so, it's a little different than normal regex syntax, but in my opinion more straightforward. also, the double-star (`**`) operator that repeats a specific number of time that can be any within a set is something I've not seen... it could be useful for searching for specific depth of functions (for example, `^\t**{1,3,5}func` would look for functions defined at those indentation levels)
+so, it's a little different than normal regex syntax, but in my opinion more straightforward. also, the double-star (`**`) operator that repeats a specific number of time that can be any within a set is something I've not seen... it could be useful for searching for specific depth of functions (for example, `^\t**{1,2,5}func` would look for functions defined at those indentation levels)
 
 the basic parsing algorithm uses a single expandable list of NFA states, which have edges to other NFA states, or a special value (-1 means no edge, -2 means edge into 'accept' state). the NFA is then simulated by input file data, and when a match is encountered, the line is printed out (like `grep`). just compile [the code, `mg.c`](https://gist.github.com/CadeBrown/a949ed37fe15022c101cfe92f7abc72f) and run it yourself:
 
