@@ -2,6 +2,8 @@
 layout: default
 title: About
 permalink: /about
+nomathjax: true
+noprism: true
 ---
 
 ## About

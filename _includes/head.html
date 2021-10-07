@@ -2,7 +2,6 @@
     <!-- head.html - header/meta/shared resources used by 
 
 -->
-
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     
@@ -33,9 +32,24 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+
+
+    
+{% if page.nomathjax %}
+    <!-- no prism.js support -->
+{% else %}
+
     <!-- prism.js - stylesheet -->
     <link rel="stylesheet" href="/css/prism.css">
 
+    <!-- prism.js - impl -->
+    <script async src="/js/prism.js"></script>
+
+{% endif %}
+
+{% if page.nomathjax %}
+    <!-- no MathJax support -->
+{% else %}
     <!-- MathJax, for math formatting -->
     <script>
         MathJax = {
@@ -44,12 +58,16 @@
             },
             svg: {
                 fontCache: 'global'
-            }
+            },
         };
     </script>
 
     <!-- Actually load scripts -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async type="text/javascript" id="MathJax-script"
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+{% endif %}
+
 
 </head>

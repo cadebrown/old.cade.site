@@ -2,6 +2,8 @@
 layout: default
 title: Timeline
 permalink: /timeline
+nomathjax: true
+noprism: true
 ---
 
 ## Timeline

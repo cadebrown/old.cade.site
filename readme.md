@@ -33,7 +33,11 @@ and navigate to `localhost:4000` in your browser
 here are some tips that may make your blog more responsive/efficient:
 
   * use `.webp` files for images
-
+  * to check your images, use [imagemagick](https://imagemagick.org/script/identify.php)
+    * for example, `for f in files/*; do identify -format '%f %wx%y\n' $f; done`
+  * in your front matter, use these options to speed up some places (for example, your index/about typically don't need math and this can speed them up!)
+    * `nomathjax: true` if the page won't need math formatting
+    * `noprism: true` if the page won't need code formatting
 
 ## software used
 
@@ -50,6 +54,7 @@ this is all the software that I use, with some helpful links to show you how to 
     * to use it in a post, use `$ x^2 + x + 5$` (for inline), or `$$ x^2 + x + 5 $$` (for block mode)
     * to customize behavior, check `_includes/head.html`
     * to optimize, [go here](https://docs.mathjax.org/en/latest/misc/faq.html#faq-slow-no-math)
+      * also, [look at combined components](https://docs.mathjax.org/en/latest/web/components/combined.html)
   * [git.io](https://git.io/), GitHub's URL shortener (I use it for gists)
   
 
