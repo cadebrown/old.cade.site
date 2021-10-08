@@ -16,7 +16,11 @@ $ sudo gem install jekyll bundler
 $ bundle install
 ```
 
-then, to serve locally:
+
+## running
+
+
+to serve locally:
 
 ```shell
 $ bundle exec jekyll serve
@@ -27,6 +31,7 @@ $ bundle exec jekyll serve
 
 and navigate to `localhost:4000` in your browser
 
+give `--drafts` to also include draft posts
 
 ## tips
 
