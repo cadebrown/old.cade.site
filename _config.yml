@@ -1,6 +1,6 @@
 # _config.yml - configuration for my personal blog (cade.site)
 #
-# feel free to copy my entire project, under terms of the kpl (https://kata.tools/kpl):
+# feel free to copy my entire project, under terms of the KPL (https://kata.tools/kpl):
 #   * https://github.com/cadebrown/cadebrown.github.io
 #
 # @author: Cade Brown <me@cade.site>
@@ -38,7 +38,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      use_mathjax: true
+      use_katex: true
       use_prism: true
   # default settings for all drafts
   -
@@ -47,7 +47,7 @@ defaults:
       path: ""
       type: "drafts"
     values:
-      use_mathjax: true
+      use_katex: true
       use_prism: true
 
 

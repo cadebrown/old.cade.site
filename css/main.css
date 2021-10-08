@@ -333,18 +333,13 @@ td {
 
 /** Code Highlighting **/
 
-/* mathjax math */
-mjx-container {
+/* katex math */
+.katex-display {
     overflow-x: auto;
     width: 100%;
-    padding: 0.2em;
+    padding: 0.5em;
 }
-/*
-.MJX-TEX {
-    font-size: 110%;
 
-}
-*/
 /* inline code */
 p > code {
     background-color: var(--col-back0);

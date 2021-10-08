@@ -37,7 +37,7 @@ here are some tips that may make your blog more responsive/efficient:
   * to check your images, use [imagemagick](https://imagemagick.org/script/identify.php)
     * for example, `for f in files/*; do identify -format '%f %wx%y\n' $f; done`
   * specify only the software you need for a file with the `use_*` settings (see `_config.yml` for specifics)
-    * by default, posts use MathJax and Prism.js, while pages *don't even load them in*
+    * by default, posts use Katex and Prism.js, while pages *don't even load them in*
 
 ## software used
 
@@ -50,11 +50,11 @@ this is all the software that I use, with some helpful links to show you how to 
     * to use commandline/shell output, [see here](https://github.com/cadebrown/cadebrown.github.io/blob/main/_posts/2021-09-28-diy-regex-engine.md)
     * to generate a tree view for a directory, [go here](https://prismjs.com/plugins/treeview/)
     * to have a pretty diff/difference, [go here](https://prismjs.com/plugins/diff-highlight/)
-  * [MathJax](https://www.mathjax.org/), for math/LaTeX
+  * [Katex](https://www.katex.org/), for math/LaTeX
     * to use it in a post, use `$ x^2 + x + 5$` (for inline), or `$$ x^2 + x + 5 $$` (for block mode)
     * to customize behavior, check `_includes/head.html`
-    * to optimize, [go here](https://docs.mathjax.org/en/latest/misc/faq.html#faq-slow-no-math)
-      * also, [look at combined components](https://docs.mathjax.org/en/latest/web/components/combined.html)
+    * to optimize, [go here](https://docs.katex.org/en/latest/misc/faq.html#faq-slow-no-math)
+      * also, [look at combined components](https://docs.katex.org/en/latest/web/components/combined.html)
   * [git.io](https://git.io/), GitHub's URL shortener (I use it for gists)
   
 

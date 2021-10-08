@@ -1,4 +1,4 @@
-# kata public license (kpl)
+# Kata Public License (KPL)
 
 any uses and/or redistributions of this software are allowed with the following conditions:
 

@@ -1,0 +1,58 @@
+---
+layout: post
+title: "Kata Roadmap #0: Architecture"
+categories: [kata]
+tags: [kata, meta]
+thumb: /files/jekyllproject-cadesite.webp
+---
+
+I'm starting a new project called Kata ([kata.tools](https://kata.tools), WIP). Kata is a software ecosystem for building web, desktop, embedded, and High Performance Computing (HPC) software. Kata includes a few major components to do this job:
+
+  * kata-ir (`kir` CLI, `*.kir` files): a low level intermediate representation (IR), meant to be a platform-agnostic and language-agnostic means of code interop
+  * kata-comb (`kc` CLI, `*.kc` files): a systems level programming language, for using native types, functions, and modules seamlessly
+  * kata-script (`ks` CLI, `*.ks` files): a high level scripting language, with a rich type system and expressive syntax
+    * `uno` stdlib module: a cross platform programmable UI framework that can compile to HTML, or native UI elements
+  * kata-package-manager (`kpm` CLI, `.kpm` files): a file/directory based package manager, builder, and bundler
+  * kata-shell (`kash` CLI, `*.kash` files): a shell language meant for task automation, authoring utils/tools, and launching processes/debugging
+  * kata-numerix (no CLI, `.knx` files): a compute-only (i.e. no IO) language meant for HPC/ML/AI, which can be JIT/statically compiled and ran using CUDA, HIP, etc... (or, use the reference CPU implementation to test/debug!). understands native types, tensors, broadcasting, task scheduling, and host/device communication
+
+obviously, this is going to take a while and be an iterative process! that's why I'm making this post, to give an estimated roadmap and high level details about the project
+
+<!--more-->
+
+## Another language? Why?
+
+fair point, there are already [a lot of programming languages](https://en.wikipedia.org/wiki/List_of_programming_languages). after all, what point is there to another when there are already so many that do so many different things?
+
+instead of going through every programming language/ecosystem and explaining why they were not satisfying my use cases, here are some of the most popular/general programming languages, and what's missing for them to be the "holy grail" (and why some of them should be banished to the shadow realm):
+
+  * C: Great for portability and performance, but severely lacking in composition, type systems, and the syntax has too many quirks
+  * C#: A very well designed language, within the larger .NET/CLR ecosystem, but leans too much into the C-style syntax and pure-academic object-oriented programming paradigms
+    * I know things like F# and other .NET languages are easy-interop with each other, but they weren't designed to truly be platform agnostic and web-oriented, which are now major use cases
+  * Python: Great for high level problem solving, "driver" code (as opposed to "engine"), but syntax is terrible (relevant whitespace, TitleCase constants, abuse of `:`, weird naming conventions, awkward syntax for `lambda`, the list goes on). Also, the standard library is just... not designed well. So many quirks, inconsistencies, and odd formulations (not to mention "hello, world" breaking!)
+  * JavaScript: Come on now... I'm not going to even mention why JavaScript is not the one...
+
+the above were only languages I consider myself fluent in (5+ years) and still use regularly. The following are languages I haven't used, or stopped using for one reason or another:
+
+  * Rust: [it's difficult to learn](https://vorner.github.io/difficult.html). 
+  * TypeScript/CoffeeScript/AnotherDerivativeScript23: these suffer from most of the problems JavaScript does and typically use the same [terrible tooling](https://www.npmjs.com/). it's more of an ecosystem problem than a language design problem, and adding another unifying JavaScript clone language is not going to make things any better
+
+
+### ...okay, but people are using those languages to great success!
+
+that's great for them, and anyone who has success with a language/ecosystem is free to stick with it, just as they are free to stick with any language up until this point
+
+my main goal with the Kata project is to make one ecosystem for any application someone could imagine. and, inevitably, when a new kind of application is needed, Kata gives developers the tools to define DSLs (Domain-Specific-Languages) with built-in lexer and parser generators with full diagnostics that work seamlessly with the existing Kata stack (i.e. they can compile down to `kir`, )
+
+
+## Goal
+
+the goal of this project is to have a clean, fast, and easy-to-modify blog that other people can use for theirs. this jekyll template has:
+
+  * math formatting using [Katex](https://www.katex.org/) (i.e. `$...$` and `$$...$$`)
+  * code syntax highlighting using [Prism](https://prismjs.com/)
+    * also supports custom languages, plugins, and more... check it out!
+  * (optional) Google Analytics support
+
+
+TODO: explain how it works, how to modify, etc...

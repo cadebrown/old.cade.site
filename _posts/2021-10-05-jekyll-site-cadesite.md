@@ -14,7 +14,7 @@ Recently, I've been cleaning house on old projects and websites -- and I realize
 
 the goal of this project is to have a clean, fast, and easy-to-modify blog that other people can use for theirs. this jekyll template has:
 
-  * math formatting using [MathJax](https://www.mathjax.org/) (i.e. `$...$` and `$$...$$`)
+  * math formatting using [Katex](https://www.katex.org/) (i.e. `$...$` and `$$...$$`)
   * code syntax highlighting using [Prism](https://prismjs.com/)
     * also supports custom languages, plugins, and more... check it out!
   * (optional) Google Analytics support

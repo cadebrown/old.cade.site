@@ -3,7 +3,7 @@ layout: default
 title: Timeline
 permalink: /timeline
 use_jquery: true
-use_mathjax: true
+use_katex: true
 ---
 
 ## Timeline
