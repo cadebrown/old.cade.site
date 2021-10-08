@@ -45,25 +45,16 @@ when using proper nouns, I try to respect the authors' wishes with capitalizatio
 
 ## Quotations
 
-I use either `'` or `"` to begin and end quotations. if I'm quoting code or something digital, I use backticks (`` ` ``) which will render them as `monospace font` on most computers
+I use either `'` or `"` to begin and end quotations. if I'm quoting code or something digital, I use backticks (`` ` ``) which will render them as `monospace font` on most computers (along with different styling)
 
-I follow [Wikipedia's quotation+punctuation guide](https://en.wikipedia.org/wiki/Wikipedia_talk:Manual_of_Style/quotation_and_punctuation#Quotation_marks_and_punctuation). American English is just wrong... if the punctuation is not part of the quotation, it should not be inside of the quotation marks.
+I follow [Wikipedia's quotation+punctuation guide](https://en.wikipedia.org/wiki/Wikipedia_talk:Manual_of_Style/quotation_and_punctuation#Quotation_marks_and_punctuation). US English is just wrong... if the punctuation is not part of the quotation, it should not be inside of the quotation marks!
 
 
 ## Punctuation
-
-### Commas
-
-I use the serial comma (sometimes called the Oxford comma) when delimiting a list of items in a sentence. sometimes, I also leave out the `and` or `or` when it is unambiguous
-
-examples:
-
-  * I went to the store and got apples, bananas, and oranges
-  * please let me know if you have any of the following: red, blue, green, yellow, pink
 
 ### Octothorpe
 
 I call the [`#` symbol an octothorpe](https://en.wikipedia.org/wiki/Number_sign). I remember it because there's 8 little thorns, so it's like "eight-thorns" to "octo-thorpe"
 
-in the US, it is referred to as a "pound sign"... but this can be very problematic considering [that's already used for something else](https://en.wikipedia.org/wiki/Pound_sign)
+in the US, it is referred to as a "pound sign"... but this can be very confusing considering [that's already used for something else](https://en.wikipedia.org/wiki/Pound_sign)
 
