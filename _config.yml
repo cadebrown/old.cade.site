@@ -9,14 +9,14 @@
 # -*- SITE -*-
 
 # your website's name
-# NOTE: I use my full URL, but if you have a catchy name, use it here
+# NOTE: i use my full URL, but if you have a catchy name, use it here
 name: "cade.site"
 
 # the URL of this blog (normally <user>.github.io, but may be a custom URL too)
 displayurl: "cade.site"
 
 # description of this blog (i.e. a medium text for SEO)
-desc: "I write about programming, music, and math with DIY-tutorials and language design"
+desc: "i write about programming, music, and math with DIY-tutorials and language design"
 
 # the shell prompt to use while highlighting
 shellprompt: "sh $"

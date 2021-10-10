@@ -221,7 +221,7 @@ img {
     border: solid 1px var(--col-borderB);
     margin: auto;
 
-    /* limit the size... I've been tweaking these values */
+    /* limit the size... i've been tweaking these values */
     max-width: 90%;
     max-height: 28em;
 }
@@ -229,7 +229,7 @@ img {
 
 /* images within dl/dd text */
 dd img {
-    /* limit the size... I've been tweaking these values */
+    /* limit the size... i've been tweaking these values */
     max-width: 60%;
     max-height: 24em;
 }
@@ -239,7 +239,7 @@ dd img {
 .inline-img {
     display: inline-block;
 
-    /* limit the size... I've been tweaking these values */
+    /* limit the size... i've been tweaking these values */
     max-width: 40%;
     max-height: 26em;
 }

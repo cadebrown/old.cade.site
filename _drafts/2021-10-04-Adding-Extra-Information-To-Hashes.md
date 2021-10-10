@@ -18,9 +18,9 @@ for example, what if you could tell, in O(1) time if a string was all-ASCII, no 
 ## But WHY?
 
 
-well, I was implementing printf-like IO on duck-typed reference-counted objects. but, instead of the typical build-a-buffer, and then print, and then free, the printf has builtin pathways for common types (including common containers), so that no extra memory is allocated from a `printf()/print()` function, even for dictionary/lists.
+well, i was implementing printf-like IO on duck-typed reference-counted objects. but, instead of the typical build-a-buffer, and then print, and then free, the printf has builtin pathways for common types (including common containers), so that no extra memory is allocated from a `printf()/print()` function, even for dictionary/lists.
 
-while implementing the dictionary format, which looks like `{ a: 1, b: 2, "c invalid-ident": 3 }`. notice how keys can be unquoted (for valid identifiers), or can be quoted if they have invalid characters (so that any string can be used). I realized that every string-print would potentially add O(len(s)) time and I wasn't satisfied (I'm trying to provide Python-style type system operating at native speeds). I realized that I was already including a 32/64 bit hash value as an unsigned as integer, which is computed with a [djb2-like](http://www.cse.yorku.ca/~oz/hash.html) function. so, what if we included that information in the hash? for example:
+while implementing the dictionary format, which looks like `{ a: 1, b: 2, "c invalid-ident": 3 }`. notice how keys can be unquoted (for valid identifiers), or can be quoted if they have invalid characters (so that any string can be used). i realized that every string-print would potentially add O(len(s)) time and i wasn't satisfied (i'm trying to provide Python-style type system operating at native speeds). i realized that i was already including a 32/64 bit hash value as an unsigned as integer, which is computed with a [djb2-like](http://www.cse.yorku.ca/~oz/hash.html) function. so, what if we included that information in the hash? for example:
 
 ![comment block](/files/katastringhash.webp)
 
@@ -63,7 +63,7 @@ print(sprintf("This is a fu%Rll sentence", B()))
 
 ### What's the added cost to string creation
 
-This is the only thing that I don't have a good accessment on the performance. When talking about dense, linear strings (as opposed to twines) string creation is inherently O(N) because we need to know how many Unicode characters there are and bytes, and to compute the hash. so, the loop to compute the hash would also need to track whether it was ASCII-only, or ASCII-identifier only, or ASCII-unescaped only, and perform a few bitwise operations to mask the values into a single 32/64 bit integer
+This is the only thing that i don't have a good accessment on the performance. When talking about dense, linear strings (as opposed to twines) string creation is inherently O(N) because we need to know how many Unicode characters there are and bytes, and to compute the hash. so, the loop to compute the hash would also need to track whether it was ASCII-only, or ASCII-identifier only, or ASCII-unescaped only, and perform a few bitwise operations to mask the values into a single 32/64 bit integer
 
 
-if we assume the average string is used more than once (which is a fair assumption), we would start to break even at 1 or 2 uses of the string. but even then, it's not a large deficit. but, when a single string is printed often, or used in a dictionary, the savings may be 10-100x in CPU-cycles. therefore, I think it is a worthy feature to investigate and adopt it experimentally until a stable interface is developed... stay tuned, I'll update this article whenever I perfom specific comparisons
+if we assume the average string is used more than once (which is a fair assumption), we would start to break even at 1 or 2 uses of the string. but even then, it's not a large deficit. but, when a single string is printed often, or used in a dictionary, the savings may be 10-100x in CPU-cycles. therefore, i think it is a worthy feature to investigate and adopt it experimentally until a stable interface is developed... stay tuned, i'll update this article whenever i perfom specific comparisons

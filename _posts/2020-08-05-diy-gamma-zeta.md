@@ -6,7 +6,7 @@ tags: [math, kscript]
 thumb: /files/diy-gamma-zeta.webp
 ---
 
-in developing [my language, kscript](https://github.com/chemicaldevelopment/kscript), I wanted to have the [Riemann Zeta Function](https://en.wikipedia.org/wiki/Riemann_zeta_function) and [Gamma Function](https://en.wikipedia.org/wiki/Gamma_function) available as part of the standard library. so, I implemented it!
+in developing [my language, kscript](https://github.com/chemicaldevelopment/kscript), i wanted to have the [Riemann Zeta Function](https://en.wikipedia.org/wiki/Riemann_zeta_function) and [Gamma Function](https://en.wikipedia.org/wiki/Gamma_function) available as part of the standard library. so, i implemented it!
 
 our basic workflow is:
 
@@ -19,7 +19,7 @@ let's get to it!
 
 ## Definitions
 
-I'll assume you're more or less familiar with what the Zeta and Gamma functions are, but I'll also provide a definition we can work with:
+i'll assume you're more or less familiar with what the Zeta and Gamma functions are, but i'll also provide a definition we can work with:
 
 $$\Gamma(x) = (x - 1)! = \int_{0}^{\infty} t^{x-1} e^{-t} dt$$
 
@@ -53,13 +53,13 @@ double complex my_lcgamma(double complex x);
 
 we would like this to be self contained, and distributable to any other C99 project. further, the results should be accurate to the requested precision (`double` in C is typically IEEE 64 bit)
 
-we include `lgamma` functions to compute the logarithm of the gamma function; we won't go into optimizing for this case too much, but I need this for kscript so we will also generate it (to generate it yourself, include `--lgamma` in your arguments to the script)
+we include `lgamma` functions to compute the logarithm of the gamma function; we won't go into optimizing for this case too much, but i need this for kscript so we will also generate it (to generate it yourself, include `--lgamma` in your arguments to the script)
 
 ## Implementation
 
-the source code I used is available for free: [view on GitHub](https://gist.github.com/CadeBrown/f60d234cbfae1fc3cc1dcb114b93d538)
+the source code i used is available for free: [view on GitHub](https://gist.github.com/CadeBrown/f60d234cbfae1fc3cc1dcb114b93d538)
 
-I used [this paper](http://numbers.computation.free.fr/Constants/Miscellaneous/zetaevaluations.pdf) to form the basis of my implementation for the Zeta function. specifically, section `1.2` entitled `Convergence of alternating series method`. we'll also need an implementation of the Gamma Function, which I've linked papers to help us. note that we can use C's `tgamma` function for real number computations, but we'll have to roll our own for complex numbers (we'll implement both, for completeness). I won't go into all of the derivations for all the formula (those are covered in the papers I linked if you're interested); I'll try and just breifly cover the motivation and basic algebra between formulas
+i used [this paper](http://numbers.computation.free.fr/Constants/Miscellaneous/zetaevaluations.pdf) to form the basis of my implementation for the Zeta function. specifically, section `1.2` entitled `Convergence of alternating series method`. we'll also need an implementation of the Gamma Function, which i've linked papers to help us. note that we can use C's `tgamma` function for real number computations, but we'll have to roll our own for complex numbers (we'll implement both, for completeness). i won't go into all of the derivations for all the formula (those are covered in the papers i linked if you're interested); i'll try and just breifly cover the motivation and basic algebra between formulas
 
 references:
 
@@ -162,7 +162,7 @@ $$ \frac{1}{x+1} + \frac{1}{x+2} = \frac{(x + 1) + (x + 2)}{(x+1)(x+2)} = \frac{
 
 We can algebraically manipulate the rational expression to yield either a summation of divisions, or a division of products & sums. this is actually very similar to our above expression that we want for $A_g'(x)$
 
-I'll skip all the murky details here, but essentially we'll end up solving a matrix equation that will tell us what our $a_i$ should be (similar to how, in the simple expression, if we are given $\frac{2x+3}{(x+1)(x+2)}$, our result $a_i$ should be $\[1, 1\]$). that matrix equation is defined via:
+i'll skip all the murky details here, but essentially we'll end up solving a matrix equation that will tell us what our $a_i$ should be (similar to how, in the simple expression, if we are given $\frac{2x+3}{(x+1)(x+2)}$, our result $a_i$ should be $\[1, 1\]$). that matrix equation is defined via:
 
 $$ a = \mathbf{B} \mathbf{C} \mathbf{D_c} \mathbf{D_r} p $$
 
@@ -244,7 +244,7 @@ def get_gamma_table(n, g):
     Dr = [[getDr(i, j) for j in range(n)] for i in range(n)]
 
     # the `f` vector, defined as `F` but without the double rising factorial (which Dc has)
-    # I left this in here instead of combining here to be more accurate to 
+    # i left this in here instead of combining here to be more accurate to 
     #   the method given in 4
     f_gn = [sqrt(2) * (e / (2 * (i + g) + 1)) ** (i + 0.5) for i in range(n)]
 
@@ -284,7 +284,7 @@ def get_gamma_table(n, g):
 
 great! Now we can generate a function (in `C` code), that should look like:
 
-I define macros for constants such as `PI` for kscript; but you may want to use your own; check the script to see how I precompute constants. The script will generate constants for $\pi$, $\log \pi$, $\sqrt{2 \pi}$, $\log\sqrt{2 \pi}$ in full precision, so we don't have to worry about that (defines them as `MY_PI`, `MY_LOG_PI`, etc)
+i define macros for constants such as `PI` for kscript; but you may want to use your own; check the script to see how i precompute constants. The script will generate constants for $\pi$, $\log \pi$, $\sqrt{2 \pi}$, $\log\sqrt{2 \pi}$ in full precision, so we don't have to worry about that (defines them as `MY_PI`, `MY_LOG_PI`, etc)
 
 ```c
 // evaluate the gamma function at a given point
@@ -363,7 +363,7 @@ double complex my_cgamma(double complex x) {
 }
 ```
 
-for the sake of brevity; I won't post the implementation of `my_*lgamma`; it is very similar to these. run the script yourself to see it's output for that!
+for the sake of brevity; i won't post the implementation of `my_*lgamma`; it is very similar to these. run the script yourself to see it's output for that!
 
 ## Zeta Function
 
@@ -605,7 +605,7 @@ the real code goes up to $2^{10}$, but you get the point; essentially, the small
 
 ## Testing
 
-to test this, I wrote a small program using the generated code. you can check out the [full source code (mg.c)](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335). I tested values of $x=\sigma+it$, for $\sigma, t \in \[0, 256\)$, and compared the time. I also compared the built in `tgamma` function discussed earlier, and measured how accurate my implementation was relative to it; here are the results summarized:
+to test this, i wrote a small program using the generated code. you can check out the [full source code (mg.c)](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335). i tested values of $x=\sigma+it$, for $\sigma, t \in \[0, 256\)$, and compared the time. i also compared the built in `tgamma` function discussed earlier, and measured how accurate my implementation was relative to it; here are the results summarized:
 
 {:.command-line .no-line-numbers data-prompt="{{ site.shellprompt }}" data-filter-output="out:"}
 ```bash
@@ -639,13 +639,13 @@ out:tgamma(x), x in [0, 256)      :    0.050 us/iter
 
 
 
-feel free to compile it on your machine and email me results; I'd be happy to include them.
+feel free to compile it on your machine and email me results; i'd be happy to include them.
 
-my implementation and glibc's implementation of the gamma function agree everywhere up to `14` digits, which is plenty accurate (we could check Wolfram alpha exactly to see whether I was closer or they were, but they are both fine for our purposes).
+my implementation and glibc's implementation of the gamma function agree everywhere up to `14` digits, which is plenty accurate (we could check Wolfram alpha exactly to see whether i was closer or they were, but they are both fine for our purposes).
 
-the generated source code I use in kscript (as well as for the demo) is available [here, as a single file](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335), feel free to use in non-commercial projects.
+the generated source code i use in kscript (as well as for the demo) is available [here, as a single file](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335), feel free to use in non-commercial projects.
 
-I hope you've enjoyed the blog, and can use these implementations for your own project. the C code is very simple and should be pretty easy to port to other languages (JavaScript, Python, C#, etc, etc).
+i hope you've enjoyed the blog, and can use these implementations for your own project. the C code is very simple and should be pretty easy to port to other languages (JavaScript, Python, C#, etc, etc).
 
 thanks for reading!
 

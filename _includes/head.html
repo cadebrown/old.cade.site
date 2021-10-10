@@ -1,19 +1,20 @@
-<head>
-    <!-- head.html - header/meta/shared resources used by 
+<!-- head.html - defines the standard 'head' element used across the blog
 
 -->
+
+<head>
+
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     
-    <!-- misc stuff I found online -->
+    <!-- misc stuff i found online -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- You can change the favicon at this path! -->
+    <!-- HTML favicon -->
     <link rel="shortcut icon" type="image/png" href="/files/favicon.webp">
 
-    <!-- HTML description -->
+    <!-- HTML meta description -->
     <meta name="description" content="{{ site.desc }}">
-
 
     <!-- RSS feed -->
     <link rel="alternate" type="application/atom+xml" title="{{ site.description }}" href="/feed.xml">
@@ -32,8 +33,16 @@
     <!-- Site JS -->
     <script src="/js/main.js"></script>
 
+
+    <!-- EXTERNAL -->
+
+
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Github Buttons support -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 
 {% if jekyll.environment == 'production' %}

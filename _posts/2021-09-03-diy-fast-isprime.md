@@ -6,7 +6,7 @@ tags: [math, kata]
 thumb: /files/diy-fast-isprime-0.webp
 ---
 
-we've all had to include a little `isprime()` function in our code, right? (well, most people reading my blog probably have). in this article I provide an implementation of a primality test (in C) that is quite a bit faster for larger values, and is still easily embeddable and usable within existing applications
+we've all had to include a little `isprime()` function in our code, right? (well, most people reading my blog probably have). in this article i provide an implementation of a primality test (in C) that is quite a bit faster for larger values, and is still easily embeddable and usable within existing applications
 
 <!--more-->
 
@@ -42,7 +42,7 @@ while there's nothing wrong with this code, and it arguably is the best solution
 
 ## Miller-Rabin implementation
 
-I'm just going to include the full implementation here, so you can copy and paste, and read the comments to understand how it works:
+i'm just going to include the full implementation here, so you can copy and paste, and read the comments to understand how it works:
 
 ```c
 /* Miller-Rabin 'isprime()' implementation
@@ -156,5 +156,5 @@ here's a comparison of even larger (> 32 bit values) trends in performance:
 
 as you can see, both implementations have similar performance (with naive being a little faster), until $2^{14}$, at which point the trend reverses. the trends become even more pronounced after $2^{32}$, where the Miller-Rabin implementation essentially hits the 'else' case, and plateaus.
 
-for large values, the Miller-Rabin implementation 30x-50x faster than the naive one! I know this implementation has helped many of my other projects efficiently implement prime checking (check out [PGS](https://github.com/chemicaldevelopment/pgs))
+for large values, the Miller-Rabin implementation 30x-50x faster than the naive one! i know this implementation has helped many of my other projects efficiently implement prime checking (check out [PGS](https://github.com/chemicaldevelopment/pgs)!)
 

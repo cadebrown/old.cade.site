@@ -6,7 +6,7 @@ permalink: /about
 
 ## About
 
-hello there! my name is Cade Brown, and this is my [personal blog](https://cade.site). I'm a programmer, mathematician and musician, and I like writing about it!
+hello there! my name is Cade Brown, and this is my [personal blog](https://cade.site). i'm a programmer, mathematician and musician, and i like writing about it!
 
 important links:
 
@@ -21,7 +21,7 @@ my main areas of interest are:
   * GPU/heterogeneous computing (like CUDA, HIP, OpenCL, ...)
   * Mathematical programming/algorithms (like bignum arithmetic, root finding, symbolic algebra)
 
-currently, I'm working on:
+currently, i'm working on:
 
   * [kata.tools](https://kata.tools): a WIP software framework, runtime, and set of languages to rule them all!
 
@@ -31,13 +31,13 @@ currently, I'm working on:
 
 ### MAGMA (Matrix Algebra on GPU and Many-core Architectures)
 
-At ICL, I have been working on the [MAGMA](https://icl.utk.edu/magma/) project, specifically adding the abilitity to run on AMD GPUs via the HIP platform (previously, it was primarily CUDA-focused). I also worked on tuning our algorithms for better performance on the new hardware.
+At ICL, i have been working on the [MAGMA](https://icl.utk.edu/magma/) project, specifically adding the abilitity to run on AMD GPUs via the HIP platform (previously, it was primarily CUDA-focused). i also worked on tuning our algorithms for better performance on the new hardware.
 
 [check out my paper!](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf)
 
-### "Know It All", an A.I. writer
+### "Know It All", an A.i. writer
 
-I (along with Jakob Liggett) worked on ["Know It All"](https://www.youtube.com/watch?v=PwGsRskWN-I) as part of the UTK VolHacks hackathon. It is a machine-learning based program which listens for audio input, transcribes it, and then completes the quote, using the GPT-2 algorithm
+i (along with Jakob Liggett) worked on ["Know It All"](https://www.youtube.com/watch?v=PwGsRskWN-i) as part of the UTK VolHacks hackathon. It is a machine-learning based program which listens for audio input, transcribes it, and then completes the quote, using the GPT-2 algorithm
 
 It turned out quite well, and the video above has some amusing, meta-textual responses
 
@@ -46,7 +46,7 @@ It turned out quite well, and the video above has some amusing, meta-textual res
 
 [SimpleSummit](https://simplesummit.github.io/) was my project during 2 successive summer internships at ORNL at the OLCF. It is a small cluster computer made of [NVIDIA Jetsons](https://developer.nvidia.com/buy-jetson), and can, in real time, use multiprocessing to allow a user to view a fractal in real time.
 
-I did all of the software for the project, which included `fractalexplorer`. It ran over 8 different machines at once, which communicated in real time (via MPI) over a network to produce ~30fps fractal rendering.
+i did all of the software for the project, which included `fractalexplorer`. It ran over 8 different machines at once, which communicated in real time (via MPI) over a network to produce ~30fps fractal rendering.
 
 Check out our ORNL article here: [SimpleSummit](https://www.olcf.ornl.gov/2018/10/09/simple-summit/)
 
