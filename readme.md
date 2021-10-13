@@ -69,7 +69,7 @@ this blog has a lot of builtin integrations with common tools. here's a quick li
     * if you're not satisfied with my Prism config, [use their wizard](https://prismjs.com/download.html)
     * to add more languages, add them in the [js/components](./js/components) folder (TODO: example of this)
   * [KaTeX](https://www.katex.org/): for math formatting (LaTeX-like, and much faster than MathJax)
-    * to use it in a post, use `$ x^2 + x + 5$` (for inline), or `$$ x^2 + x + 5 $$` (for block mode)
+    * to use it in a post, use `\( x^2 + x + 5 \)` (for inline), or `$$ x^2 + x + 5 $$` (for block mode)
   * [git.io](https://git.io/): for URL shortening (useful for gists)
   * [GitHub Buttons](https://buttons.github.io/): includes the style in the head element, so just paste the element!
   * Google Analytics: for analyzing your web traffic
