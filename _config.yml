@@ -40,6 +40,7 @@ defaults:
     values:
       use_katex: true
       use_prism: true
+      use_disqus: true
   # default settings for all drafts
   -
     scope:
@@ -49,6 +50,7 @@ defaults:
     values:
       use_katex: true
       use_prism: true
+      use_disqus: true
 
 
 # -*- ACCOUNTS/LINKS -*-
@@ -64,6 +66,9 @@ links:
   # Instagram username
   instagram: dev_ceb
 
+# Disqus ID (comment to disable)
+disqus: cadesite
+
 # Google Analytics ID (comment to disable)
 googleanalytics: G-DB8V1YFP76
 
@@ -73,10 +78,10 @@ googleanalytics: G-DB8V1YFP76
 # renderer settings
 markdown: kramdown
 kramdown:
+  parse_block_html: true
   # disable the default syntax highligher (since we use Prism.js)
   syntax_highlighter_opts:
     disable: true
-
 plugins:
   - jekyll-paginate
   - jekyll-feed

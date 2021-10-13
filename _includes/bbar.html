@@ -4,7 +4,6 @@
 -->
 
 
-
 <!-- accounts/links -->
 {%- if site.links.github -%}
     | <a class="fa-container" href="https://github.com/{{ site.links.github }}"><span class="fa fa-lg fa-github"></span>/{{ site.links.github }}</a>
@@ -17,10 +16,39 @@
 {%- endif -%}
 
 
-
 <!-- disclaimer -->
 <p><small><i>
     personal blog of <a href="mailto:{{ site.links.email }}">{{ site.name }} &lt;{{ site.links.email }}&gt;</a>
     <br/>
     all content licensed under <a rel="license" href="http://kata.tools/kpl">KPL</a>, unless otherwise noted
 </i></small></p>
+
+
+{% if page.use_disqus && site.links.disqus %}
+
+<hr/>
+
+<!-- Disqus comments -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* FUCK YOU DISQUS config... your example code is not working at all
+    var disqus_config = function () {
+        this.page.url = '{{ site.url }}{{ page.url }}'
+        this.page.identifier = '{{ site.url }}{{ page.url }}'
+    }
+  */  
+    (function() {
+        let s = document.createElement('script')
+        s.type = 'text/javascript'
+        s.async = true
+        s.src = '//{{ site.disqus }}.disqus.com/embed.js'
+        s.setAttribute('data-timestamp', +new Date());
+        (document.head || document.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">Disqus comments</a>
+</noscript>
+{% else %}
+<!-- no Disqus support -->
+{% endif %}

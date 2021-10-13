@@ -12,7 +12,9 @@
 :root {
 
     /* Which font-family selection should be used (other themes typically don't need this) */
+    /* NOTE: I use monospace, but if you don't like monosapce by default, uncomment this line */
     /*--font: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+
     --font: monospace;
 
 }
