@@ -1,9 +1,46 @@
 <footer>
-<!-- footer.html - footer/shared resources that come AFTER page load
+    <!-- footer.html - footer/shared resources that come AFTER page load
 
 -->
 
+    <!-- accounts/links -->
 
+    <div class='footer-div'>
+        <a href="mailto:{{ site.links.email }}"><i class="fa fa-fw fa-paper-plane"></i>/ {{ site.links.email }}</a>
+    </div>
+
+
+    {%- if site.links.github -%}
+    <div class='footer-div'>
+        <a href="https://github.com/{{ site.links.github }}"><i class="fab fa-fw fa-github"></i>/ {{ site.links.github
+            }}</a>
+    </div>
+    {%- endif -%}
+    {%- if site.links.twitter -%}
+    <div class='footer-div'>
+        <a href="https://twitter.com/{{ site.links.twitter }}"><i class="fab fa-fw fa-twitter"></i>/ {{
+            site.links.twitter
+            }}</a>
+    </div>
+    {%- endif -%}
+    {%- if site.links.instagram -%}
+    <div class='footer-div'>
+        <a href="https://instagram.com/{{ site.links.instagram }}"><i class="fab fa-fw fa-instagram"></i>/ {{
+            site.links.instagram }}</a>
+    </div>
+    {%- endif -%}
+
+
+
+    <!-- disclaimer -->
+
+    <!--
+    <p><small><i>
+                personal blog of <a href="mailto:{{ site.links.email }}">{{ site.name }} &lt;{{ site.links.email
+                    }}&gt;</a>
+                <br />
+                all content licensed under <a rel="license" href="http://kata.tools/kpl">KPL</a>, unless otherwise noted
+            </i></small></p>
+    -->
 
 </footer>
-
