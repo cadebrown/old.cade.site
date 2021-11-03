@@ -15,6 +15,8 @@ recently, i've been cleaning house on old projects and websites -- and i realize
 
 the guide for actually setting this up is located [in the readme on GitHub](https://github.com/cadebrown/cadebrown.github.io#readme). this blog post just covers some of the features
 
+you can also check `_config.yml`, it includes comments describing most of the settings.
+
 
 ## Goal
 

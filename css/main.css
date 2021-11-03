@@ -7,135 +7,139 @@
  * @author:    Cade Brown <cade@kscript.org>
  */
 
-/* defaults for all themes */
 
 :root {
-    /* Which font-family selection should be used (other themes typically don't need this) */
+    /* which font-family selection should be used (other themes typically don't need this) */
     /* NOTE: I use monospace, but if you don't like monosapce by default, uncomment this line */
     /*--font: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    --font: monospace;
+    --font: Consolas, monospace;
+    --font-code: monospace;
 
     --footer-size: 64px;
 
 }
 
-/* '1337': my personal theme
-  *
-  * for changing themes, see 'js/main.js' and '_includes/footer.html'
-  */
+/*** THEMES ***/
 
+/* none: basically no theme over plain HTML */
+html[data-theme='none'] {
+    /* what color should clickable links be? */
+    --col-link: #366fca;
+}
+
+/* 1337: my personal theme, like matrix/terminal style */
 html[data-theme='1337'] {
+    /* background image */
     --img-back: url('/files/backtile-grid1.webp');
-    --col-back0: #2a2a2a;
-    --col-back1: #0e0e0e;
-    --col-borderA: #ffc0cb88;
-    --col-borderB: #94bfa788;
-    --col-textA: pink;
-    --col-textB: #16c516;
-    --col-shadow: #161616;
+
+    /* all site background */
+    --col-back0: #0e0e0e;
+    /* content background */
+    --col-back1: #2a2a2a;
+    /* general border, for figures/images */
+    --col-border: #88888888;
+    /* drop shadow color */
+    --col-shadow: #161616bb;
+
+    /* general text content */
+    --col-text: #16c516;
+    /* inverted text content */
+    --col-text-inv: #c5168b;
+    /* content which is a link */
     --col-link: #1f8cd4;
-    /* 1337 uses mono! (this causes a layout shift sometimes when switching, but since the
-     *   switcher is at the top, no problem!
-     */
-    --font: Consolas, monospace;
 }
 
-/* have themes for the buttons at the bottom bar */
-
-.themebutton-1337 {
-    background-image: linear-gradient(-45deg, #0e0e0e 40%, #16c516 60%);
-}
 
 /* 'chalkboard' theme */
 
 html[data-theme='chalkboard'] {
-    /* (optional): what image should the background be? */
-    /*--img-back: url('/files/backtile-grid1.webp') repeat;*/
-    /* what color should be the background for the whole site? */
+
+    /* all site background */
     --col-back0: #0e0e0e;
-    /* what color should be the background for text? */
+    /* content background */
     --col-back1: #2a2a2a;
-    /* what color should borders around images/figures be (borderA should blend in with the theme) */
-    --col-borderA: #11111188;
-    /* what color should borders around images/figures be (borderB should stand out against the theme) */
-    --col-borderB: #eeeeee88;
-    /* what color should text that matches the theme be? (for example, a black theme should have textA as black) */
-    --col-textA: #111111;
-    /* what color should text that DOESN'T match the theme be? (this should stand out against the theme, used for most content) */
-    --col-textB: #eeeeee;
-    /* what color should shadows/highlights be? */
-    --col-shadow: #161616;
-    /* what color should clickable links be? */
+    /* general border, for figures/images */
+    --col-border: #88888888;
+    /* drop shadow color */
+    --col-shadow: #161616bb;
+
+    /* general text content */
+    --col-text: #eeeeee;
+    /* inverted text content */
+    --col-text-inv: #111111;
+    /* content which is a link */
     --col-link: #82c7ff;
+}
+
+
+/* 'whiteboard' theme */
+
+html[data-theme='whiteboard'] {
+
+    /* all site background */
+    --col-back0: #b4b4b4;
+    /* content background */
+    --col-back1: #ffffff;
+    /* general border, for figures/images */
+    --col-border: #88888888;
+    /* drop shadow color */
+    --col-shadow: #161616bb;
+
+    /* general text content */
+    --col-text: #111111;
+    /* inverted text content */
+    --col-text-inv: #eeeeee;
+    /* content which is a link */
+    --col-link: #366fca;
+}
+
+/* have themes for the buttons at the bottom bar */
+
+.themebutton-none {
+    background-image: linear-gradient(-45deg, #ffffff 40%, #ffffff 60%);
+}
+
+.themebutton-1337 {
+    background-image: linear-gradient(-45deg, #0e0e0e 40%, #16c516 60%);
 }
 
 .themebutton-chalkboard {
     background-image: linear-gradient(-45deg, #0e0e0e 40%, #2a2a2a 60%);
 }
 
-/* 'whiteboard' theme */
-
-html[data-theme='whiteboard'] {
-    --col-back0: #b4b4b4;
-    --col-back1: #ffffff;
-    --col-borderA: #eeeeee88;
-    --col-borderB: #11111188;
-    --col-textA: #eeeeee;
-    --col-textB: #111111;
-    --col-shadow: #161616;
-    --col-link: #366fca;
-}
-
 .themebutton-whiteboard {
     background-image: linear-gradient(-45deg, #b4b4b4 40%, #ffffff 60%);
 }
 
-/* 'salmon' theme (kinda crazy LOL) */
-
-html[data-theme='salmon'] {
-    --img-back: url('/files/backtile-salmon0.webp');
-    --col-back0: #cf71a5;
-    --col-back1: #e0b7b7;
-    --col-borderA: pink;
-    --col-borderB: #94bfa7;
-    --col-textA: #eeeeee;
-    --col-textB: #111111;
-    --col-shadow: #161616;
-    --col-link: #2c69cc;
-}
-
-.themebutton-salmon {
-    background-image: linear-gradient(-45deg, #cf71a5 40%, #e0b7b7 60%);
-}
-
-/* 'none' theme, i.e. basically no special formatting */
-
-html[data-theme='none'] {
-    /* what color should clickable links be? */
-    --col-link: #366fca;
-}
-
-.themebutton-none {
-    background-image: linear-gradient(-45deg, #ffffff 40%, #ffffff 60%);
-}
-
-/*** HTML STD ***/
+/*** HTML STANDARD ELEMENTS ***/
 
 body {
     margin: 0;
+
     line-height: 1.32rem;
-    scrollbar-width: none;
-    background-color: var(--col-back0);
-    background-image: var(--img-back);
-    background-repeat: repeat;
-    background-position: -0.5em;
-    background-attachment: fixed;
-    font-family: var(--font);
-    color: var(--col-textB);
     font-size: 18px;
     tab-size: 4;
+
+    background-attachment: fixed;
+    background-position: -0.5em;
+    background-repeat: repeat;
+    background-color: var(--col-back0);
+    background-image: var(--img-back);
+
+    font-family: var(--font);
+    color: var(--col-text);
+
+    scrollbar-width: none;
+}
+/*** Web/Medi ***/
+
+@media screen and (max-width: 1100px) {
+    body {
+        margin: 0.6em;
+    }
 }
 
+/** headers **/
 
 h1 {
     line-height: 2.35rem;
@@ -144,14 +148,9 @@ h1 {
 h2 {
     line-height: 1.9rem;
 }
+
 h3 {
     line-height: 1.7rem;
-}
-
-
-
-.main-par {
-    margin: 2em 12vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -162,14 +161,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: var(--col-text);
     text-decoration: none;
-}
-
-a:link {
-    color: var(--col-link);
-}
-
-a:visited {
-    color: var(--col-link);
 }
 
 h1 a:link {
@@ -196,6 +187,8 @@ h3 a:visited {
     color: var(--col-text);
 }
 
+
+/* prefixes for header sections */
 h2::before {
     content: '# ';
 }
@@ -212,9 +205,64 @@ h5::before {
     content: '#### ';
 }
 
+
+/* header-link, for the link generation per section */
+.header-link {
+    margin: auto;
+    margin-left: 6px;
+    opacity: 0;
+
+    font-size: 28px;
+
+    transition: opacity 0.1s ease-in-out 0.1s;
+    -webkit-transition: opacity 0.1s ease-in-out 0.1s;
+    -moz-transition: opacity 0.1s ease-in-out 0.1s;
+    -ms-transition: opacity 0.1s ease-in-out 0.1s;
+}
+
+/* header-link on hover should be shown */
+h2:hover .header-link, 
+h3:hover .header-link, 
+h4:hover .header-link, 
+h5:hover .header-link, 
+h6:hover .header-link {
+    opacity: 1;
+}
+
+/** links **/
+
+a:link {
+    color: var(--col-link);
+}
+
+a:visited {
+    color: var(--col-link);
+}
+
+/** lists **/
+
+li {
+    padding-bottom: 6px;
+}
+
+/** inline code **/
+p > code {
+    padding-left: 0.8px;
+    padding-right: 0.8px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+
+    border: 1px solid gray;
+
+    background-color: var(--col-back0);
+}
+
+
+/** blockquotes/asides **/
+
 blockquote {
-    background: var(--col-back-sub);
-    border-left: 10px solid var(--col-border-fig);
+    background: var(--col-back1);
+    border-left: 10px solid var(--col-border);
     font-size: 1.2em;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
@@ -234,27 +282,15 @@ blockquote p {
     margin-block-start: 0.5em;
 }
 
-/* used for horizontal break in page */
-
-hr {
-    margin: 1.2em 0.01em 0.9em 0.01em;
-}
-
-/*
-img {
-    display: block;
-    border: solid 1px var(--col-borderB);
-    margin: auto;
-    max-width: 90%;
-    max-height: 28em;
-}
-*/
+/** images **/
 
 img {
     margin: auto;
+    
     /* limit the size... i've been tweaking these values */
     max-width: 80%;
     max-height: 55vh;
+
     display: block;
     border: solid 1px var(--col-border-fig);
 }
@@ -274,28 +310,26 @@ img {
     max-height: 76vh;
 }
 
-.bk-inv {
-    background-color: #fff;
-}
 
-/* images within dl/dd text */
-
+/* image within a description list (i.e. dd/dl) */
 dd img {
     /* limit the size... i've been tweaking these values */
+    /*
     max-width: 60%;
     max-height: 24em;
+    */
 }
 
-/* inline small image */
-
-.inline-img {
+/* inline image*/
+.img-inline {
     display: inline-block;
     /* limit the size... i've been tweaking these values */
     max-width: 40%;
     max-height: 26em;
 }
 
-/* TODO: table? */
+/** table/cells **/
+
 
 table {
     margin: auto;
@@ -309,67 +343,33 @@ td {
     padding: 0.2em;
 }
 
-/* for any clickable elemtn, set it to a pointer */
 
-.clickable {
-    cursor: pointer;
+/** breaks/dividers **/
+
+hr {
+    margin: 1.2em 0.01em 0.9em 0.01em;
 }
 
-/*** POSTS ***/
-
-.post-section {
-    overflow: hidden;
-}
-
-/* thumbnail container */
-
-.post-thumb-container {
-    float: left;
-    padding: 0.3em;
-    margin: 0.2em;
-    /* limit the size to something reasonable */
-    width: 21em;
-    max-height: 18.5em;
-}
-
-.post-thumb {
-    max-width: 100%;
-    max-height: 100%;
-    width: 640;
-    height: 400;
-}
-
-.main {
-    background-color: var(--col-back1);
-    padding: 1em;
-    border-radius: 14px;
-    border: 1px solid var(--col-borderB);
-    box-shadow: 0px 0px 0px var(--col-shadow);
-}
-
-/* All theme buttons */
-
-.themebutton {
-    width: 24px;
-    height: 24px;
-    border-color: var(--col-borderB);
-    vertical-align: middle;
-}
+/** header/footer/misc **/
 
 footer {
     width: 100%;
-    box-shadow: 0 80vh 0 80vh #000;
     height: var(--footer-size);
+
     margin: 0 auto;
     overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--col-back1);
+
     font-size: 20px;
-    color: var(--col-text-inv) !important;
     font-weight: 600;
-    border-top: 2px solid var(--col-borderB);
+
+    border-top: 2px solid var(--col-border);
+
+    background-color: var(--col-back1);
+    box-shadow: 0 80vh 0 80vh #000;
+    color: var(--col-text-inv) !important;
 }
 
 footer a {
@@ -378,73 +378,95 @@ footer a {
 }
 
 footer a:hover {
-    /*background-color: var(--col-theme-G1);
-*/
+    /*background-color: var(--col-theme-G1);*/
 }
 
-li {
-    padding-bottom: 8px;
+
+/*** CUSTOM CLASSES ***/
+
+/* any clickable item */
+.clickable {
+    cursor: pointer;
 }
+
+/* the 'main' central area that holds content */
+.main {
+    background-color: var(--col-back1);
+    padding: 1em;
+    border-radius: 14px;
+    border: 1px solid var(--col-border);
+    box-shadow: 0px 0px 0px var(--col-shadow);
+}
+
+/* parent of 'main', for CSS-purposes */
+.main-par {
+    margin: 2em 12vw;
+}
+
+/* used for post descriptions */
+.post-section {
+    overflow: hidden;
+}
+
+/* parent of post thumbnail, for CSS align */
+.post-thumb-par {
+    float: left;
+    padding: 0.3em;
+    margin: 0.2em;
+    /* limit the size to something reasonable */
+    width: 21em;
+    max-height: 18.5em;
+}
+
+@media screen and (max-width: 1100px) {
+    .post-thumb-par {
+        max-width: 98%;
+        margin: 0 auto;
+        padding: 0em;
+
+        float: none;
+    }
+}
+
+/* image for post thumbnail */
+.post-thumb {
+    max-width: 100%;
+    max-height: 100%;
+    width: 640;
+    height: 400;
+}
+
+/* button used to switch themes */
+.themebutton {
+    width: 24px;
+    height: 24px;
+
+    border-color: var(--col-border);
+    vertical-align: middle;
+}
+
 
 .footer-div {
     align-items: center;
     text-align: center;
 }
 
-/** FontAwesome logos **/
 
-/* all FontAwesome */
+/*** EXTERNAL/THIRD PARTY ***/
 
+/** FontAwesome (fa-) **/
+
+/* any link should be colored as such */
 .fa-link {
     color: var(--col-link);
 }
 
-.header-link {
-    font-size: 28px;
-    margin: auto;
-    margin-left: 6px;
-    opacity: 0;
-    transition: opacity 0.1s ease-in-out 0.1s;
-    -webkit-transition: opacity 0.1s ease-in-out 0.1s;
-    -moz-transition: opacity 0.1s ease-in-out 0.1s;
-    -ms-transition: opacity 0.1s ease-in-out 0.1s;
-}
 
-h2:hover .header-link, h3:hover .header-link, h4:hover .header-link, h5:hover .header-link, h6:hover .header-link {
-    opacity: 1;
-}
+/** KaTeX (katex-) **/
 
-/** Code Highlighting **/
-
-/* katex math */
-
+/* all math/inline should be shown completely */
 .katex-display {
-    overflow-x: auto;
     width: 100%;
+    overflow-x: auto;
     padding: 0.5em;
-}
-
-/* inline code */
-
-p>code {
-    background-color: var(--col-back0);
-    border: 1px solid gray;
-    padding-left: 0.8px;
-    padding-right: 0.8px;
-    margin-left: 0.5px;
-    margin-right: 0.5px;
-}
-
-/** Mobile/Web **/
-
-@media screen and (max-width: 1100px) {
-    body {
-        margin: 0.6em;
-    }
-    .post-thumb-container {
-        max-width: 98%;
-        float: none;
-        margin: 0 auto;
-        padding: 0em;
-    }
 }
