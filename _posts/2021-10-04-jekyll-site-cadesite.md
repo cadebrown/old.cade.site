@@ -13,7 +13,7 @@ Recently, i've been cleaning house on old projects and websites -- and i realize
 
 ## Setup/Customization
 
-The guide for actually setting this up is located [in the readme on GitHub](https://github.com/cadebrown/cadebrown.github.io#readme). this blog post just covers some of the features
+The guide for actually setting this up is located [in the readme on GitHub](https://github.com/cadebrown/cadebrown.github.io#readme). This blog post just covers some of the features
 
 You can also check `_config.yml`, it includes comments describing most of the settings.
 
