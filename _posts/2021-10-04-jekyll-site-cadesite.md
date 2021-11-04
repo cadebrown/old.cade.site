@@ -31,11 +31,13 @@ The goal of this project is to have a clean, fast, and easy-to-modify blog that 
 
 I include 3 themes by default:
 
+
 ### chalkboard
 
 `chalkboard` is my default theme, which is a dark theme with a modern, solarized look:
 
 ![chalkboard theme](/files/themess-chalkboard.webp)
+
 
 ### whiteboard
 
