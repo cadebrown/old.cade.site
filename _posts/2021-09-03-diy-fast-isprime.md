@@ -6,13 +6,13 @@ tags: [math, kata]
 thumb: /files/diy-fast-isprime-0.webp
 ---
 
-we've all had to include a little `isprime()` function in our code, right? (well, most people reading my blog probably have). in this article i provide an implementation of a primality test (in C) that is quite a bit faster for larger values, and is still easily embeddable and usable within existing applications
+We've all had to include a little `isprime()` function in our code, right? (well, most people reading my blog probably have). In this article i provide an implementation of a primality test (in C) that is quite a bit faster for larger values, and is still easily embeddable and usable within existing applications
 
 <!--more-->
 
 ## Naive Implementation
 
-most programmers, when asked to check whether a number is prime, would probably write some code like the following (myself included):
+Most programmers, when asked to check whether a number is prime, would probably write some code like the following (myself included):
 
 
 ```c
@@ -37,12 +37,12 @@ isprime_naive(size_t n) {
 
 ```
 
-while there's nothing wrong with this code, and it arguably is the best solution if you only use it a couple of times, there are more efficient deterministic tests for larger numbers. for example, we'll look at using the [Miller-Rabin primality test](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test), modified to be deterministic for a suitable range of 'n'
+While there's nothing wrong with this code, and it arguably is the best solution if you only use it a couple of times, there are more efficient deterministic tests for larger numbers. For example, we'll look at using the [Miller-Rabin primality test](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test), modified to be deterministic for a suitable range of 'n'
 
 
 ## Miller-Rabin implementation
 
-i'm just going to include the full implementation here, so you can copy and paste, and read the comments to understand how it works:
+I'm just going to include the full implementation here, so you can copy and paste, and read the comments to understand how it works:
 
 ```c
 /* Miller-Rabin 'isprime()' implementation
@@ -145,16 +145,15 @@ isprime(size_t n) {
 
 ```
 
-here's how they perform on my machine, calculating whether 10 million random numbers are prime, within different bounds:
+Here's how they perform on my machine, calculating whether 10 million random numbers are prime, within different bounds:
 
 ![performance graph up to `2**32`](/files/diy-fast-isprime-0.webp)
 
 
-here's a comparison of even larger (> 32 bit values) trends in performance:
+Here's a comparison of even larger (> 32 bit values) trends in performance:
 
 ![performance graph up to `2**48`](/files/diy-fast-isprime-1.webp)
 
-as you can see, both implementations have similar performance (with naive being a little faster), until $2^{14}$, at which point the trend reverses. the trends become even more pronounced after $2^{32}$, where the Miller-Rabin implementation essentially hits the 'else' case, and plateaus.
+As you can see, both implementations have similar performance (with naive being a little faster), until $2^{14}$, at which point the trend reverses. The trends become even more pronounced after $2^{32}$, where the Miller-Rabin implementation essentially always hits the 'else' case, and plateaus.
 
-for large values, the Miller-Rabin implementation 30x-50x faster than the naive one! i know this implementation has helped many of my other projects efficiently implement prime checking (check out [PGS](https://github.com/chemicaldevelopment/pgs)!)
-
+For large values, the Miller-Rabin implementation 30x-50x faster than the naive one! I know this implementation has helped many of my other projects efficiently implement prime checking (check out [PGS](https://github.com/chemicaldevelopment/pgs)!)

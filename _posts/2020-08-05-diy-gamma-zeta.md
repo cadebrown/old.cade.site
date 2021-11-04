@@ -147,36 +147,35 @@ this works fine on paper, but when actually implementing the C code there is a n
 
   * the number of floating-point multiplies is $O(n^2)$ at run time (think about all the fractions in $A_g$), which will make it slower to execute, as well as introduce more error 
   * those multiplications will result in fractions which have very different magnitudes; doing that and summing their results will make roundoff errors much more prevalent
-  * tore intermediate adds $x, x+1, x+2, ...$, means more register usage and for large tables, maybe even stack variables (that's really bad for performance!)
+  * more intermediate adds $x, x+1, x+2, ...$, means more register usage and for large tables, maybe even stack variables (that's really bad for performance!)
 
-
-wouldn't it be nice to re-arrange the $A_g$ function into something that looks like the following:
+Wouldn't it be nice to re-arrange the $A_g$ function into something that looks like the following:
 
 $$A_g'(x) = a_0 + \frac{a_1}{x+1} + \frac{a_2}{x+2} + ... \frac{a_{n-1}}{x+n-1}$$
 
-therefore minimizing and simplifying the resulting code? Yes it would! But how do we do that?
+Therefore minimizing and simplifying the resulting code? Yes it would! But how do we do that?
 
-well; we view the summation as a [Partial Fraction Summation](https://www.purplemath.com/modules/partfrac.htm); think of the following equation:
+Well; we view the summation as a [Partial Fraction Summation](https://www.purplemath.com/modules/partfrac.htm); think of the following equation:
 
 $$ \frac{1}{x+1} + \frac{1}{x+2} = \frac{(x + 1) + (x + 2)}{(x+1)(x+2)} = \frac{2x+3}{(x+1)(x+2)}$$
 
-We can algebraically manipulate the rational expression to yield either a summation of divisions, or a division of products & sums. this is actually very similar to our above expression that we want for $A_g'(x)$
+We can algebraically manipulate the rational expression to yield either a summation of divisions, or a division of products & sums. This is actually very similar to our above expression that we want for $A_g'(x)$
 
-i'll skip all the murky details here, but essentially we'll end up solving a matrix equation that will tell us what our $a_i$ should be (similar to how, in the simple expression, if we are given $\frac{2x+3}{(x+1)(x+2)}$, our result $a_i$ should be $\[1, 1\]$). that matrix equation is defined via:
+I'll skip all the murky details here, but essentially we'll end up solving a matrix equation that will tell us what our $a_i$ should be (similar to how, in the simple expression, if we are given $\frac{2x+3}{(x+1)(x+2)}$, our result $a_i$ should be $\[1, 1\]$). That matrix equation is defined via:
 
 $$ a = \mathbf{B} \mathbf{C} \mathbf{D_c} \mathbf{D_r} p $$
 
 Where $a, p$ are vectors of the coefficients mentioned in the above formulas, and the rest are $n \times n$ matrices generated to describe the partial fraction decomposition. 
 
 
-further, the error may be calculated as:
+Further, the error may be calculated as:
 
 $$ \textrm{err} = |\Gamma(x) - approx(x)| \leq |\frac{\pi}{2}(\frac{e^g}{\sqrt{2}} - (\frac{p_0}{2} + \sum_{j=1}^{n}(-1)^{j} p_j))| $$
 
-we would like to ensure that $$ \textrm{err} \leq 10^{-14} $$, which is among the limits of IEEE 64 bit floating point (i.e. a `double` in C)
+We would like to ensure that $$ \textrm{err} \leq 10^{-14} $$, which is among the limits of IEEE 64 bit floating point (i.e. a `double` in C)
 
 
-here's my code implementing the actual formulae:
+Here's my code implementing the actual formulae:
 
 ```python
 # generates a table for the Gamma function, used for approximation
@@ -275,16 +274,16 @@ def get_gamma_table(n, g):
         # given: err <= |pi/2*W*( sqrt(pi) - u*a )|
         # compute dot product `u * a`
         dot_ua = (a[0] + sum([2 * a[i] / mpfr(2 * i - 1) for i in range(1, n)])) / W
-        # compute full formulat
+        # compute full formula
         return abs(pi / 2 * W) * abs(sqrt(pi) - dot_ua)
 
     # return them
     return a, errbound
 ```
 
-great! Now we can generate a function (in `C` code), that should look like:
+Great! Now we can generate a function (in `C` code), that should look like:
 
-i define macros for constants such as `PI` for kscript; but you may want to use your own; check the script to see how i precompute constants. The script will generate constants for $\pi$, $\log \pi$, $\sqrt{2 \pi}$, $\log\sqrt{2 \pi}$ in full precision, so we don't have to worry about that (defines them as `MY_PI`, `MY_LOG_PI`, etc)
+I define macros for constants such as `PI` for kscript; but you may want to use your own; check the script to see how i precompute constants. The script will generate constants for $\pi$, $\log \pi$, $\sqrt{2 \pi}$, $\log\sqrt{2 \pi}$ in full precision, so we don't have to worry about that (defines them as `MY_PI`, `MY_LOG_PI`, etc)
 
 ```c
 // evaluate the gamma function at a given point
@@ -363,27 +362,27 @@ double complex my_cgamma(double complex x) {
 }
 ```
 
-for the sake of brevity; i won't post the implementation of `my_*lgamma`; it is very similar to these. run the script yourself to see it's output for that!
+For the sake of brevity; i won't post the implementation of `my_*lgamma`; it is very similar to these. run the script yourself to see it's output for that!
 
 ## Zeta Function
 
-the hard part is over; the Zeta function is actually (in my opinion) easier to generate a table for. it is based on a (quite) simple formula:
+The hard part is over; the Zeta function is actually (in my opinion) easier to generate a table for. it is based on a (quite) simple formula:
 
 $$\zeta(x) = \frac{1}{d_0(1 - 2^{1-x})} \sum_{k=1}^{n}\frac{(-1)^{k-1}d_k}{k^x} + \gamma_n(x)$$
 
-where:
+Where:
 
 $n$ is the number of terms in the approximation, $d$ is a vector of coefficients (similar to $a$ in the Gamma approximation) best fit for a particular model, and $gamma_n(x)$ is the error term
 
-the form of $d_k$ is much simpler to compute; it is given by: 
+The form of $d_k$ is much simpler to compute; it is given by: 
 
 $$d_k = n \sum_{j=k}^{n}\frac{(n+j-1)!4^j}{(n-j)!(2j)!}$$
 
-the error term is bounded by:
+The error term is bounded by:
 
 $$|\gamma_n(x)| \leq \frac{2}{(3+\sqrt{8})^n|\Gamma(x)||1-2^{1-x}|} \leq \frac{3(1+2|\Im(x)|e^{\frac{|\Im(x)|\pi}{2}})}{(3+\sqrt{8})^n|1-2^{1-x}|} $$
 
-and, therefore, again in this approximation, we would require that $ \gamma_n(x) \leq 10^{-14}$, to give us a sufficiently accurate approximation
+And, therefore, again in this approximation, we would require that $ \gamma_n(x) \leq 10^{-14}$, to give us a sufficiently accurate approximation
 
 
 ```python
@@ -466,9 +465,9 @@ double my_zeta(double x) {
 }
 ```
 
-note that our zeta function may call the gamma function we defined; this is neccessary due to the fact that the summation will not converge for negative values of $x$
+Note that our zeta function may call the gamma function we defined; this is neccessary due to the fact that the summation will not converge for negative values of $x$
 
-for complex inputs; we need to realize that the maximum error term increases as the imaginary component; for example, the author estimates that it is required that $n \geq 1.3d + 0.9\Im(x)$, if $d$ digits are required for accuracy. however; for $x$ with small imaginary components, we should use the smallest $n$ that will work:
+For complex inputs; we need to realize that the maximum error term increases as the imaginary component; for example, the author estimates that it is required that $n \geq 1.3d + 0.9\Im(x)$, if $d$ digits are required for accuracy. However; for $x$ with small imaginary components, we should use the smallest $n$ that will work:
 
 ```python
 
@@ -600,12 +599,12 @@ double complex my_czeta(double complex x) {
 }
 ```
 
-the real code goes up to $2^{10}$, but you get the point; essentially, the smallest possible table is generated for every power of two threshold of the imaginary component. for example, $n = 144$ is required for $\Im(x) \leq 128$. if we used that for all numbers, we would be $\frac{144}{28} \approx 5.14$ times slower than we need to be! This will help in performance.
+The real code goes up to $2^{10}$, but you get the point; essentially, the smallest possible table is generated for every power of two threshold of the imaginary component. For example, $n = 144$ is required for $\Im(x) \leq 128$. If we used that for all numbers, we would be $\frac{144}{28} \approx 5.14$ times slower than we need to be! This will help in performance.
 
 
 ## Testing
 
-to test this, i wrote a small program using the generated code. you can check out the [full source code (mg.c)](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335). i tested values of $x=\sigma+it$, for $\sigma, t \in \[0, 256\)$, and compared the time. i also compared the built in `tgamma` function discussed earlier, and measured how accurate my implementation was relative to it; here are the results summarized:
+To test this, i wrote a small program using the generated code. You can check out the [full source code (mg.c)](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335). I tested values of $x=\sigma+it$, for $\sigma, t \in \[0, 256\)$, and compared the time. I also compared the built in `tgamma` function discussed earlier, and measured how accurate my implementation was relative to it; here are the results summarized:
 
 {:.command-line .no-line-numbers data-prompt="{{ site.shellprompt }}" data-filter-output="out:"}
 ```bash
@@ -638,19 +637,12 @@ out:tgamma(x), x in [0, 256)      :    0.050 us/iter
 ```
 
 
+Feel free to compile it on your machine and email me results; i'd be happy to include them.
 
-feel free to compile it on your machine and email me results; i'd be happy to include them.
+My implementation and glibc's implementation of the gamma function agree everywhere up to `14` digits, which is plenty accurate (we could check Wolfram alpha exactly to see whether i was closer or they were, but they are both fine for our purposes).
 
-my implementation and glibc's implementation of the gamma function agree everywhere up to `14` digits, which is plenty accurate (we could check Wolfram alpha exactly to see whether i was closer or they were, but they are both fine for our purposes).
+The generated source code i use in kscript (as well as for the demo) is available [here, as a single file](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335), feel free to use in non-commercial projects.
 
-the generated source code i use in kscript (as well as for the demo) is available [here, as a single file](https://gist.github.com/CadeBrown/52d316379ca6335ad8614991215dc335), feel free to use in non-commercial projects.
+I hope you've enjoyed the blog, and can use these implementations for your own project. The C code is very simple and should be pretty easy to port to other languages (JavaScript, Python, C#, etc, etc).
 
-i hope you've enjoyed the blog, and can use these implementations for your own project. the C code is very simple and should be pretty easy to port to other languages (JavaScript, Python, C#, etc, etc).
-
-thanks for reading!
-
-
-
-
-
-
+Thanks for reading!

@@ -1,19 +1,19 @@
 # cadebrown.github.io ([https://cade.site](https://cade.site))
 
-this is my custom Jekyll theme for [cade.site](https://cade.site), meant to be easily editable, clean, responsive, and performant. includes math and code formatting, as well as multiple themes with a selector (it's easy to add your own too!)
+This is my custom Jekyll theme for [cade.site](https://cade.site), meant to be easily editable, clean, responsive, and performant. Includes math and code formatting, as well as multiple themes with a selector (it's easy to add your own too!)
 
-if this theme has helped you out, consider donating a small amount to me (the author, Cade Brown):
+If this theme has helped you out, consider donating a small amount to me (the author, Cade Brown):
 
 BTC: 3G11Rd59EZChtwU9vMExXmaoHL3g92dEsN
 
 
-## setup
+## Setup
 
-first, you'll need to install the [Jekyll stack](https://jekyllrb.com/docs/installation/). follow that link and find your platform
+First, you'll need to install the [Jekyll stack](https://jekyllrb.com/docs/installation/). Follow that link and find your platform
 
-then, [fork the GitHub repo](https://github.com/cadebrown/cadebrown.github.io/fork)
+Then, [fork the GitHub repo](https://github.com/cadebrown/cadebrown.github.io/fork)
 
-the first time you clone the repo on your machine, run:
+The first time you clone the repo on your machine, run:
 
 ```shell
 $ bundle install
@@ -22,7 +22,7 @@ Bundle complete! 7 Gemfile dependencies, 32 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 ```
 
-then, to serve locally, run:
+Then, to serve locally, run:
 
 ```shell
 $ bundle exec jekyll serve
@@ -31,34 +31,33 @@ $ bundle exec jekyll serve
   Server running... press ctrl-c to stop.
 ```
 
-and navigate to `localhost:4000` in your browser
+Then, navigate to `localhost:4000` in your browser
 
   * give `--drafts` to also include draft posts
   * give `--host 0.0.0.0` to serve to your local network
 
-## customizing
+## Customizing
 
-feel free to copy this Jekyll theme! (full source is on [the GitHub repo](https://github.com/cadebrown/cadebrown.github.io))
+Feel free to copy this Jekyll theme! (full source is on [the GitHub repo](https://github.com/cadebrown/cadebrown.github.io))
 
-the website (and most of the content) is licensed under the [KPL](https://kata.tools/kpl). (all i ask is that you give me an attribution/link somewhere on your blog)
+The website (and most of the content) is licensed under the [KPL](https://kata.tools/kpl). (all i ask is that you give me an attribution/link somewhere on your blog)
 
-### code structure
+### Code Structure
 
-all the modular components are in `_includes`, for example:
+All the modular components are in `_includes`, for example:
 
   * `_includes/bbar.html`: bottom bar, included at the end of every page
   * `_includes/post-desc.html`: post description card generator (i.e. thumbnail and exerpt)
 
-all the custom themes and styling are in `css/main.css`
+All the custom themes and styling are in `css/main.css`
 
   * to change the font from monospace to something less 1337, change the `:root` rules at the top of the file
   * to add a theme, follow the comments for an existing theme, change the name, and also edit `_includes/tbar.html` (comments will explain everything)
 
 
+### Software
 
-### software
-
-this blog has a lot of builtin integrations with common tools. here's a quick list:
+This blog has a lot of builtin integrations with common tools. here's a quick list:
 
   * [kramdown](https://kramdown.gettalong.org/syntax.html): for parsing `.md` (markdown) files
   * [Disqus](https://disqus.com/): for comments
@@ -74,16 +73,16 @@ this blog has a lot of builtin integrations with common tools. here's a quick li
   * [GitHub Buttons](https://buttons.github.io/): includes the style in the head element, so just paste the element!
   * Google Analytics: for analyzing your web traffic
 
-most configuration options for software are available in:
+Most configuration options for software are available in:
 
   * `_config.yml`: this is where links/usernames/default settings go
   * individual page front matter (i.e. between `---`s at the start of the file), which can override those defaults
   * `_includes/head.html`: this is where you could customize versions/loading order of script tags and whatnot
 
 
-### tips
+### Tips
 
-here are some tips
+Here are some tips for better performance/integration with your site:
 
   * use `.webp` files for images ([use `cwebp` if possible](https://developers.google.com/speed/webp/docs/cwebp))
   * to check your images, use [imagemagick](https://imagemagick.org/script/identify.php)
