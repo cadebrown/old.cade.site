@@ -134,9 +134,34 @@ body {
 /*** Web/Medi ***/
 
 @media screen and (max-width: 1100px) {
-    body {
-        margin: 0.6em;
+    .post-thumb-par {
+        max-width: 98%;
+        margin: 0 auto;
+        padding: 0em;
+
+        float: none;
     }
+    /* parent of 'main', for CSS-purposes */
+    .main-par {
+        margin: 0 !important;
+    }
+
+    :root {
+        /* override some variables */
+        --footer-size: 144px;
+    }
+
+    footer {
+        flex: 1;
+        flex-direction: column;
+    }
+    .footer-div {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 0.15em 0;
+    }
+
 }
 
 /** headers **/
@@ -430,16 +455,6 @@ footer a:hover {
     /* limit the size to something reasonable */
     width: 21em;
     max-height: 18.5em;
-}
-
-@media screen and (max-width: 1100px) {
-    .post-thumb-par {
-        max-width: 98%;
-        margin: 0 auto;
-        padding: 0em;
-
-        float: none;
-    }
 }
 
 /* image for post thumbnail */
