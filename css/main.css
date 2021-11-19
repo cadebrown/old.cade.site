@@ -327,8 +327,8 @@ img {
     margin: auto;
     
     /* limit the size... i've been tweaking these values */
-    max-width: 80%;
-    max-height: 55vh;
+    max-width: 88%;
+    max-height: 60vh;
 
     display: block;
     border: solid 1px var(--col-border-fig);
@@ -389,6 +389,10 @@ hr {
     margin: 1.2em 0.01em 0.9em 0.01em;
 }
 
+center > iframe {
+    max-width: 100%;
+}
+
 /** header/footer/misc **/
 
 footer {
@@ -419,6 +423,7 @@ footer a {
 footer a:hover {
     /*background-color: var(--col-theme-G1);*/
 }
+
 
 
 /*** CUSTOM CLASSES ***/

@@ -2,6 +2,12 @@
 layout: default
 ---
 
+
+{% if page.thumb %}
+    <!-- thumnail image -->
+    <img alt='image thumbnail' src="{{ page.thumb }}"/>
+{% endif %}
+
 <!-- Series TOC -->
 {% if page.series %}
     <aside class="series">
@@ -27,10 +33,6 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-{% if page.thumb %}
-    <!-- thumnail image -->
-    <img alt='image thumbnail' src="{{ page.thumb }}"/>
-{% endif %}
 
 <!-- Article Content -->
 {{ content }}
