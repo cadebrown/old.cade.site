@@ -12,11 +12,21 @@ This page contains a timeline of my contributions, personal projects, and signif
 
 2021-08 - [kata.tools](https://kata.tools), [*.ks](https://ks.kata.tools)
 
-  : I developed kata.tools as an extension of kscript, with a more complete ecosystem and runtime environment, with other languages and utilities 
+  : I developed kata.tools as an extension of kscript, with a more complete ecosystem and runtime environment, with other languages and utilities
+
+  : NOTE: still a work in progress
+
+2021-07 - [Avocat](https://github.com/utk-pairs/avocat)
+
+  : I worked on Avocat, implementing a tree-based language and interpreter for automatic error resolution in the terminal
+
+  : NOTE: still a work in progress
 
 2021-06 - [ML/AI Art](https://github.com/cadebrown/cmlart)
 
   : Deep dreaming, optical flow, and other ML/AI art implementations
+
+  : Check out my blog post, [here](/2021/11/12/art-aigen)
 
   : ![Album Art for "Societas de Machinarum XIII"](/files/album-societas-de-machinarum-xiii.webp)
 
@@ -30,7 +40,7 @@ This page contains a timeline of my contributions, personal projects, and signif
 
 2020-05 - [SLATE (HIP port)](http://icl.utk.edu/slate/)
 
-  : I was a part-time developer on SLATE for a couple months, and i helped with their effort to port to AMD GPUs/HIP
+  : I was a part-time developer on SLATE for a couple months, and I helped with their effort to port to AMD GPUs/HIP
 
 2020-03 - ["Design, Optimization, and Benchmarking of Dense Linear Algebra Algorithms on AMD GPUs"](https://ieeexplore.ieee.org/document/9286214)
 
@@ -39,6 +49,8 @@ This page contains a timeline of my contributions, personal projects, and signif
   : [free pdf](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf)
 
   : ![chart from paper](/files/paper-icl0-chart0.webp)
+
+  : All publications at ICL: ![ICL publications](https://www.icl.utk.edu/publications?f%5Bauthor%5D=1508)
 
 2019-09 - ["Know It All", an A.i. Writer](https://www.youtube.com/watch?v=PwGsRskWN-i&t=3s)
 
