@@ -24,11 +24,11 @@ It's not standard English, but here's why i don't follow the standard convention
 
 When using proper nouns, i try to respect the authors' wishes with capitalization (with limits, of course)
 
-For published communications (such as this website), i capitalize the first word of every sentence so that it is easier to parse
+For published communications (such as this website), I capitalize the first word of every sentence so that it is easier to parse
 
 ## Quotations
 
-I use either `'` or `"` to begin and end quotations. If i'm quoting code or something digital, i use backticks (`` ` ``) which will render them as `monospace font` on most computers (along with different styling)
+I use either `'` or `"` to begin and end quotations. If I'm quoting code or something digital, I use backticks (`` ` ``) which will render them as `monospace font` on most computers (along with different styling)
 
 I follow [Wikipedia's quotation+punctuation guide](https://en.wikipedia.org/wiki/Wikipedia_talk:Manual_of_Style/quotation_and_punctuation#Quotation_marks_and_punctuation). US English is just wrong... if the punctuation is not part of the quotation, it should not be inside of the quotation marks!
 

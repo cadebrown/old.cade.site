@@ -9,14 +9,13 @@ permalink: /about
 Hello there! My name is Cade Brown, and this is my [personal blog](https://cade.site). I'm a software developer and a musician.
 
 
-
-
 Useful Links:
 
   * [me@cade.site](mailto:me@cade.site), my personal email (my preferred contact method)
   * [github.com/cadebrown](https://github.com/cadebrown), my GitHub (this is where most of my code happens)
   * [/timeline](/timeline), timeline of my major projects and important dates
-  * [/files/resume-CadeBrown-2021-12-08.pdf](/files/resume-CadeBrown-2021-12-08.pdf), my resume
+  * [/files](/files), a listing of all files on my website, including slides, pictures, PDFs, etc
+    * [/files/resume-CadeBrown-2021-12-08.pdf](/files/resume-CadeBrown-2021-12-08.pdf), my resume
 
 My main areas of interest are:
 
