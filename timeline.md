@@ -8,7 +8,10 @@ use_katex: true
 
 ## Timeline
 
-This page contains a timeline of my contributions, personal projects, and significant dates
+This page contains a timeline of my contributions, personal projects, and significant dates.
+
+For a short resume, check out: [/files/resume-CadeBrown-2021-12-08.pdf](/files/resume-CadeBrown-2021-12-08.pdf)
+
 
 2021-08 - [kata.tools](https://kata.tools), [*.ks](https://ks.kata.tools)
 
@@ -50,7 +53,7 @@ This page contains a timeline of my contributions, personal projects, and signif
 
   : ![chart from paper](/files/paper-icl0-chart0.webp)
 
-  : All publications at ICL: ![ICL publications](https://www.icl.utk.edu/publications?f%5Bauthor%5D=1508)
+  : All publications at ICL: [ICL publications](https://www.icl.utk.edu/publications?f%5Bauthor%5D=1508)
 
 2019-09 - ["Know It All", an A.i. Writer](https://www.youtube.com/watch?v=PwGsRskWN-i&t=3s)
 
@@ -60,7 +63,7 @@ This page contains a timeline of my contributions, personal projects, and signif
 
   : I joined ICL (Innovative Computing Laboratory) and successfully MAGMA to HIP (i.e. so that it would work on AMD GPUs). We also did performance tuning (see my [first paper](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf), it's in this timeline)
 
-2019-01 - [kscript](https://kscript.org)
+2019-01 - [kscript (programming language)](https://kscript.org)
 
   : Superseded by [kata.tools](https://kata.tools)
 
@@ -81,7 +84,7 @@ This page contains a timeline of my contributions, personal projects, and signif
 
   : I was also active on the [GNU GMP mailing lists](https://gmplib.org/list-archives/gmp-discuss/2017-May/006108.html)
 
-2016-10 - [EZC](https://github.com/chemicaldevelopment/ezc)
+2016-10 - [EZC (programming language)](https://github.com/chemicaldevelopment/ezc)
 
   : An esoteric, stack-based, [RPN](https://en.wikipedia.org/wiki/Reverse_Polish_notation)-based language
 
@@ -99,7 +102,7 @@ This page contains a timeline of my contributions, personal projects, and signif
 
   : I worked as a contractor with Agilaire to produce a low-cost and small-form-factor datalogger for air quality instrumentation, using a Raspberry PI
 
-2015-08 - [L&N STEMpunks FRC #3966 team](https://www.youtube.com/c/LNSTEMpunksorg/videos)
+2015-08 - [L&N STEMpunks FRC #3966 team (robotics)](https://www.youtube.com/c/LNSTEMpunksorg/videos)
 
   : I was the leader of the programming department for 2 years, a member for 3 total years
 

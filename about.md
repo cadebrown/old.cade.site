@@ -6,7 +6,7 @@ permalink: /about
 
 ## About
 
-Hello there! My name is Cade Brown, and this is my [personal blog](https://cade.site). I'm a software developer and a musician.
+Hello there! My name is Cade Brown, and this is my [personal blog](https://cade.site). I'm a software developer, mathematician, and musician, just sharing things I find interesting.
 
 
 Useful Links:
@@ -30,6 +30,8 @@ Currently, I'm working on:
 
 
 ## Projects
+
+This is a short overview of my major contributions. For a more complete view, check out my [timeline](/timeline) or [my resume](/files/resume-CadeBrown-2021-12-08.pdf).
 
 
 ### MAGMA and SLATE, HPC Libraries

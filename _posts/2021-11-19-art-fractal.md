@@ -31,6 +31,11 @@ These are some various renderings of fractals that I've done, mainly using softw
 ![FractalRender #1](/files/art-fractal/fr-1.webp)
 
 
+![FractalRender #2](/files/art-fractal/fr-print-0.webp)
+
+![FractalRender #3](/files/art-fractal/fr-print-1.webp)
+
+
 ## 3D Prints
 
 ![Mandelbrot 3D print](/files/art-fractal/mand-3d.webp)
