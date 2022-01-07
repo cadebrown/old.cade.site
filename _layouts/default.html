@@ -5,22 +5,108 @@
 
 <!-- we add some classes for prism.js, for global plugins -->
 <body class="match-braces line-numbers">
-    <div class="main-par">
+    <div class="wrapper">
         <div class="main">
-            {% include tbar.html %}
+            <!-- Header section -->
+            <header>
+                <h1><a href='{{ site.url }}'>{{ site.displayurl }}</a> 
+                {% if page.title %}
+                    &mdash; {{ page.title }}
+                {% else %}
+                
+                {% endif %}
+                </h1>
+            
+            </header>
+            
+            <!-- TODO: make a Nx3 grid on mobile -->
+            <a href='/'> Blog</a>
+            | <a href='/about'>About</a> 
+            | <a href='/timeline'> Timeline</a> 
+            | <a href='/links'> Links</a> 
+            | <a href='/art'> Art</a> 
+            | <a href='/archive'> Archive</a> 
+    
+            <!-- theme selection -->
+            <p style='font-family: "monospace";'><small><i>
+                theme:
+                <!--
+                    <button type="button" aria-label="set theme to 'none'" class="themebutton themebutton-none" onclick="theme_set('none')"></button>
+                -->
+                <!-- to add your theme, copy one of these buttons and replace all the name mentions in the properties with your new theme name -->
+                <button type="button" aria-label="set theme to 'chalkboard'" class="themebutton themebutton-chalkboard" onclick="theme_set('chalkboard')"></button>
+                <button type="button" aria-label="set theme to 'whiteboard'" class="themebutton themebutton-whiteboard" onclick="theme_set('whiteboard')"></button>
+                <button type="button" aria-label="set theme to '1337'" class="themebutton themebutton-1337" onclick="theme_set('1337')"></button>
+            </i></small></p>
 
-        <hr>
+            <hr>
 
-        <!-- this is where your content goes -->
-        {{ content }}
+            <!-- this is where your content goes -->
+            {{ content }}
 
-        <hr>
+            <hr>
 
-        {% include bbar.html %}
+        </div>
+
+        <!-- Footer section, TODO: make sticky footer -->
+        <footer>
+            <div class="footer-wrapper-wrapper">
+                <div class="footer-wrapper">
+                    <!-- icons and links -->
+                    {% if site.links.email %}
+                        <div class='footer-div'>
+                            <a href="mailto:{{ site.links.email }}"><i class="fa fa-fw fa-paper-plane"></i>/{{ site.links.email }}</a>
+                        </div>
+                    {% endif %}
+                    {% if site.links.github %}
+                        <div class='footer-div'>
+                            <a href="https://github.com/{{ site.links.github }}"><i class="fab fa-fw fa-github"></i>/{{ site.links.github
+                                }}</a>
+                        </div>
+                    {% endif %}
+                    {% if site.links.twitter %}
+                        <div class='footer-div'>
+                            <a href="https://twitter.com/{{ site.links.twitter }}"><i class="fab fa-fw fa-twitter"></i>/{{
+                                site.links.twitter
+                                }}</a>
+                        </div>
+                    {% endif %}
+                    {% if site.links.instagram %}
+                        <div class='footer-div'>
+                            <a href="https://instagram.com/{{ site.links.instagram }}"><i class="fab fa-fw fa-instagram"></i>/{{
+                                site.links.instagram }}</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </footer>
     </div>
-</div>
+
+    <!-- Disqus comment block -->
+    {% if site.links.disqus and page.use_disqus %}
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* FUCK YOU DISQUS config... your example code is not working at all
+            var disqus_config = function () {
+                this.page.url = '{{ site.url }}{{ page.url }}'
+                this.page.identifier = '{{ site.url }}{{ page.url }}'
+            }
+        */  
+            (function() {
+                let s = document.createElement('script')
+                s.type = 'text/javascript'
+                s.async = true
+                s.src = '//{{ site.disqus }}.disqus.com/embed.js'
+                s.setAttribute('data-timestamp', +new Date());
+                (document.head || document.body).appendChild(s);
+            })();
+        </script>
+        <noscript>
+            enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">Disqus comments</a>
+        </noscript>
+    {% else %}
+        <!-- no Disqus support -->
+    {% endif %}
+    
 </body>
-
-{% include footer.html %}
-
 </html>

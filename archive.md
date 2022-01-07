@@ -7,6 +7,9 @@ permalink: /archive
 <!-- Original snippet for generating archive page found here:
 https://gist.github.com/tuananh/743255://gist.github.com/tuananh/7432553 -->
 
+
+This is an archive of all the [blog posts](/), sorted by date
+
 ## Archive
 
 <ul>

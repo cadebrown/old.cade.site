@@ -6,62 +6,89 @@ use_jquery: true
 use_katex: true
 ---
 
-## Timeline
+If you're looking for the TL;DR, check out [my resume](/files/resume-CadeBrown-2021-12-08.pdf)
 
-This page contains a timeline of my contributions, personal projects, and significant dates.
-
-For a short resume, check out: [/files/resume-CadeBrown-2021-12-08.pdf](/files/resume-CadeBrown-2021-12-08.pdf)
-
+# Timeline
 
 2021-08 - [kata.tools](https://kata.tools), [*.ks](https://ks.kata.tools)
 
-  : I developed kata.tools as an extension of kscript, with a more complete ecosystem and runtime environment, with other languages and utilities
+  : Kata is an open-source cross-platform ecosystem for developing software on desktop, mobile, web, and HPC platforms
 
-  : NOTE: still a work in progress
+  : I am the creator and primary developer of Kata
+
+  : NOTE: project is currently in pre-alpha stages, not intended for public use
 
 2021-07 - [Avocat](https://github.com/utk-pairs/avocat)
 
-  : I worked on Avocat, implementing a tree-based language and interpreter for automatic error resolution in the terminal
-
-  : NOTE: still a work in progress
+  : Avocat is an assistant for the terminal, that attempts to automatically complete tasks and resolve errors
+  
+  : I wrote the core execution logic, and my colleague [Gregory Croisdale](https://gregory.croisdale.us/) also worked on the project
 
 2021-06 - [ML/AI Art](https://github.com/cadebrown/cmlart)
 
-  : Deep dreaming, optical flow, and other ML/AI art implementations
+  : Check out my blog post, [here: /2021/11/12/art-aigen](/2021/11/12/art-aigen)
 
-  : Check out my blog post, [here](/2021/11/12/art-aigen)
+  : I wrote some ML/AI utilities, as well as used some pre-existing models to generate pictures and videos
+
+  : Check out this video I helped produce for my band: [Beneath The Catacombs of Celephaïs](https://www.youtube.com/watch?v=wWBboUDMPw4)
 
   : ![Album Art for "Societas de Machinarum XIII"](/files/album-societas-de-machinarum-xiii.webp)
 
 2021-05 - [Dysmorphic Demiurge - DEREALIZATION](https://www.youtube.com/watch?v=ugiHrij0CfY)
 
-  : We produced a full album and an animated lyric video to go with it, which you can see at the link above
+  : My death metal band, [Dysmorphic Demiurge](https://www.facebook.com/DysmorphicDemiurge/) released an album, [DEREALIZATION](https://www.youtube.com/watch?v=ugiHrij0CfY). I'm the primary vocalist, and I do some of the production elements
+
+  : Completely self-produced, this album is an hour of intense technical music with changing time signatures, tempo, and mood. I highly recommend you check it out, if you're interested in this kind of music!
+
+  : Released on [Miasma Records](https://miasmarecords.com/collections/dysmorphic-demiurge)
+
+  : ![Album Art for "DEREALIZATION"](/files/DDD.webp)
+
+2021-02 - [CARVE (Cade Andgreg's Risc-V Emulator)](https://carve.chemicaldevelopment.us/)
+
+  : CARVE is a RISC-V emulator for the web, written by me and Gregory Croisdale. Features a debugger
+
+  : CARVE is written in C, compiled to WebAssembly and can be ran on any browser that supports WASM (most browsers, mobile and desktop)
 
 2020-04 - [Dysmorphic Demiurge - As You Hunger For Pardon](https://www.metal-archives.com/bands/Dysmorphic_Demiurge/3540466961)
 
-  : I am the lead vocalist, and a producer of the death metal band [Dysmorphic Demiurge](https://www.metal-archives.com/bands/Dysmorphic_Demiurge/3540466961)
+  : My death metal band, [Dysmorphic Demiurge](https://www.facebook.com/DysmorphicDemiurge/) released an album, [As You Hunger For Pardon](https://www.youtube.com/watch?v=R-aQyCgwTpk)
+
+  : I'm the primary vocalist, and I do some of the production elements. This was our first album, released on Inherited Suffering Records
+
+2020-06 - [HEARO (Qardian Labs)](https://www.qardianlabs.net/)
+
+  : I designed and trained a machine learning model for 14-point evaluations of heart disease risk, scoring ~91% accuracy on the test set (with 80/20 validation and shuffling), as well as a web interface for the model
+
+  : [Here's a working demo](https://radiant-mesa-06241.herokuapp.com/HEARO14/)
 
 2020-05 - [SLATE (HIP port)](http://icl.utk.edu/slate/)
 
-  : I was a part-time developer on SLATE for a couple months, and I helped with their effort to port to AMD GPUs/HIP
+  : SLATE is a linear algebra library aimed at exascale computing. I worked on porting some parts to the HIP/ROCm stack
+
+  : Here's the [published working notes](https://www.icl.utk.edu/files/publications/2021/icl-utk-1479-2021.pdf)
 
 2020-03 - ["Design, Optimization, and Benchmarking of Dense Linear Algebra Algorithms on AMD GPUs"](https://ieeexplore.ieee.org/document/9286214)
 
-  : My first published paper! I discuss my work on MAGMA within ICL@UTK, and a co-authorship with Jack Dongarra
+  : TL;DR: successfully ported to HIP with automatic source transpilation, 2x-20x speedup on some BLAS routines, 58%-75% speedup on some LAPACK routines
 
-  : [free pdf](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf)
+  : Here's the [published paper](https://www.icl.utk.edu/files/publications/2020/icl-utk-1405-2020.pdf)
 
   : ![chart from paper](/files/paper-icl0-chart0.webp)
 
-  : All publications at ICL: [ICL publications](https://www.icl.utk.edu/publications?f%5Bauthor%5D=1508)
+2019-09 - ["Know It All", an AI Writer](https://www.youtube.com/watch?v=PwGsRskWN-I)
 
-2019-09 - ["Know It All", an A.i. Writer](https://www.youtube.com/watch?v=PwGsRskWN-i&t=3s)
+  : A [VolHacks](https://volhacks.org/) project that listens to your voice and continues to write a story for you (outdated now, of course, due to new developments in GPT-3)
 
-  : Myself and Jakob Liggett participated in VOLHacks and produced this little application that finishes your sentences using NLP (outdated now, of course, due to new developments in GPT-3)
+  : This was a joint effort between myself and Jakob Liggett
 
 2019-08 - [MAGMA (HIP port, optimization)](https://icl.cs.utk.edu/magma/)
 
-  : I joined ICL (Innovative Computing Laboratory) and successfully MAGMA to HIP (i.e. so that it would work on AMD GPUs). We also did performance tuning (see my [first paper](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf), it's in this timeline)
+  : MAGMA is a linear algebra library aimed at GPU/many-core systems, largely as a modern replacement for [LAPACK](https://en.wikipedia.org/wiki/LAPACK)
+
+  : I worked on porting the entire library to the HIP/ROCm stack, as well as optimization of the existing algorithms for better performance on both existing hardware (NVIDIA GPUs) and the new hardware just supported (AMD GPUs). 
+
+  : Here's the [published paper](https://www.icl.utk.edu/files/publications/2020/icl-utk-1405-2020.pdf)
 
 2019-01 - [kscript (programming language)](https://kscript.org)
 
@@ -69,14 +96,24 @@ For a short resume, check out: [/files/resume-CadeBrown-2021-12-08.pdf](/files/r
 
   : I developed kscript as a new programming language that is highly dynamic, with math, GUI development, app development, and performance as first class concerns
 
-  : Check out the [web demo](https://term.kscript.org/) and the [documentation](https://docs.kscript.org)
+  : Check out the [web demo](https://term.kscript.org/) (try `import m; for x in range(1, 10), print(x, m.zeta(x))`) and the [documentation](https://docs.kscript.org)
+
+<!--
+
+2017-06 - [FractalRender (in Scratch)](https://scratch.mit.edu/projects/168228453/)
+
+  : Yet another fractal rendering program I wrote, this time in Scratch (just for fun)
+
+  : ![screenshot of scratch](/files/art-fractal/scratch.webp)
+-->
 
 2017-05 - [SimpleSummit](https://github.com/simplesummit)
 
-  : I was the primary software developer for the interactive fractal exploring simulation
+  : SimpleSummit is a cluster computer made of NVIDIA Jetson hardware, used to run a realtime interactive fractal simulation
+
+  : I was the primary software developer for the fractal application, and assisted with the physical design as well
 
   : ![screenshot of fractalexplorer](/files/fractalexplorer0.webp)
-
 
 2017-02 - [GNU MPFR](https://www.mpfr.org/)
 
@@ -92,15 +129,15 @@ For a short resume, check out: [/files/resume-CadeBrown-2021-12-08.pdf](/files/r
 
   : I developed this application to search polynomials (mainly quadratics) to find those which are prime for many consecutive values
 
-  : For example, $ 36 x^2 + 558 x + 359 $ is prime for 30 consecutive values (starting at $0$)
+  : For example, $ 36 x^2 - 810 x + 2753 $ is prime for 45 consecutive values (starting at $ 0 $) (PGS independently re-discovered this, which is the current world record for quadratic prime generators)
 
 2016-01-12 - [OEIS A267263](https://oeis.org/A267263)
 
-  : I authored an integer sequence, defined as the 'number of non-zero digits in representation of n in primorial base' (whew...)
+  : I authored an integer sequence, defined as the 'number of non-zero digits in representation of n in primorial base' (whew...). This is basically the equivalent of the [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight), but for a mixed-radix number system based on primes
 
 2015-09 - [Agilaire 'pilog'](https://agilaire.com/)
 
-  : I worked as a contractor with Agilaire to produce a low-cost and small-form-factor datalogger for air quality instrumentation, using a Raspberry PI
+  : I worked as an independent contractor with Agilaire to produce a low-cost datalogger for air quality instrumentation, using a Raspberry PI
 
 2015-08 - [L&N STEMpunks FRC #3966 team (robotics)](https://www.youtube.com/c/LNSTEMpunksorg/videos)
 
@@ -114,6 +151,7 @@ For a short resume, check out: [/files/resume-CadeBrown-2021-12-08.pdf](/files/r
 
   : I authored plugins for Minecraft, in Java (some of which were for my server)
    
-  : [my page on bukkit.org](https://bukkit.org/members/sm0oth_kriminal.90999993/)
+  : [my page on bukkit.org](https://dev.bukkit.org/members/_ForgeUser14038486/projects)
 
-  : [my page on spigotmc.org](https://www.spigotmc.org/account/personal-details)
+  : [my page on spigotmc.org](https://www.spigotmc.org/members/cadebrown.44717/)
+

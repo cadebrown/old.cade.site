@@ -1,12 +1,7 @@
 /* main.css - primary CSS for cade.site
  *
- * 
- * some useful links: 
- *   * https://coolors.co/
- *
- * @author:    Cade Brown <cade@kscript.org>
+ * @author: Cade Brown <me@cade.site>
  */
-
 
 :root {
     /* which font-family selection should be used (other themes typically don't need this) */
@@ -14,17 +9,56 @@
     /*--font: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     --font: Consolas, monospace;
     --font-code: monospace;
-
-    --footer-size: 64px;
-
 }
 
-/*** THEMES ***/
+/*** THEME VARIABLES ***/
 
 /* none: basically no theme over plain HTML */
 html[data-theme='none'] {
     /* what color should clickable links be? */
     --col-link: #366fca;
+}
+
+/* 'whiteboard' theme, i.e. default light theme */
+html[data-theme='whiteboard'] {
+
+    /* all site background */
+    --col-back0: #b4b4b4;
+    /* content background */
+    --col-back1: #ffffff;
+    /* general border, for figures/images */
+    --col-border: #88888888;
+    /* drop shadow color */
+    --col-shadow: #161616bb;
+
+    /* general text content */
+    --col-text: #111111;
+    /* inverted text content */
+    --col-text-inv: #eeeeee;
+    /* content which is a link */
+    --col-link: #366fca;
+
+}
+
+/* 'chalkboard' theme, i.e. default dark theme */
+html[data-theme='chalkboard'] {
+
+    /* all site background */
+    --col-back0: #0e0e0e;
+    /* content background */
+    --col-back1: #2a2a2a;
+    /* general border, for figures/images */
+    --col-border: #88888888;
+    /* drop shadow color */
+    --col-shadow: #161616bb;
+
+    /* general text content */
+    --col-text: #eeeeee;
+    /* inverted text content */
+    --col-text-inv: #111111;
+    /* content which is a link */
+    --col-link: #509ddb;
+
 }
 
 /* 1337: my personal theme, like matrix/terminal style */
@@ -47,130 +81,61 @@ html[data-theme='1337'] {
     --col-text-inv: #c5168b;
     /* content which is a link */
     --col-link: #1f8cd4;
+
 }
-
-
-/* 'chalkboard' theme */
-
-html[data-theme='chalkboard'] {
-
-    /* all site background */
-    --col-back0: #0e0e0e;
-    /* content background */
-    --col-back1: #2a2a2a;
-    /* general border, for figures/images */
-    --col-border: #88888888;
-    /* drop shadow color */
-    --col-shadow: #161616bb;
-
-    /* general text content */
-    --col-text: #eeeeee;
-    /* inverted text content */
-    --col-text-inv: #111111;
-    /* content which is a link */
-    --col-link: #82c7ff;
-}
-
-
-/* 'whiteboard' theme */
-
-html[data-theme='whiteboard'] {
-
-    /* all site background */
-    --col-back0: #b4b4b4;
-    /* content background */
-    --col-back1: #ffffff;
-    /* general border, for figures/images */
-    --col-border: #88888888;
-    /* drop shadow color */
-    --col-shadow: #161616bb;
-
-    /* general text content */
-    --col-text: #111111;
-    /* inverted text content */
-    --col-text-inv: #eeeeee;
-    /* content which is a link */
-    --col-link: #366fca;
-}
-
-/* have themes for the buttons at the bottom bar */
 
 .themebutton-none {
     background-image: linear-gradient(-45deg, #ffffff 40%, #ffffff 60%);
-}
-
-.themebutton-1337 {
-    background-image: linear-gradient(-45deg, #0e0e0e 40%, #16c516 60%);
-}
-
-.themebutton-chalkboard {
-    background-image: linear-gradient(-45deg, #0e0e0e 40%, #2a2a2a 60%);
 }
 
 .themebutton-whiteboard {
     background-image: linear-gradient(-45deg, #b4b4b4 40%, #ffffff 60%);
 }
 
+.themebutton-chalkboard {
+    background-image: linear-gradient(-45deg, #0e0e0e 40%, #2a2a2a 60%);
+}
+
+.themebutton-1337 {
+    background-image: linear-gradient(-45deg, #0e0e0e 40%, #16c516 60%);
+}
+
+
 /*** HTML STANDARD ELEMENTS ***/
 
-body {
+html, body {
     margin: 0;
+    padding: 0;
+}
 
-    line-height: 1.32rem;
-    font-size: 18px;
-    tab-size: 4;
+html {
 
     background-attachment: fixed;
     background-position: -0.5em;
     background-repeat: repeat;
-    background-color: var(--col-back0);
     background-image: var(--img-back);
+}
+
+body {
+    line-height: 1.32rem;
+    font-size: 18px;
+    tab-size: 4;
+
+    background-color: var(--col-back0);
 
     font-family: var(--font);
     color: var(--col-text);
 
-    scrollbar-width: none;
+    /*scrollbar-width: none;*/
 }
-/*** Web/Medi ***/
-
-@media screen and (max-width: 1100px) {
-    .post-thumb-par {
-        max-width: 98%;
-        margin: 0 auto;
-        padding: 0em;
-
-        float: none;
-    }
-    /* parent of 'main', for CSS-purposes */
-    .main-par {
-        margin: 0 !important;
-    }
-
-    :root {
-        /* override some variables */
-        --footer-size: 144px;
-    }
-
-    footer {
-        flex: 1;
-        flex-direction: column;
-    }
-    .footer-div {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        margin: 0.15em 0;
-    }
-
-}
-
-/** headers **/
 
 h1 {
+    margin-top: 1.1em;
     line-height: 2.35rem;
 }
 
 h2 {
+    margin-top: 0.7em;
     line-height: 1.9rem;
 }
 
@@ -188,30 +153,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
 }
 
-h1 a:link {
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
     color: var(--col-text);
 }
 
-h1 a:visited {
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
     color: var(--col-text);
 }
-
-h2 a:link {
-    color: var(--col-text);
-}
-
-h2 a:visited {
-    color: var(--col-text);
-}
-
-h3 a:link {
-    color: var(--col-text);
-}
-
-h3 a:visited {
-    color: var(--col-text);
-}
-
 
 /* prefixes for header sections */
 h2::before {
@@ -231,7 +179,7 @@ h5::before {
 }
 
 
-/* header-link, for the link generation per section */
+/* class for auto-generated links for headers */
 .header-link {
     margin: auto;
     margin-left: 6px;
@@ -245,7 +193,7 @@ h5::before {
     -ms-transition: opacity 0.1s ease-in-out 0.1s;
 }
 
-/* header-link on hover should be shown */
+/* show the icon on the header link */
 h2:hover .header-link, 
 h3:hover .header-link, 
 h4:hover .header-link, 
@@ -253,8 +201,6 @@ h5:hover .header-link,
 h6:hover .header-link {
     opacity: 1;
 }
-
-/** links **/
 
 a:link {
     color: var(--col-link);
@@ -264,13 +210,10 @@ a:visited {
     color: var(--col-link);
 }
 
-/** lists **/
-
 li {
     padding-bottom: 6px;
 }
 
-/** inline code **/
 p > code {
     padding-left: 0.8px;
     padding-right: 0.8px;
@@ -281,9 +224,6 @@ p > code {
 
     background-color: var(--col-back0);
 }
-
-
-/** blockquotes/asides **/
 
 blockquote {
     background: var(--col-back1);
@@ -307,13 +247,10 @@ blockquote p {
     margin-block-start: 0.5em;
 }
 
-/** videos **/
-
-
 video {
     margin: auto;
     
-    /* limit the size... i've been tweaking these values */
+    /* limit the size... i've been tweaking these values TODO */
     max-width: 80%;
     max-height: 65vh;
 
@@ -321,17 +258,21 @@ video {
     border: solid 1px var(--col-border-fig);
 }
 
-/** images **/
-
 img {
     margin: auto;
     
-    /* limit the size... i've been tweaking these values */
+    /* limit the size... i've been tweaking these values TODO */
     max-width: 88%;
     max-height: 60vh;
 
     display: block;
     border: solid 1px var(--col-border-fig);
+}
+
+/* TODO: define these sizes */
+
+.clear {
+    clear: both;
 }
 
 .img-S {
@@ -349,6 +290,14 @@ img {
     max-height: 76vh;
 }
 
+.img-left {
+    float: left;
+    margin-right: 1.6em;
+}
+.img-right {
+    float: right;
+    margin-left: 1.6em;
+}
 
 /* image within a description list (i.e. dd/dl) */
 dd img {
@@ -367,9 +316,6 @@ dd img {
     max-height: 26em;
 }
 
-/** table/cells **/
-
-
 table {
     margin: auto;
 }
@@ -382,48 +328,58 @@ td {
     padding: 0.2em;
 }
 
-
-/** breaks/dividers **/
-
 hr {
     margin: 1.2em 0.01em 0.9em 0.01em;
 }
 
+/* have iframes fill up centered blocks */
 center > iframe {
     max-width: 100%;
 }
 
 /** header/footer/misc **/
-
 footer {
-    width: 100%;
-    height: var(--footer-size);
 
-    margin: 0 auto;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 
-    border-top: 2px solid var(--col-border);
+    /*border-top: 2px solid var(--col-border);*/
 
-    background-color: var(--col-back1);
+    /*background-color: var(--col-back1);*/
+    background-color: var(--col-back);
     box-shadow: 0 80vh 0 80vh #000;
     color: var(--col-text-inv) !important;
+
+}
+
+/* wrapper for footer links */
+.footer-wrapper {
+
+    display: flex;
+    margin-top: 0.8em;
+    margin-bottom: 2.0em;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* wrapper for the wrapper */
+.footer-wrapper-wrapper {
+    margin: 0 6.7vw;
+}
+
+.footer-div {
+    width: 100%;
+    margin: 0.6em 0;
+
+    align-items: center;
+    text-align: center;
 }
 
 footer a {
-    padding: 12px;
     text-decoration: none;
 }
-
-footer a:hover {
-    /*background-color: var(--col-theme-G1);*/
-}
-
 
 
 /*** CUSTOM CLASSES ***/
@@ -435,17 +391,15 @@ footer a:hover {
 
 /* the 'main' central area that holds content */
 .main {
+    flex: 1;
+
+    padding: 0em 1.5em;
+
     background-color: var(--col-back1);
-    padding: 1em;
-    border-radius: 14px;
     border: 1px solid var(--col-border);
     box-shadow: 0px 0px 0px var(--col-shadow);
 }
 
-/* parent of 'main', for CSS-purposes */
-.main-par {
-    margin: 2em 12vw;
-}
 
 /* used for post descriptions */
 .post-section {
@@ -479,13 +433,6 @@ footer a:hover {
     vertical-align: middle;
 }
 
-
-.footer-div {
-    align-items: center;
-    text-align: center;
-}
-
-
 /*** EXTERNAL/THIRD PARTY ***/
 
 /** FontAwesome (fa-) **/
@@ -495,7 +442,6 @@ footer a:hover {
     color: var(--col-link);
 }
 
-
 /** KaTeX (katex-) **/
 
 /* all math/inline should be shown completely */
@@ -504,3 +450,40 @@ footer a:hover {
     overflow-x: auto;
     padding: 0.5em;
 }
+
+
+/*** MEDIA QUERIES ***/
+.wrapper {
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* media query for very wide displays (i.e. most desktops) */
+@media screen and (min-aspect-ratio: 4/3) {
+
+    /* on wide displays, add some space */
+    .wrapper {
+        margin-left: 10.5vw;
+        margin-right: 10.5vw;
+    }
+
+}
+
+/* for narrow displays, so links stack instead of side by side */
+@media (max-width: 1000px) {
+
+    .post-thumb-par {
+        max-width: 98%;
+        margin: 0 auto;
+        padding: 0em;
+
+        float: none;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+}
+

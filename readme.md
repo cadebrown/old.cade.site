@@ -2,10 +2,6 @@
 
 This is my custom Jekyll theme for [cade.site](https://cade.site), meant to be easily editable, clean, responsive, and performant. Includes math and code formatting, as well as multiple themes with a selector (it's easy to add your own too!)
 
-If this theme has helped you out, consider donating a small amount to me (the author, Cade Brown):
-
-BTC: 3G11Rd59EZChtwU9vMExXmaoHL3g92dEsN
-
 
 ## Setup
 
@@ -40,19 +36,18 @@ Then, navigate to `localhost:4000` in your browser
 
 Feel free to copy this Jekyll theme! (full source is on [the GitHub repo](https://github.com/cadebrown/cadebrown.github.io))
 
-The website (and most of the content) is licensed under the [KPL](https://kata.tools/kpl). (all i ask is that you give me an attribution/link somewhere on your blog)
+The website (and most of the content) is licensed under the [KPL](https://kata.tools/kpl). (all I ask is that you give me an attribution/link somewhere on your blog)
 
 ### Code Structure
 
 All the modular components are in `_includes`, for example:
 
-  * `_includes/bbar.html`: bottom bar, included at the end of every page
   * `_includes/post-desc.html`: post description card generator (i.e. thumbnail and exerpt)
 
 All the custom themes and styling are in `css/main.css`
 
   * to change the font from monospace to something less 1337, change the `:root` rules at the top of the file
-  * to add a theme, follow the comments for an existing theme, change the name, and also edit `_includes/tbar.html` (comments will explain everything)
+  * to add a theme, follow the comments for an existing theme, change the name, and also edit `_layouts/default.html` (comments will explain everything)
 
 
 ### Software
@@ -70,7 +65,7 @@ This blog has a lot of builtin integrations with common tools. here's a quick li
   * [KaTeX](https://www.katex.org/): for math formatting (LaTeX-like, and much faster than MathJax)
     * to use it in a post, use `\( x^2 + x + 5 \)` (for inline), or `$$ x^2 + x + 5 $$` (for block mode)
   * [git.io](https://git.io/): for URL shortening (useful for gists)
-  * [GitHub Buttons](https://buttons.github.io/): includes the style in the head element, so just paste the element!
+  * [GitHub Buttons](https://buttons.github.io/): the style is included in the head element, so just paste the element!
   * Google Analytics: for analyzing your web traffic
 
 Most configuration options for software are available in:

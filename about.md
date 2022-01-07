@@ -4,58 +4,50 @@ title: About
 permalink: /about
 ---
 
-## About
+<center>
+<h1>
+<a href="mailto:me@cade.site">Cade Brown &lt;me@cade.site&gt;</a>
+</h1>
+</center>
 
-Hello there! My name is Cade Brown, and this is my [personal blog](https://cade.site). I'm a software developer, mathematician, and musician, just sharing things I find interesting.
+<!--![A Picture of My Face](/files/face.webp)-->
+![A Picture of My Face](/files/cade-face-2.webp){: .img-left .img-S }
 
 
-Useful Links:
+# About Me
 
-  * [me@cade.site](mailto:me@cade.site), my personal email (my preferred contact method)
-  * [github.com/cadebrown](https://github.com/cadebrown), my GitHub (this is where most of my code happens)
-  * [/timeline](/timeline), timeline of my major projects and important dates
-  * [/files](/files), a listing of all files on my website, including slides, pictures, PDFs, etc
-    * [/files/resume-CadeBrown-2021-12-08.pdf](/files/resume-CadeBrown-2021-12-08.pdf), my resume
+<div style="margin: 0 5vw; font-size: 110%;">
+  I'm a software developer, [digital artist](/art), and hobbyist mathematician
 
-My main areas of interest are:
+  Experienced in in scientific computing, programming languages, [and more](/timeline)
 
-  * Programming Language Theory (PLT), including esoteric languages and language design
-  * Numerical/math programming (like bignum arithmetic, root finding, symbolic algebra)
-  * GPU/heterogeneous computing (like CUDA, HIP, OpenCL, ...)
+  Check out [my resume](/files/resume-CadeBrown-2021-12-08.pdf), as well as [my complete timeline/history](/timeline)
 
-Currently, I'm working on:
+</div>
+<div class="clear"></div>
+
+## Technology Skills
+
+  * 8 years of Python experience (NumPy, SciPy, Matplotlib, Tensorflow, Torch, Django)
+  * 6 years of HTML/JavaScript/CSS experience (React, NodeJS, WebGL)
+  * 5 years of C and C++ experience
+    * 4 years of CUDA experience
+    * 2 years of HIP/ROCm experience
+    * 2 years of Emscripten/WebAssembly experience
+  * GH Pages/Jekyll/WASM stack proficiency
+
+## Experience
+
+  * 2019+: [Innovative Computing Laboratory](https://www.icl.utk.edu/), working on HPC research (distributed/GPU computing)
+  * 2019+: [University of Tennessee](https://www.utk.edu/), working on a Bachelor's degree in Computer Science
+  * 2021-2022: UTK's [PAIRS lab](https://github.com/utk-pairs/avocat), working on HCI research (Human-Computer Interaction)
+  * 2020: [Qardian Labs](https://www.qardianlabs.net/about-us), [machine learning model](https://radiant-mesa-06241.herokuapp.com/HEARO14/) for heart disease detection
+  * 2016-2018: [L&N STEMpunks](https://github.com/lnstempunks), as the programming team leader
+  * 2016-2017: ORNL on the [SimpleSummit](https://simplesummit.github.io/blog/fractalexplorer) project
+  * 2015: [Agilaire](https://agilaire.com/), as an independent contractor for low-cost air quality dataloggers
+
+## Current Projects
 
   * [kata.tools](https://kata.tools): a WIP software framework, runtime, and set of languages to rule them all!
-  * [Avocat](https://github.com/utk-pairs/avocat): Avocat is an automated error-solver for your terminal!
-
-
-## Projects
-
-This is a short overview of my major contributions. For a more complete view, check out my [timeline](/timeline) or [my resume](/files/resume-CadeBrown-2021-12-08.pdf).
-
-
-### MAGMA and SLATE, HPC Libraries
-
-At ICL, I worked on the [MAGMA](https://icl.utk.edu/magma/) project, specifically, the abilitity to run on AMD GPUs via the ROCm/HIP platform (previously, it was primarily CUDA-focused). I also worked on tuning DLA algorithms for better performance on existing NVIDIA hardware.
-
-I also worked part-time on the [SLATE](https://icl.utk.edu/slate/) project, porting backends to use rocBLAS and OpenMP (for AMD and Intel platforms, respectively).
-
-[Design, Optimization, and Benchmarking of Dense
-Linear Algebra Algorithms on AMD GPUs](https://www.icl.utk.edu/files/publications/2020/icl-utk-1415-2020.pdf)
-
-
-### "Know It All", an A.I. writer
-
-I (along with Jakob Liggett) worked on ["Know It All"](https://www.youtube.com/watch?v=PwGsRskWN-i) as part of the UTK VolHacks hackathon. It is a machine-learning based program which listens for audio input, transcribes it, and then continues the quote, using the GPT-2 algorithm
-
-It turned out quite well, and the video above has some amusing, meta-textual responses. Since then, GPT-3 has come out (along with free variants), which would undoubtedly increase the quality of the continuations.
-
-
-### SimpleSummit, a distributed computing project 
-
-[SimpleSummit](https://simplesummit.github.io/) was my project during 2 successive highschool internships at ORNL at the OLCF. It is a small cluster computer made of a few [NVIDIA Jetsons](https://developer.nvidia.com/buy-jetson), hooked up over a network. The network adapts in real time to distribute the workload evenly, taking into account the real-time metrics of the cluster.
-
-I did all of the software for the project, which included `fractalexplorer`. It ran over 8 different machines at once, which communicated in real time (via MPI) over a network to produce ~30fps fractal rendering.
-
-Check out our ORNL article here: [SimpleSummit](https://www.olcf.ornl.gov/2018/10/09/simple-summit/)
-
+  * [Avocat](https://github.com/utk-pairs/avocat): A terminal assistant to help you perform tasks and automatically fix errors that are encountered using StackOverflow's API
+  
