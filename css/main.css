@@ -275,6 +275,14 @@ img {
     clear: both;
 }
 
+
+/* for the about page */
+.img-ZZZ {
+    max-width: 80%;
+    max-height: 44vh;
+}
+
+
 .img-S {
     max-width: 68%;
     max-height: 36vh;
@@ -292,10 +300,12 @@ img {
 
 .img-left {
     float: left;
+    margin: 0.5em;
     margin-right: 1.6em;
 }
 .img-right {
     float: right;
+    margin: 0.5em;
     margin-left: 1.6em;
 }
 
@@ -484,6 +494,19 @@ footer a {
     .footer-wrapper {
         flex-direction: column;
     }
+
+
+    .img-left {
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+    .img-right {
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+    
 
 }
 

@@ -11,7 +11,7 @@ permalink: /about
 </center>
 
 <!--![A Picture of My Face](/files/face.webp)-->
-![A Picture of My Face](/files/cade-face-2.webp){: .img-left .img-S }
+![A Picture of My Face](/files/cade-face-2.webp){: .img-left .img-ZZZ }
 
 
 # About Me
