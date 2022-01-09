@@ -95,7 +95,8 @@ theme_default: 'chalkboard'
 # -*- POSTS -*-
 
 # permalink format for a title
-permalink: /:year/:month/:day/:title
+#permalink: /:year/:month/:day/:title
+permalink: /:year/:title
 
 
 # pagination settings
@@ -107,7 +108,8 @@ paginate_path: /page-:num
 # NOTE: should be an HTML comment
 sep_more: <!--more-->
 
-#plugins:
+plugins:
+  - jekyll-redirect-from
 #  - jekyll-paginate
 #  - jekyll-feed
 

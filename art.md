@@ -9,7 +9,7 @@ tag: art
 
 I don't just program computers to do math, sometimes I program them to do art!
 
-I am an amateur digital artist, and most of my pieces are computer generated (or, as I call them, human-assisted). I primarily make art using machine learning and artificial intelligence, or mathematical methods. You can check out my [blog post on ML/AI art](/2021/11/12/art-aigen) and my [blog post on fractal art](/2021/11/19/art-fractal) for more details on my methodology.
+I am an amateur digital artist, and most of my pieces are computer generated (or, as I call them, human-assisted). I primarily make art using machine learning and artificial intelligence, or mathematical methods. You can check out my [blog post on ML/AI art](/2021/art-aigen) and my [blog post on fractal art](/2021/art-fractal) for more details on my methodology.
 
 
 ## Blog Posts
