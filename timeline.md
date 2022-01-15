@@ -142,6 +142,9 @@ If you're looking for the TL;DR, check out [my resume](/files/resume-CadeBrown-2
 2015-08 - [L&N STEMpunks FRC #3966 team (robotics)](https://www.youtube.com/c/LNSTEMpunksorg/videos)
 
   : I was the leader of the programming department for 2 years, a member for 3 total years
+  
+  : [Check out a match by us!](https://www.youtube.com/watch?v=gzqFjdk8j0o)
+
 
   : [some cool photos here](https://www.instagram.com/lnstempunks)
 
