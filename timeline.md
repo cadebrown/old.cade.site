@@ -70,7 +70,7 @@ If you're looking for the TL;DR, check out [my resume](/files/resume-CadeBrown-2
 
 2020-03 - ["Design, Optimization, and Benchmarking of Dense Linear Algebra Algorithms on AMD GPUs"](https://ieeexplore.ieee.org/document/9286214)
 
-  : TL;DR: successfully ported to HIP with automatic source transpilation, 2x-20x speedup on some BLAS routines, 58%-75% speedup on some LAPACK routines
+  : TL;DR: successfully ported to HIP with automatic source transpilation, 2x-20x speedup on some BLAS routines, 58%-75% speedup on some LAPACK routines. Check out [my blog post](/2020/magma-paper)
 
   : Here's the [published paper](https://www.icl.utk.edu/files/publications/2020/icl-utk-1405-2020.pdf)
 
@@ -131,7 +131,7 @@ If you're looking for the TL;DR, check out [my resume](/files/resume-CadeBrown-2
 
   : For example, $ 36 x^2 - 810 x + 2753 $ is prime for 45 consecutive values (starting at $ 0 $) (PGS independently re-discovered this, which is the current world record for quadratic prime generators)
 
-2016-01-12 - [OEIS A267263](https://oeis.org/A267263)
+2016-01 - [OEIS A267263](https://oeis.org/A267263)
 
   : I authored an integer sequence, defined as the 'number of non-zero digits in representation of n in primorial base' (whew...). This is basically the equivalent of the [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight), but for a mixed-radix number system based on primes
 
@@ -143,8 +143,11 @@ If you're looking for the TL;DR, check out [my resume](/files/resume-CadeBrown-2
 
   : I was the leader of the programming department for 2 years, a member for 3 total years
   
-  : [Check out a match by us!](https://www.youtube.com/watch?v=gzqFjdk8j0o)
+  : <center>
+      <iframe width="960" height="540" src="https://www.youtube.com/embed/RBQL_KEJ_q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
 
+  : [Check out a match by us!](https://www.youtube.com/watch?v=gzqFjdk8j0o)
 
   : [some cool photos here](https://www.instagram.com/lnstempunks)
 

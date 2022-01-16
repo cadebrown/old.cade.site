@@ -6,7 +6,9 @@ permalink: /about
 
 <center>
 <h1>
-<a href="mailto:me@cade.site">Cade Brown &lt;me@cade.site&gt;</a>
+<!--<a href="mailto:me@cade.site">Cade Brown &lt;me@cade.site&gt;</a>-->
+<a href="mailto:me@cade.site">Cade Brown</a>
+
 </h1>
 </center>
 
@@ -17,11 +19,13 @@ permalink: /about
 # About Me
 
 <div style="margin: 0 5vw; font-size: 110%;">
-  I'm a software developer, [digital artist](/art), and hobbyist mathematician
+  I'm a software developer, [digital artist](/art), and mathematician. Passionate about building software that works
 
-  Experienced in in scientific computing, programming languages, [and more](/timeline)
-
-  Check out [my resume](/files/resume-CadeBrown-2021-12-08.pdf), as well as [my complete timeline/history](/timeline)
+  I'm experienced in scientific computing, machine learning, programming languages/compilers, and more. Check out [my resume](/files/resume-CadeBrown-2021-12-08.pdf), as well as [my complete timeline/history](/timeline)
+  
+  Currently attending University of Tennessee Knoxville, working on machine learning research, and working on personal projects
+  
+  Questions? Comments? Concerns? Contact me: [me@cade.site](mailto:me@cade.site)
 
 </div>
 <div class="clear"></div>
@@ -41,9 +45,9 @@ permalink: /about
   * 2019+: [Innovative Computing Laboratory](https://www.icl.utk.edu/), working on HPC research (distributed/GPU computing)
   * 2019+: [University of Tennessee](https://www.utk.edu/), working on a Bachelor's degree in Computer Science
   * 2021-2022: UTK's [PAIRS lab](https://github.com/utk-pairs/avocat), working on HCI research (Human-Computer Interaction)
-  * 2020: [Qardian Labs](https://www.qardianlabs.net/about-us), [machine learning model](https://radiant-mesa-06241.herokuapp.com/HEARO14/) for heart disease detection
-  * 2016-2018: [L&N STEMpunks](https://github.com/lnstempunks), as the programming team leader
-  * 2016-2017: ORNL on the [SimpleSummit](https://simplesummit.github.io/blog/fractalexplorer) project
+  * 2020: [Qardian Labs](https://www.qardianlabs.net/about-us), developing a [machine learning model](https://radiant-mesa-06241.herokuapp.com/HEARO14/) for heart disease detection
+  * 2016-2018: [L&N STEMpunks](https://github.com/lnstempunks), as the programming team lead
+  * 2016-2017: ORNL internship for the [SimpleSummit](https://simplesummit.github.io/blog/fractalexplorer) project
   * 2015: [Agilaire](https://agilaire.com/), as an independent contractor for low-cost air quality dataloggers
 
 ## Current Projects
