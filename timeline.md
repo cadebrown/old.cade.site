@@ -6,7 +6,7 @@ use_jquery: true
 use_katex: true
 ---
 
-If you're looking for the TL;DR, check out [my resume](/files/resume-CadeBrown-2021-12-08.pdf)
+If you're looking for the TL;DR, check out [my resume](/files/resume-CadeBrown-2021-01-16.pdf)
 
 # Timeline
 
