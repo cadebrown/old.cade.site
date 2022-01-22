@@ -21,7 +21,7 @@ permalink: /about
 <div style="margin: 0 5vw; font-size: 110%;">
   I'm a software developer, [digital artist](/art), and mathematician. Passionate about building software that works
 
-  I'm experienced in scientific computing, machine learning, programming languages/compilers, and more. Check out [my resume](/files/resume-CadeBrown-2022-01-16.pdf), as well as [my complete timeline/history](/timeline)
+  I'm experienced in scientific computing, machine learning, programming languages/compilers, and more. Check out [my resume](/CadeBrown_resume.pdf), as well as [my complete timeline/history](/timeline)
   
   Currently attending University of Tennessee Knoxville, working on machine learning research, and working on personal projects
   
