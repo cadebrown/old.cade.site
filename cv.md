@@ -9,11 +9,9 @@ Hi! I'm Cade Brown, a software developer interested in machine learning, High Pe
 
 This is my CV, which contains my polished and published work. Please also check out the following links:
 
+  * [cade.site/resume](/resume): my 1-page PDF resume
   * [cade.site/about](/about): short bio and information about me
   * [cade.site/timeline](/timeline): my complete timeline of work and projects
-  * [cade.site/resume](/resume): my 1-page PDF resume
-
-This is my CV, if you're looking for a TL;DR, check out my [resume](/CadeBrown_resume.pdf) or my [about page: /about](/about)
 
 # Publications
 
@@ -28,7 +26,7 @@ This is my CV, if you're looking for a TL;DR, check out my [resume](/CadeBrown_r
 
 **SLATE Port to AMD and Intel Platforms**, A. Abdelfattah, M. Farhan, **Cade Brown**, M. Gates, D. Sukkari, A. YarKhan, J. Dongarra, *Innovative Computing Laboratory*, April 2021.
 
-: TL;DR: We implement routines for the SLATE library
+: TL;DR: We implement routines for the SLATE library on new AMD and Intel platforms. This is just a tech report publication
 
 : [Online PDF](https://www.icl.utk.edu/files/publications/2021/icl-utk-1479-2021.pdf)
 

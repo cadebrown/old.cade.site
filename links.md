@@ -4,7 +4,7 @@ title: Links
 permalink: /links
 ---
 
-# Cade Online
+# Things I'm In:
 
 **Python and the infinite** _October 2020_ - [lwn.net/Articles/833624](https://lwn.net/Articles/833624)
 
