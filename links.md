@@ -4,7 +4,19 @@ title: Links
 permalink: /links
 ---
 
-This page contains some of my useful guides, books, papers, and other websites
+# Cade Online
+
+**Python and the infinite** _October 2020_ - [lwn.net/Articles/833624](https://lwn.net/Articles/833624)
+
+: TL;DR: I made a post on `python-dev` about Python has some inconsistencies with how it handles math, and the story was picked up by LWN
+
+**ORNL's SimpleSummit** _2018_ [youtube.com/watch?v=fIOulrWkljo](https://youtube.com/watch?v=fIOulrWkljo)
+
+: "Cade Brown and Thomas Hill developed a small-scale demonstration unit of the Summit supercomputer called Simple Summit"
+
+: (please excuse the music/audio quality, I was not the producer!)
+
+
 
 # Useful Websites
 

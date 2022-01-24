@@ -499,12 +499,12 @@ footer a {
     .img-left {
         float: none;
         margin: auto;
-        width: 100%;
+        /*width: 100%;*/
     }
     .img-right {
         float: none;
         margin: auto;
-        width: 100%;
+        /*width: 100%;*/
     }
     
 
