@@ -69,6 +69,15 @@ I worked as an intern as a part of the [SimpleSummit](https://simplesummit.githu
 __NOTE__: These are just my polished, released projects. For all my personal projects, check out my timeline: [cade.site/timeline](https://cade.site/timeline)
 
 
+## kscript {#kscript}
+
+I wrote kscript ([kscript.org](https://kscript.org)), which is a dynamic programming language with support for tensors, math routines, graphics and more. It has an online repl: [term.kscript.org](https://term.kscript.org) and documentation: [docs.kscript.org](https://docs.kscript.org)
+
+## Cade Andgreg's RISC-V Emulator {#kscript}
+
+I worked on a team to design and implement a web-based IDE for RISC-V programming and debugging: [carve.chemicaldevelopment.us](https://carve.chemicaldevelopment.us)
+
+
 ## Online Encyclopedia of Integer Sequences {#oeis}
 
 I made various contributions to sequences and discussions, as a hobby interest of mine
