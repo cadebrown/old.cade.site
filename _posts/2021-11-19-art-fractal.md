@@ -7,7 +7,7 @@ thumb: /files/art-fractal/mand-3d.webp
 redirect_from: /2021/11/19/art-fractal
 ---
 
-These are some various renderings of fractals that I've done, mainly using software I've written
+These are some various renderings of fractals that I've done, using software I've written
 
 <!--more-->
 ## Software
