@@ -19,7 +19,7 @@ permalink: /about
 # About Me
 
 <div style="margin: 0 5vw; font-size: 110%;">
-  Hi! I'm Cade Brown, a software developer, [digital artist](/art), and mathematician.Passionate about building software that works
+  Hi! I'm Cade Brown, a software developer, [digital artist](/art), and mathematician. Passionate about building software that works
 
   I'm experienced in scientific computing, machine learning, programming languages/compilers, and more. Check out [my resume](/CadeBrown_resume.pdf) and [my CV](/cv), as well as [my complete timeline/history](/timeline)
   
