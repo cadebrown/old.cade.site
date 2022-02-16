@@ -74,7 +74,7 @@ permalink: /links
 
 : Written by Euclid around 300BC, this book is a good introduction to the basics of mathematics starting with the basics of geometry
 
-: In my opinion, this should be the first mathematics textbook for schools to use. It's ridiculous that most schools to teach stddddddddddw wudents geometry without using Euclid's work. 
+: In my opinion, this should be the first mathematics textbook for schools to use. It's ridiculous that most schools to teach students geometry without using Euclid's work. 
 
 [*Prime Numbers and the Riemann Hypothesis*](https://books.google.com/books/about/Prime_Numbers_and_the_Riemann_Hypothesis.html?id=jyU7rgEACAAJ)
 
