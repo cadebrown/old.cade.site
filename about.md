@@ -39,7 +39,7 @@ permalink: /about
     * 4 years of CUDA experience
     * 2 years of HIP/ROCm experience
     * 2 years of Emscripten/WebAssembly experience
-  * 1-2 years personal usage of: C#, Java, Crystal (Ruby), Julia, Haskell, R, MatLab, PARI/gp
+  * 1-2 years personal usage of: C#, Java, Crystal (Ruby), Julia, Haskell, R, PARI/gp
   * GH Pages/Jekyll/WASM stack proficiency 
   * Python/NumPy/SciPy/Tensorflow stack proficiency
 
