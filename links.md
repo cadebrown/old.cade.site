@@ -33,7 +33,14 @@ permalink: /links
 [numcalc.com/](http://numcalc.com/) - Online numerical calculator, with arbitrary precision and symbolic computation
 
 
+## ML/AI Tutorials
+
+[pytorch.org/tutorials/intermediate/mario_rl_tutorial.html](https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html) - A tutorial on reinforcement learning with PyTorch, with Mario
+
+
 ## ML/AI Models
+
+[openai.com/blog/webgpt](https://openai.com/blog/webgpt/) - Interesting research looking at GPT model appplied to web browsers, with citing sources
 
 [github.com/hzwer/arXiv2020-RIFE](https://github.com/hzwer/arXiv2020-RIFE) - Video frame interpolation (really good, use it on all your videos!)
 
@@ -42,9 +49,13 @@ permalink: /links
 
 [github.com/NVIDIA/FastPhotoStyle](https://github.com/NVIDIA/FastPhotoStyle) - Style transfer model for images
 
+[nlp.stanford.edu/projects/glove/](https://nlp.stanford.edu/projects/glove/) - NLP word encoding method
+
 ## ML/AI Datasets
 
 [toflow.csail.mit.edu/](http://toflow.csail.mit.edu/) - Vimeo90k dataset of high quality videos
+
+[www.eleuther.ai/projects/owt2/](https://www.eleuther.ai/projects/owt2/) - Large web text database
 
 
 # People
