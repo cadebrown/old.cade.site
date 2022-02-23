@@ -4,7 +4,7 @@ title: Links
 permalink: /links
 ---
 
-# Things I'm In:
+# My Content
 
 **Python and the infinite** _October 2020_ - [lwn.net/Articles/833624](https://lwn.net/Articles/833624)
 
@@ -15,7 +15,6 @@ permalink: /links
 : "Cade Brown and Thomas Hill developed a small-scale demonstration unit of the Summit supercomputer called Simple Summit"
 
 : (please excuse the music/audio quality, I was not the producer!)
-
 
 
 # Useful Websites
@@ -32,6 +31,20 @@ permalink: /links
 ## Programming Languages
 
 [numcalc.com/](http://numcalc.com/) - Online numerical calculator, with arbitrary precision and symbolic computation
+
+
+## ML/AI Models
+
+[github.com/hzwer/arXiv2020-RIFE](https://github.com/hzwer/arXiv2020-RIFE) - Video frame interpolation (really good, use it on all your videos!)
+
+  * I use this ALL the time... literally use it on any video to smooth it up
+  * I wrote some instructions on setting it up [here](https://gist.github.com/cadebrown/54052d919ae7153eab6c57aeab6f0a36)
+
+[github.com/NVIDIA/FastPhotoStyle](https://github.com/NVIDIA/FastPhotoStyle) - Style transfer model for images
+
+## ML/AI Datasets
+
+[toflow.csail.mit.edu/](http://toflow.csail.mit.edu/) - Vimeo90k dataset of high quality videos
 
 
 # People
