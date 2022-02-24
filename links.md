@@ -51,12 +51,18 @@ permalink: /links
 
 [nlp.stanford.edu/projects/glove/](https://nlp.stanford.edu/projects/glove/) - NLP word encoding method
 
+[github.com/DeclanRussell/NvidiaAIDenoiser](https://github.com/DeclanRussell/NvidiaAIDenoiser) - Denoising model for images, useful for Blender rendering and restoring low quality videos
+
+[en.wikipedia.org/wiki/Wikipedia:Database_download](https://en.wikipedia.org/wiki/Wikipedia:Database_download) - Wikipedia database dumps (I'm working on a personal project with this...)
+
+
 ## ML/AI Datasets
 
 [toflow.csail.mit.edu/](http://toflow.csail.mit.edu/) - Vimeo90k dataset of high quality videos
 
 [www.eleuther.ai/projects/owt2/](https://www.eleuther.ai/projects/owt2/) - Large web text database
 
+[en.wikipedia.org/wiki/Common_Crawl](https://en.wikipedia.org/wiki/Common_Crawl) - Common crawl of the entire web
 
 # People
 
