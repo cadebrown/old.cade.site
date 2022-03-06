@@ -40,6 +40,8 @@ permalink: /links
 
 ## ML/AI Models
 
+[hific.github.io/](https://hific.github.io/) - AI-based image compression (wow!)
+
 [openai.com/blog/webgpt](https://openai.com/blog/webgpt/) - Interesting research looking at GPT model appplied to web browsers, with citing sources
 
 [github.com/hzwer/arXiv2020-RIFE](https://github.com/hzwer/arXiv2020-RIFE) - Video frame interpolation (really good, use it on all your videos!)
