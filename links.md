@@ -40,7 +40,11 @@ permalink: /links
 
 ## ML/AI Models
 
-[hific.github.io/](https://hific.github.io/) - AI-based image compression (wow!)
+[bellard.org/nncp](https://bellard.org/nncp/) - Neural network based text compression
+
+[github.com/tensorflow/compression](https://github.com/tensorflow/compression) - Tensorflow compression models
+
+  * [hific.github.io/](https://hific.github.io/) - AI-based image compression (wow!)
 
 [openai.com/blog/webgpt](https://openai.com/blog/webgpt/) - Interesting research looking at GPT model appplied to web browsers, with citing sources
 
