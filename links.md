@@ -62,6 +62,9 @@ permalink: /links
 [en.wikipedia.org/wiki/Wikipedia:Database_download](https://en.wikipedia.org/wiki/Wikipedia:Database_download) - Wikipedia database dumps (I'm working on a personal project with this...)
 
 
+[reddit.com/r/MachineLearning/comments/tb0m76/d_how_to_do_vqganclip_in_a_single_iteration](https://www.reddit.com/r/MachineLearning/comments/tb0m76/d_how_to_do_vqganclip_in_a_single_iteration/) - Interesting model that might replace VQGAN/CLIP
+
+
 ## ML/AI Datasets
 
 [toflow.csail.mit.edu/](http://toflow.csail.mit.edu/) - Vimeo90k dataset of high quality videos
