@@ -17,6 +17,7 @@ permalink: /links
 : (please excuse the music/audio quality, I was not the producer!)
 
 
+
 # Useful Websites
 
 ## Image/Video Content
@@ -26,11 +27,25 @@ permalink: /links
 [paletton.com/](https://paletton.com/) - A color palette generator, using mathematical relationships
 
 
+## Slides/Info
+
+
+[pollylabs.org/](https://pollylabs.org/) - Polyhedral compilation curator
+
+[pliss2019.github.io/albert_cohen_slides.pdf](https://pliss2019.github.io/albert_cohen_slides.pdf) - polyhedral compilation diagrams and tiling
+
+[www.lri.fr/doctorants/past_presentations/2015-01-29-zinenko.pdf](https://www.lri.fr/doctorants/past_presentations/2015-01-29-zinenko.pdf) - Polyhedral compilation explanations
+
 # Software
 
 ## Programming Languages
 
 [numcalc.com/](http://numcalc.com/) - Online numerical calculator, with arbitrary precision and symbolic computation
+
+
+## Libraries
+
+[sod.pixlab.io/](https://sod.pixlab.io/) - Embedded computer vision library
 
 
 ## ML/AI Tutorials
@@ -39,6 +54,10 @@ permalink: /links
 
 
 ## ML/AI Models
+
+[cdn.openai.com/papers/dall-e-2.pdf](https://cdn.openai.com/papers/dall-e-2.pdf) - DALL-E 2, a hugely impressive leap forward in image synthesis
+
+[theoladune.github.io/AIVC-Seminar/](https://theoladune.github.io/AIVC-Seminar/) - AIVC, AI-powered image/video compression
 
 [bellard.org/nncp](https://bellard.org/nncp/) - Neural network based text compression
 
@@ -130,3 +149,11 @@ permalink: /links
 [*Counterexample To Euler's Conjecture on Sums of Like Powers*](https://www.ams.org/journals/bull/1966-72-06/S0002-9904-1966-11654-3/S0002-9904-1966-11654-3.pdf)
 
 : One of my favorite papers, although not particularly explanative. A computer-assisted dis-proof of one of Euler's conjectures
+
+[*PolyJIT: Polyhedral Optimization Just in Time*](https://www.infosun.fim.uni-passau.de/publications/docs/SAGLijpp2018.pdf)
+
+: Application of JIT techniques with polyhedral compilation
+
+[*Disel: DSL for Linear Algebra and Neural Net Computation on GPUs*](https://dl.acm.org/doi/pdf/10.1145/3211346.3211354)
+
+: Example of a language geared at numerics-heavy compilation (focusing on neural networks)
