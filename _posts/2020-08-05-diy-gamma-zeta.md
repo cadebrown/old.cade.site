@@ -4,7 +4,6 @@ title: "DIY: Gamma and Zeta Function Implementation"
 categories: [math]
 tags: [math, kscript]
 thumb: /files/diy-gamma-zeta.webp
-redirect_from: /2020/08/05/diy-gamma-zeta
 ---
 
 in developing [my language, kscript](https://github.com/chemicaldevelopment/kscript), i wanted to have the [Riemann Zeta Function](https://en.wikipedia.org/wiki/Riemann_zeta_function) and [Gamma Function](https://en.wikipedia.org/wiki/Gamma_function) available as part of the standard library. so, i implemented it!

@@ -8,7 +8,3 @@ permalink: /notes
 
 > Any sufficiently advanced technology is indistinguishable from magic.
 > -- Arthur C. Clarke
-
-## 2022-02-15
-
-  * set up daily notes
