@@ -22,13 +22,12 @@ This is my CV, which contains my polished and published work. Please also check 
 : [Online PDF](/paper0.pdf)
 
 
-## Other Publications
-
 **SLATE Port to AMD and Intel Platforms**, A. Abdelfattah, M. Farhan, **Cade Brown**, M. Gates, D. Sukkari, A. YarKhan, J. Dongarra, *Innovative Computing Laboratory*, April 2021.
 
 : TL;DR: We implement routines for the SLATE library on new AMD and Intel platforms. This is just a tech report publication
 
 : [Online PDF](https://www.icl.utk.edu/files/publications/2021/icl-utk-1479-2021.pdf)
+
 
 
 # Experience

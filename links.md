@@ -4,18 +4,14 @@ title: Links
 permalink: /links
 ---
 
+
+This is a collection of useful links for information, ML/AI, programming languages, and various tech-y stuff.
+
 # My Content
 
-**Python and the infinite** _October 2020_ - [lwn.net/Articles/833624](https://lwn.net/Articles/833624)
+[**Python and the infinite**](https://lwn.net/Articles/833624) I made a post on `python-dev` about Python has some inconsistencies handling math
 
-: TL;DR: I made a post on `python-dev` about Python has some inconsistencies with how it handles math, and the story was picked up by LWN
-
-**ORNL's SimpleSummit** _2018_ [youtube.com/watch?v=fIOulrWkljo](https://youtube.com/watch?v=fIOulrWkljo)
-
-: "Cade Brown and Thomas Hill developed a small-scale demonstration unit of the Summit supercomputer called Simple Summit"
-
-: (please excuse the music/audio quality, I was not the producer!)
-
+[**kscript.org**](https://kscript.org/) - A programming language and website I built. Also check out the [REPL](https://term.kscript.org)
 
 
 # Useful Websites
@@ -55,7 +51,9 @@ permalink: /links
 
 ## ML/AI Models
 
-[cdn.openai.com/papers/dall-e-2.pdf](https://cdn.openai.com/papers/dall-e-2.pdf) - DALL-E 2, a hugely impressive leap forward in image synthesis
+[cdn.openai.com/papers/dall-e-2.pdf](https://cdn.openai.com/papers/dall-e-2.pdf) - DALL-E 2, a hugely impressive leap forward in image synthesis. [here's an article I wrote about it](/2022/dalle2)
+
+[arxiv.org/abs/2203.15556](https://arxiv.org/abs/2203.15556) - Chinchilla, better and smaller than GPT-3. Also, this paper has a great introduction that explains broad ideas in ML/AI
 
 [theoladune.github.io/AIVC-Seminar/](https://theoladune.github.io/AIVC-Seminar/) - AIVC, AI-powered image/video compression
 
@@ -67,10 +65,13 @@ permalink: /links
 
 [openai.com/blog/webgpt](https://openai.com/blog/webgpt/) - Interesting research looking at GPT model appplied to web browsers, with citing sources
 
+[video-diffusion.github.io/](https://video-diffusion.github.io/) - Generates decent quality videos from text conditioning
+
 [github.com/hzwer/arXiv2020-RIFE](https://github.com/hzwer/arXiv2020-RIFE) - Video frame interpolation (really good, use it on all your videos!)
 
   * I use this ALL the time... literally use it on any video to smooth it up
   * I wrote some instructions on setting it up [here](https://gist.github.com/cadebrown/54052d919ae7153eab6c57aeab6f0a36)
+
 
 [github.com/NVIDIA/FastPhotoStyle](https://github.com/NVIDIA/FastPhotoStyle) - Style transfer model for images
 
@@ -91,6 +92,9 @@ permalink: /links
 [www.eleuther.ai/projects/owt2/](https://www.eleuther.ai/projects/owt2/) - Large web text database
 
 [en.wikipedia.org/wiki/Common_Crawl](https://en.wikipedia.org/wiki/Common_Crawl) - Common crawl of the entire web
+
+[cs.stanford.edu/people/karpathy/deepvideo/](https://cs.stanford.edu/people/karpathy/deepvideo/) - Sports-1M dataset, scraped from YT
+
 
 # People
 
@@ -157,6 +161,11 @@ permalink: /links
 
 : Application of JIT techniques with polyhedral compilation
 
-[*Disel: DSL for Linear Algebra and Neural Net Computation on GPUs*](https://dl.acm.org/doi/pdf/10.1145/3211346.3211354)
+[*Diesel: DSL for Linear Algebra and Neural Net Computation on GPUs*](https://dl.acm.org/doi/pdf/10.1145/3211346.3211354)
 
 : Example of a language geared at numerics-heavy compilation (focusing on neural networks)
+
+[*Inverse Graphics GAN: Learning to Generate 3D Shapes from Unstructured 2D Data*](https://arxiv.org/pdf/2002.12674.pdf)
+
+
+

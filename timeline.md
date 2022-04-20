@@ -6,7 +6,9 @@ use_jquery: true
 use_katex: true
 ---
 
-If you're looking for the TL;DR, check out [my resume](/CadeBrown_resume.pdf)
+If you're looking for the TL;DR, check out [my resume](/resume.pdf)
+
+If you're looking for my academic CV, check it out [here](/cv)
 
 # Timeline
 
@@ -107,13 +109,16 @@ If you're looking for the TL;DR, check out [my resume](/CadeBrown_resume.pdf)
   : ![screenshot of scratch](/files/art-fractal/scratch.webp)
 -->
 
-2017-05 - [SimpleSummit](https://github.com/simplesummit)
+2017-05 - [SimpleSummit / Bubbles](https://github.com/simplesummit)
 
   : SimpleSummit is a cluster computer made of NVIDIA Jetson hardware, used to run a realtime interactive fractal simulation
 
   : I was the primary software developer for the fractal application, and assisted with the physical design as well
 
   : ![screenshot of fractalexplorer](/files/fractalexplorer0.webp)
+
+
+  : ![cluster setup](/files/simplesummit-0.webp)
 
 2017-02 - [GNU MPFR](https://www.mpfr.org/)
 
@@ -143,9 +148,9 @@ If you're looking for the TL;DR, check out [my resume](/CadeBrown_resume.pdf)
 
   : I was the leader of the programming department for 2 years, a member for 3 total years
   
-  : <center>
-      <iframe width="960" height="540" src="https://www.youtube.com/embed/RBQL_KEJ_q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </center>
+<center>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/RBQL_KEJ_q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
   : [Check out a match by us!](https://www.youtube.com/watch?v=gzqFjdk8j0o)
 

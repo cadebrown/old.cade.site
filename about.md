@@ -19,9 +19,9 @@ permalink: /about
 # About Me
 
 <div style="margin: 0 5vw; font-size: 110%;">
-  Hi! I'm Cade Brown, a software developer, [digital artist](/art), and mathematician. Passionate about building software that works
+  Hi, I'm a software developer, [digital artist](/art), and mathematician that is passionate about building software that works!
 
-  I'm experienced in scientific computing, machine learning, programming languages/compilers, and more. Check out [my resume](/CadeBrown_resume.pdf) and [my CV](/cv), as well as [my complete timeline/history](/timeline)
+  I'm experienced in scientific computing, machine learning, programming languages/compilers, and more. Check out [my resume](/resume.pdf) and [my CV](/cv), as well as [my complete timeline/history](/timeline)
   
   Currently attending University of Tennessee Knoxville, working on machine learning research, and working on personal projects
   
@@ -33,7 +33,7 @@ permalink: /about
 
 ## Technology Skills
 
-  * 8 years of Python experience (NumPy, SciPy, Matplotlib, Tensorflow, Torch, Django)
+  * 8 years of Python experience (NumPy, SciPy, Matplotlib, Tensorflow, PyTorch)
   * 6 years of HTML/JavaScript/CSS experience (React, NodeJS, WebGL)
   * 5 years of C and C++ experience
     * 4 years of CUDA experience
