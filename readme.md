@@ -81,7 +81,7 @@ Here are some tips for better performance/integration with your site:
 
   * use `.webp` files for images ([use `cwebp` if possible](https://developers.google.com/speed/webp/docs/cwebp))
   * to check your images, use [imagemagick](https://imagemagick.org/script/identify.php)
-    * for example, `for f in files/*; do identify -format '%f %wx%y\n' $f; done` and look for any abnormally large images
+    * for example, `for f in files/*; do identify -format '%f %wx%y\n' $f; done` and look for any abnormally large images that could be made smaller
   * specify only the software you need for a file with the `use_*` settings (see `_config.yml` for specifics)
     * by default, posts use KaTeX and Prism.js, while most pages *don't even load them in*
 

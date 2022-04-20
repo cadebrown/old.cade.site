@@ -45,12 +45,12 @@ permalink: /about
 
 ## Experience
 
-  * 2019+: [Innovative Computing Laboratory](https://www.icl.utk.edu/), working on HPC research (distributed/GPU computing)
-  * 2019+: [University of Tennessee](https://www.utk.edu/), working on a Bachelor's degree in Computer Science
-  * 2021-2022: UTK's [PAIRS lab](https://github.com/utk-pairs/avocat), worked on HCI research (Human-Computer Interaction) and programming language research
+  * 2019+: [Innovative Computing Laboratory](https://www.icl.utk.edu/), working on HPC performance analysis and machine learning research
+  * 2019+: [University of Tennessee](https://www.utk.edu/), working on a Bachelor's degree in Computer Science, with a minor in Philosophy
+  * 2021-2022: [UTK's PAIRS lab](https://github.com/utk-pairs/avocat), worked on HCI research (Human-Computer Interaction) and programming language research
   * 2020: [Qardian Labs](https://www.qardianlabs.net/about-us), developed a [machine learning model](https://radiant-mesa-06241.herokuapp.com/HEARO14/) for heart disease detection
   * 2017-2018: ORNL internship for the [SimpleSummit](https://simplesummit.github.io/blog/fractalexplorer) project
-  * 2016-2018: [L&N STEMpunks](https://github.com/lnstempunks), as the programming team lead
+  * 2016-2018: [L&N STEMpunks](https://github.com/lnstempunks), as the programming team lead, implementing autonomous robot control
   * 2015: [Agilaire](https://agilaire.com/), as an independent contractor for low-cost air quality dataloggers
 
 ## Current Projects
