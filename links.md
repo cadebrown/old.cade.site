@@ -53,7 +53,12 @@ This is a collection of useful links for information, ML/AI, programming languag
 
 [cdn.openai.com/papers/dall-e-2.pdf](https://cdn.openai.com/papers/dall-e-2.pdf) - DALL-E 2, a hugely impressive leap forward in image synthesis. [here's an article I wrote about it](/2022/dalle2)
 
+[www.infoq.com/news/2022/01/openai-webgpt/](https://www.infoq.com/news/2022/01/openai-webgpt/) - OpenAI's WebGPT, a GPT-2-like model for text generation.
+
 [arxiv.org/abs/2203.15556](https://arxiv.org/abs/2203.15556) - Chinchilla, better and smaller than GPT-3. Also, this paper has a great introduction that explains broad ideas in ML/AI
+
+[towardsdatascience.com/deep-reinforcement-learning-for-automated-stock-trading-f1dad0126a02](https://towardsdatascience.com/deep-reinforcement-learning-for-automated-stock-trading-f1dad0126a02) - Using AI to do stock trading
+
 
 [theoladune.github.io/AIVC-Seminar/](https://theoladune.github.io/AIVC-Seminar/) - AIVC, AI-powered image/video compression
 
