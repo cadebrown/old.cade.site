@@ -4,8 +4,12 @@ title: Links
 permalink: /links
 ---
 
+This is a collection of useful blogs, websites, and pages aimed at:
 
-This is a collection of useful links for information, ML/AI, programming languages, and various tech-y stuff.
+  * Digital art, content creation
+  * Technological progress and innovation
+  * General software development
+    * ML/AI resources/development
 
 # My Content
 
@@ -13,62 +17,53 @@ This is a collection of useful links for information, ML/AI, programming languag
 
 [**kscript.org**](https://kscript.org/) - A programming language and website I built. Also check out the [REPL](https://term.kscript.org)
 
+# Useful Apps/Software
 
-# Useful Websites
-
-## Image/Video Content
+## Digital Media
 
 [coolors.co/](https://coolors.co/) - A color palette generator
 
 [paletton.com/](https://paletton.com/) - A color palette generator, using mathematical relationships
 
+[gaugan.org/gaugan2/](http://gaugan.org/gaugan2/) - GauGAN online application that you can sketch and generate great images from very little information
 
-## Slides/Info
 
-
-[pollylabs.org/](https://pollylabs.org/) - Polyhedral compilation curator
-
-[pliss2019.github.io/albert_cohen_slides.pdf](https://pliss2019.github.io/albert_cohen_slides.pdf) - polyhedral compilation diagrams and tiling
-
-[www.lri.fr/doctorants/past_presentations/2015-01-29-zinenko.pdf](https://www.lri.fr/doctorants/past_presentations/2015-01-29-zinenko.pdf) - Polyhedral compilation explanations
-
-# Software
-
-## Programming Languages
+## Math/Programming
 
 [numcalc.com/](http://numcalc.com/) - Online numerical calculator, with arbitrary precision and symbolic computation
 
-
-## Libraries
-
 [sod.pixlab.io/](https://sod.pixlab.io/) - Embedded computer vision library
 
+# Academic Resources
 
-## ML/AI Tutorials
-
-[pytorch.org/tutorials/intermediate/mario_rl_tutorial.html](https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html) - A tutorial on reinforcement learning with PyTorch, with Mario
-
-
-## ML/AI Models
-
-[cdn.openai.com/papers/dall-e-2.pdf](https://cdn.openai.com/papers/dall-e-2.pdf) - DALL-E 2, a hugely impressive leap forward in image synthesis. [here's an article I wrote about it](/2022/dalle2)
-
-[www.infoq.com/news/2022/01/openai-webgpt/](https://www.infoq.com/news/2022/01/openai-webgpt/) - OpenAI's WebGPT, a GPT-2-like model for text generation.
-
-[arxiv.org/abs/2203.15556](https://arxiv.org/abs/2203.15556) - Chinchilla, better and smaller than GPT-3. Also, this paper has a great introduction that explains broad ideas in ML/AI
+## Tutorials
 
 [towardsdatascience.com/deep-reinforcement-learning-for-automated-stock-trading-f1dad0126a02](https://towardsdatascience.com/deep-reinforcement-learning-for-automated-stock-trading-f1dad0126a02) - Using AI to do stock trading
 
+
+## Blogs/Websites
+
+ * [pollylabs.org/](https://pollylabs.org/) - Polyhedral compilation curator
+
+## Slides/Talks
+
+[Polyhedral compilation, great for the diagrams and tiling explanation](https://pliss2019.github.io/albert_cohen_slides.pdf) - polyhedral compilation diagrams and tiling
+
+## Papers/Releases
+
+[cdn.openai.com/papers/dall-e-2.pdf](https://cdn.openai.com/papers/dall-e-2.pdf) - DALL-E 2, a hugely impressive leap forward in image synthesis. [here's an article I wrote about it](/2022/dalle2)
+
+[openai.com/blog/webgpt](https://openai.com/blog/webgpt/) - Interesting research looking at GPT model appplied to web browsers, with citing sources
+  * [www.infoq.com/news/2022/01/openai-webgpt/](https://www.infoq.com/news/2022/01/openai-webgpt/) - OpenAI's WebGPT, a GPT-2-like model for text generation.
+
+[arxiv.org/abs/2203.15556](https://arxiv.org/abs/2203.15556) - Chinchilla, better and smaller than GPT-3. Also, this paper has a great introduction that explains broad ideas in ML/AI
 
 [theoladune.github.io/AIVC-Seminar/](https://theoladune.github.io/AIVC-Seminar/) - AIVC, AI-powered image/video compression
 
 [bellard.org/nncp](https://bellard.org/nncp/) - Neural network based text compression
 
 [github.com/tensorflow/compression](https://github.com/tensorflow/compression) - Tensorflow compression models
-
   * [hific.github.io/](https://hific.github.io/) - AI-based image compression (wow!)
-
-[openai.com/blog/webgpt](https://openai.com/blog/webgpt/) - Interesting research looking at GPT model appplied to web browsers, with citing sources
 
 [video-diffusion.github.io/](https://video-diffusion.github.io/) - Generates decent quality videos from text conditioning
 
@@ -86,11 +81,7 @@ This is a collection of useful links for information, ML/AI, programming languag
 
 [en.wikipedia.org/wiki/Wikipedia:Database_download](https://en.wikipedia.org/wiki/Wikipedia:Database_download) - Wikipedia database dumps (I'm working on a personal project with this...)
 
-
-[reddit.com/r/MachineLearning/comments/tb0m76/d_how_to_do_vqganclip_in_a_single_iteration](https://www.reddit.com/r/MachineLearning/comments/tb0m76/d_how_to_do_vqganclip_in_a_single_iteration/) - Interesting model that might replace VQGAN/CLIP
-
-
-## ML/AI Datasets
+## Datasets
 
 [toflow.csail.mit.edu/](http://toflow.csail.mit.edu/) - Vimeo90k dataset of high quality videos
 
@@ -103,7 +94,7 @@ This is a collection of useful links for information, ML/AI, programming languag
 
 # People
 
-## Worked With
+## Colleagues
 
 [Gregory Croisdale](https://gregory.croisdale.us/)
 
@@ -171,6 +162,3 @@ This is a collection of useful links for information, ML/AI, programming languag
 : Example of a language geared at numerics-heavy compilation (focusing on neural networks)
 
 [*Inverse Graphics GAN: Learning to Generate 3D Shapes from Unstructured 2D Data*](https://arxiv.org/pdf/2002.12674.pdf)
-
-
-
