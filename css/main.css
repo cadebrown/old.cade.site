@@ -106,6 +106,8 @@ html[data-theme='1337'] {
 html, body {
     margin: 0;
     padding: 0;
+    background-color: var(--col-back0);
+
 }
 
 html {
@@ -356,7 +358,7 @@ footer {
     /*border-top: 2px solid var(--col-border);*/
 
     /*background-color: var(--col-back1);*/
-    background-color: var(--col-back);
+    background-color: var(--col-back0);
     box-shadow: 0 80vh 0 80vh #000;
     color: var(--col-text-inv) !important;
 

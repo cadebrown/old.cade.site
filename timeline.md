@@ -6,11 +6,20 @@ use_jquery: true
 use_katex: true
 ---
 
-If you're looking for the TL;DR, check out [my resume](/resume.pdf)
+If you're looking for the TL;DR, check out [my resume (PDF)](/resume-CadeBrown.pdf).
 
-If you're looking for my academic CV, check it out [here](/cv)
 
 # Timeline
+
+2022-05 - [NVIDIA Internship](https://nvidia.com)
+
+  : At my NVIDIA internship, I worked on the Machine Learning Compiler team’s internal projects that improve compute performance for popular AI workloads (matrix multiplication, convolution, tensor operations). We use polyhedral compilation techniques mapped directly to NVIDIA GPU hardware, which takes advantage of warp communication, shared memory, memory pipelining, and hardware tensor cores (MMA). I wrote performance tuning software to search and select optimizations to compete with cuBLAS on modern NVIDIA GPUs.
+
+  : Using large performance datasets I generated, I trained a Machine Learning model to learn how to compile efficient GPU kernels, based on millions of performance data points. This work can be integrated into an ML runtime (such as PyTorch) to optimize computations in real time via a Just-In-Time (JIT) interface for GPU kernel compilation.
+
+  : Most of this internship is under a NDA
+  
+<!--
 
 2021-08 - [kata.tools](https://kata.tools), [*.ks](https://ks.kata.tools)
 
@@ -19,6 +28,7 @@ If you're looking for my academic CV, check it out [here](/cv)
   : I am the creator and primary developer of Kata
 
   : NOTE: project is currently in pre-alpha stages, not intended for public use
+-->
 
 2021-07 - [Avocat](https://github.com/utk-pairs/avocat)
 

@@ -101,8 +101,9 @@ permalink: /:title
 
 
 # pagination settings
-paginate: 16
-paginate_path: /page-:num
+paginate: 64
+#paginate_path: /page-:num
+paginate_path: "/blog/page:num/"
 
 
 # seperator that tells where the 'more' text ends for description generation

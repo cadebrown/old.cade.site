@@ -40,7 +40,7 @@ These are some various renderings of fractals that I've done, using software I'v
 
 ![Mandelbrot 3D print](/files/art-fractal/mand-3d.webp)
 
-This is a 3D print of the Mandelbrot set. I generated the model with a Python
+This is a 3D print of the Mandelbrot set. I generated the model with a Python script inside of Blender.
 
 
 ## Meta

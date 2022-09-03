@@ -4,22 +4,7 @@ title: Links
 permalink: /links
 ---
 
-This is a collection of useful blogs, websites, and pages aimed at:
-
-  * Digital art, content creation
-  * Technological progress and innovation
-  * General software development
-    * ML/AI resources/development
-
-# My Content
-
-[**Python and the infinite**](https://lwn.net/Articles/833624) I made a post on `python-dev` about Python has some inconsistencies handling math
-
-[**kscript.org**](https://kscript.org/) - A programming language and website I built. Also check out the [REPL](https://term.kscript.org)
-
-# Useful Apps/Software
-
-## Digital Media
+# Art/Style
 
 [coolors.co/](https://coolors.co/) - A color palette generator
 
@@ -28,28 +13,22 @@ This is a collection of useful blogs, websites, and pages aimed at:
 [gaugan.org/gaugan2/](http://gaugan.org/gaugan2/) - GauGAN online application that you can sketch and generate great images from very little information
 
 
-## Math/Programming
+# Math/Programming
 
 [numcalc.com/](http://numcalc.com/) - Online numerical calculator, with arbitrary precision and symbolic computation
 
 [sod.pixlab.io/](https://sod.pixlab.io/) - Embedded computer vision library
 
-# Academic Resources
 
-## Tutorials
+# Blogs/Websites
 
-[towardsdatascience.com/deep-reinforcement-learning-for-automated-stock-trading-f1dad0126a02](https://towardsdatascience.com/deep-reinforcement-learning-for-automated-stock-trading-f1dad0126a02) - Using AI to do stock trading
+[pollylabs.org/](https://pollylabs.org/) - Polyhedral compilation curator
 
-
-## Blogs/Websites
-
- * [pollylabs.org/](https://pollylabs.org/) - Polyhedral compilation curator
-
-## Slides/Talks
+# Slides/Talks
 
 [Polyhedral compilation, great for the diagrams and tiling explanation](https://pliss2019.github.io/albert_cohen_slides.pdf) - polyhedral compilation diagrams and tiling
 
-## Papers/Releases
+# Software
 
 [cdn.openai.com/papers/dall-e-2.pdf](https://cdn.openai.com/papers/dall-e-2.pdf) - DALL-E 2, a hugely impressive leap forward in image synthesis. [here's an article I wrote about it](/2022/dalle2)
 
@@ -81,7 +60,7 @@ This is a collection of useful blogs, websites, and pages aimed at:
 
 [en.wikipedia.org/wiki/Wikipedia:Database_download](https://en.wikipedia.org/wiki/Wikipedia:Database_download) - Wikipedia database dumps (I'm working on a personal project with this...)
 
-## Datasets
+# Datasets
 
 [toflow.csail.mit.edu/](http://toflow.csail.mit.edu/) - Vimeo90k dataset of high quality videos
 
@@ -90,23 +69,6 @@ This is a collection of useful blogs, websites, and pages aimed at:
 [en.wikipedia.org/wiki/Common_Crawl](https://en.wikipedia.org/wiki/Common_Crawl) - Common crawl of the entire web
 
 [cs.stanford.edu/people/karpathy/deepvideo/](https://cs.stanford.edu/people/karpathy/deepvideo/) - Sports-1M dataset, scraped from YT
-
-
-# People
-
-## Colleagues
-
-[Gregory Croisdale](https://gregory.croisdale.us/)
-
-: A frequent collaborator, we've worked together on [Avocat](https://github.com/utk-pairs/avocat), [CARVE](https://carve.chemicaldevelopment.us/), and many, many, more
-
-[Stan Tomov](http://www.icl.utk.edu/~tomov/)
-
-: My research advisor for ~2 years at ICL, who researches linear algebra and GPU computing
-
-[Paul Zimmerman](https://en.wikipedia.org/wiki/Paul_Zimmermann_(mathematician))
-
-: MPFR author, also the author of Modern Computer Arithmetic (a very very useful book). Also part of the team that factored [RSA 240 and 250](https://en.wikipedia.org/wiki/RSA_Factoring_Challenge)
 
 
 # Books
@@ -162,3 +124,19 @@ This is a collection of useful blogs, websites, and pages aimed at:
 : Example of a language geared at numerics-heavy compilation (focusing on neural networks)
 
 [*Inverse Graphics GAN: Learning to Generate 3D Shapes from Unstructured 2D Data*](https://arxiv.org/pdf/2002.12674.pdf)
+
+
+# People
+
+[Gregory Croisdale](https://gregory.croisdale.us/)
+
+: A frequent collaborator, we've worked together on [Avocat](https://github.com/utk-pairs/avocat), [CARVE](https://carve.chemicaldevelopment.us/), and many, many, more
+
+[Stan Tomov](http://www.icl.utk.edu/~tomov/)
+
+: My research advisor for ~2 years at ICL, who researches linear algebra and GPU computing
+
+[Paul Zimmerman](https://en.wikipedia.org/wiki/Paul_Zimmermann_(mathematician))
+
+: MPFR author, also the author of Modern Computer Arithmetic (a very very useful book). Also part of the team that factored [RSA 240 and 250](https://en.wikipedia.org/wiki/RSA_Factoring_Challenge)
+
