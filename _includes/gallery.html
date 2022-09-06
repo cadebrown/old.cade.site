@@ -1,0 +1,11 @@
+
+<div class ="gallery">
+{% assign filenames = include.filenames | split: ";" %}
+{% for name in filenames %}
+<div class="gallery-box">
+<a href="{{ name }}">
+<img src="{{ name }} " alt="{{ name }}"  class="gallery-img" />
+</a>
+</div>
+{% endfor %}
+</div>

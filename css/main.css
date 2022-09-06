@@ -512,3 +512,36 @@ footer a {
 
 }
 
+
+/** Image Gallery (from: https://dmnfarrell.github.io/software/jekyll-galleries) **/
+
+
+/* overall image gallery */
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(380px, 1fr));
+    justify-content: center;
+    padding: 4px;
+
+}
+/* box for layout */
+.gallery-box {
+    flex-basis: 20%;
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
+}
+/* individual image style */
+.gallery-img {
+	width: 100%;
+    height: 380px;
+	object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* make the image larger on hover */
+.gallery-img:hover {
+    transform: scale(1.1);
+}
