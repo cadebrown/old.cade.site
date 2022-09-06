@@ -1,17 +1,21 @@
 ---
 layout: default
-title: Cade Brown
+title: About Me
 permalink: /
 redirect_from:
   - /about
+  - /home
 ---
+
+<!-- make the home page text bigger -->
+<div style="font-size: 107%">
 
 <!--![A Picture of My Face](/files/face.webp)-->
 ![A Picture of My Face](/files/cade-face-2.webp){: .img-left .img-ZZZ }
 
 # About Me - Cade Brown
 
-Hey! My name is Cade Brown and I'm a software developer, mathematician, and researcher. Outside of my work and studies, I have personal interests in [digital art](/art), [music production](/music), and [philosophy](/phil). 
+Hey! My name is Cade Brown and I'm a software developer, mathematician, and researcher. Outside of my work and studies, I have personal interests in [digital art](/art), music, and philosophy. Check out [my blog](https://cade.site/blog)!
 
 Currently, I'm studying at [UTK](https://utk.edu) for a bachelors in Computer Science, while working as a Research Assistant at the [Innovative Computing Laboratory (ICL)](https://icl.utk.edu), and a Research Intern at [NVIDIA](https://nvidia.com). My main areas of interest are [Machine Learning (ML)](https://en.wikipedia.org/wiki/Machine_learning), [High Performance Computing (HPC)](https://en.wikipedia.org/wiki/High-performance_computing), and [Programming Language Theory (PLT)](https://en.wikipedia.org/wiki/Programming_language_theory).
 
@@ -58,6 +62,7 @@ And, places I've popped up:
 
   * [LWN: Python and the Infinite](https://lwn.net/Articles/833624/) - someone wrote an article about my opinions
 
+</div>
 
 <!--
 ## Current Projects
