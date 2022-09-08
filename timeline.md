@@ -38,8 +38,8 @@ If you're looking for the TL;DR, check out [my resume (PDF)](/resume-CadeBrown.p
 
 2021-06 - [ML/AI Art](https://github.com/cadebrown/cmlart)
 
-  : Check out my blog post, [here: /2021/11/12/art-aigen](/2021/11/12/art-aigen)
-
+  : Check out my [art page (/art)](/art)
+  
   : I wrote some ML/AI utilities, as well as used some pre-existing models to generate pictures and videos
 
   : Check out this video I helped produce for my band: [Beneath The Catacombs of Celephaïs](https://www.youtube.com/watch?v=wWBboUDMPw4)
@@ -110,14 +110,11 @@ If you're looking for the TL;DR, check out [my resume (PDF)](/resume-CadeBrown.p
 
   : Check out the [web demo](https://term.kscript.org/) (try `import m; for x in range(1, 10), print(x, m.zeta(x))`) and the [documentation](https://docs.kscript.org)
 
-<!--
-
 2017-06 - [FractalRender (in Scratch)](https://scratch.mit.edu/projects/168228453/)
 
   : Yet another fractal rendering program I wrote, this time in Scratch (just for fun)
 
   : ![screenshot of scratch](/files/art-fractal/scratch.webp)
--->
 
 2017-05 - [SimpleSummit / Bubbles](https://github.com/simplesummit)
 
@@ -176,3 +173,4 @@ If you're looking for the TL;DR, check out [my resume (PDF)](/resume-CadeBrown.p
 
   : [my page on spigotmc.org](https://www.spigotmc.org/members/cadebrown.44717/)
 
+  : [my page on minecraftforum.net](https://www.minecraftforum.net/members/The_Child_Purge/posts)
