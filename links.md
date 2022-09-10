@@ -4,6 +4,16 @@ title: Links
 permalink: /links
 ---
 
+# Useful Tools
+
+[CLIP image retrieval: really good image search that has a better understanding of exact semantics than google](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=polyhedral+art+with+geometric+fractal+patterns)
+
+: I use this to find "stock images" (of course, check the [dataset terms](https://laion.ai/blog/laion-5b/)) which are good for artistic references
+
+[pandoc: quickly convert documents between formats (.md, .rst, .pptx, $\LaTeX$, and more)](https://pandoc.org/try/)
+
+: Since I've been using this tool, I just write every document up in markdown and use this when I need to convert it. 
+
 # Art/Style
 
 [coolors.co/](https://coolors.co/) - A color palette generator

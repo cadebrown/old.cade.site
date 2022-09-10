@@ -59,17 +59,12 @@
         <!-- WARN: not in production mode (so things like Google Analytics won't work) -->
     {% endif%}
 
-    {% if page.use_prism %}
         <!-- prism.js - stylesheet -->
         <link rel="stylesheet" href="/css/prism.css">
 
         <!-- prism.js - impl -->
         <script async src="/js/prism.js"></script>
-    {% else %}
-        <!-- no prism.js support -->
-    {% endif %}
 
-    {% if page.use_katex %}
         <!-- KaTeX, for math formatting -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
 
@@ -86,10 +81,6 @@
                     {left: "\\(", right: "\\)", display: false}
                 ]
             })'></script>
-
-    {% else %}
-        <!-- no KaTeX support -->
-    {% endif %}
 
 
     <!-- My code -->
