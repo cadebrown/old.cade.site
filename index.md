@@ -19,9 +19,31 @@ Hey! My name is Cade Brown and I'm a software developer, mathematician, and rese
 
 Currently, I'm studying at [UTK](https://utk.edu) for a bachelors in Computer Science, while working as a Research Assistant at the [Innovative Computing Laboratory (ICL)](https://icl.utk.edu), and a Research Intern at [NVIDIA](https://nvidia.com). My main areas of interest are [Machine Learning (ML)](https://en.wikipedia.org/wiki/Machine_learning), [High Performance Computing (HPC)](https://en.wikipedia.org/wiki/High-performance_computing), and [Programming Language Theory (PLT)](https://en.wikipedia.org/wiki/Programming_language_theory).
 
-I'm always looking for new connections, so if you have any comments or inquiries, reach out! My email is: [me@cade.site](mailto:me@cade.site)
+Feel free to reach out! My email is [me@cade.site](mailto:me@cade.site).
+
+Recruiters: here's [my Linkedin](https://www.linkedin.com/in/cade-brown/) and [my resume (PDF)](/resume-CadeBrown.pdf).
 
 <div class="clear"></div>
+
+## Digital Art
+
+[Check out more of my art, here!](/art)
+
+{% include gallery.html filenames="/img/sd-space-0.png;/img/sd-space-2.png;/files/art-fractal/fr-print-1.webp;/files/art-aigen/god.webp" %}
+
+## Find Me Online
+
+You can find me on the following sites:
+
+  * [linkedin.com/in/cade-brown](https://www.linkedin.com/in/cade-brown/) - professional life updates
+  * [github.com/cadebrown](https://github.com/cadebrown) - my code, organizations, and misc resources
+  * [reddit.com/u/Sm0oth_kriminal](https://reddit.com/u/Sm0oth_kriminal) - programming, art, music, and philsoophy discussions
+  * [instagram.com/dev_ceb](https://instagram.com/dev_ceb) - personal life updates
+  * [twitter.com/dev_ceb](https://twitter.com/dev_ceb) - personal life updates
+
+And, places I've popped up:
+
+  * [LWN: Python and the Infinite](https://lwn.net/Articles/833624/) - someone wrote an article about my opinions
 
 ## Experience
 
@@ -48,19 +70,6 @@ You can check out [my Linkedin](https://www.linkedin.com/in/cade-brown/) or [my 
   * GH Pages/Jekyll/WASM stack proficiency 
   * Python/NumPy/SciPy/Tensorflow stack proficiency
 
-## Find Me Online
-
-You can find me on the following sites:
-
-  * [linkedin.com/in/cade-brown](https://www.linkedin.com/in/cade-brown/) - professional life updates
-  * [github.com/cadebrown](https://github.com/cadebrown) - my code, organizations, and misc resources
-  * [reddit.com/u/Sm0oth_kriminal](https://reddit.com/u/Sm0oth_kriminal) - programming, art, music, and philsoophy discussions
-  * [instagram.com/dev_ceb](https://instagram.com/dev_ceb) - personal life updates
-  * [twitter.com/dev_ceb](https://twitter.com/dev_ceb) - personal life updates
-
-And, places I've popped up:
-
-  * [LWN: Python and the Infinite](https://lwn.net/Articles/833624/) - someone wrote an article about my opinions
 
 </div>
 

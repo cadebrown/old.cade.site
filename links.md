@@ -40,6 +40,16 @@ permalink: /links
 
 # Code/Software
 
+
+https://github.com/nateraw/stable-diffusion-videos
+[Stable Diffusion, open-source AI image generator](https://stability.ai/blog/stable-diffusion-announcement)
+
+: WOW! Amazing results and freely available code. I'm using this for my personal projects I have in the works
+
+: Best code is a non-official fork: [lstein/stable-diffusion](https://github.com/lstein/stable-diffusion) (has extra features, and runs on M1 mac). Official code is [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
+
+: Also, check out [stable diffusion video generation](https://github.com/nateraw/stable-diffusion-videos)
+
 [DALL-E 2, by OpenAI](https://cdn.openai.com/papers/dall-e-2.pdf)
 
 : DALL-E 2, a hugely impressive leap forward in image synthesis. [Here's an article I wrote about it](/2022/dalle2)
@@ -58,11 +68,11 @@ permalink: /links
 
 : This guy is a legend... Has some of the best text compression, built with his own library
 
-[github.com/tensorflow/compression](https://github.com/tensorflow/compression) - Tensorflow compression models
+[Tensorflow compression models](https://github.com/tensorflow/compression) - Tensorflow compression models
   
-: [hific.github.io/](https://hific.github.io/) - AI-based image compression (wow!)
+: [HIFIC](https://hific.github.io/) - AI-based image compression (wow!)
 
-[video-diffusion.github.io/](https://video-diffusion.github.io/)
+[Video Diffusion](https://video-diffusion.github.io/)
 
 : Generates decent quality short videos from text conditioning
 
@@ -72,13 +82,19 @@ permalink: /links
 
 : I wrote some instructions for setting it up [here](https://gist.github.com/cadebrown/54052d919ae7153eab6c57aeab6f0a36)
 
-[github.com/NVIDIA/FastPhotoStyle](https://github.com/NVIDIA/FastPhotoStyle) - Style transfer model for images
+[NVIDIA FastPhotoStyle](https://github.com/NVIDIA/FastPhotoStyle) - Style transfer model for images
 
-[nlp.stanford.edu/projects/glove/](https://nlp.stanford.edu/projects/glove/) - NLP word encoding method
+[GLOVE word embeddings](https://nlp.stanford.edu/projects/glove/) - NLP word encoding method
 
-[github.com/DeclanRussell/NvidiaAIDenoiser](https://github.com/DeclanRussell/NvidiaAIDenoiser) - Denoising model for images, useful for Blender rendering and restoring low quality videos
+[NVIDIA AI Denoiser](https://github.com/DeclanRussell/NvidiaAIDenoiser) - Denoising model for images, useful for Blender rendering and restoring low quality videos
 
-[en.wikipedia.org/wiki/Wikipedia:Database_download](https://en.wikipedia.org/wiki/Wikipedia:Database_download) - Wikipedia database dumps (I'm working on a personal project with this...)
+[Google: Infinite Nature](https://infinite-nature.github.io/) - AI-powered nature videos, combining a lot of different approaches
+
+[Wikipedia: Database download](https://en.wikipedia.org/wiki/Wikipedia:Database_download) - Wikipedia database dumps (I'm working on a personal project with this...)
+
+[nerdyrodent: VQGAN-CLIP](https://github.com/nerdyrodent/VQGAN-CLIP)
+
+: VQGAN+CLIP AI art generation script, for running locally. Very important part of art history
 
 # Datasets
 
@@ -90,9 +106,9 @@ permalink: /links
 
 : Large text database, generated from positive voted Reddit links
 
-[en.wikipedia.org/wiki/Common_Crawl](https://en.wikipedia.org/wiki/Common_Crawl) - Common crawl of the entire web
+[Common Crawl dataset](https://en.wikipedia.org/wiki/Common_Crawl) - Common crawl of the entire web
 
-[cs.stanford.edu/people/karpathy/deepvideo/](https://cs.stanford.edu/people/karpathy/deepvideo/) - Sports-1M dataset, scraped from YT
+[DeepVideo, with Sports-1M](https://cs.stanford.edu/people/karpathy/deepvideo/) - Sports-1M dataset, scraped from YT
 
 
 # Books
@@ -216,6 +232,11 @@ permalink: /links
 [Diesel: DSL for Linear Algebra and Neural Net Computation on GPUs](https://dl.acm.org/doi/pdf/10.1145/3211346.3211354)
 
 : Example of a language geared at numerics-heavy compilation (focusing on neural networks). I actually ended up working with the authors of this paper as part of my NVIDIA internship
+
+[LISP 1.5 Programmer's Manual](https://www.softwarepreservation.org/projects/LISP/book/LISP%201.5%20Programmers%20Manual.pdf)
+
+[Structure and Interpretation of Computer Programs](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
+
 
 # People
 
