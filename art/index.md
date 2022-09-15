@@ -5,6 +5,12 @@ permalink: /art
 tag: art
 ---
 
+## Art Projects
+
+Here's a list of my art projects:
+
+  * [All Stable Diffusion images](/art/all-stable-diffusion) I've generated
+
 
 ## Images
 

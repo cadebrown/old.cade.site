@@ -41,18 +41,26 @@ permalink: /links
 # Code/Software
 
 
-https://github.com/nateraw/stable-diffusion-videos
 [Stable Diffusion, open-source AI image generator](https://stability.ai/blog/stable-diffusion-announcement)
 
 : WOW! Amazing results and freely available code. I'm using this for my personal projects I have in the works
 
 : Best code is a non-official fork: [lstein/stable-diffusion](https://github.com/lstein/stable-diffusion) (has extra features, and runs on M1 mac). Official code is [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
 
+: Visual explanation of [diffusion and implementation](https://huggingface.co/blog/annotated-diffusion)
+
 : Also, check out [stable diffusion video generation](https://github.com/nateraw/stable-diffusion-videos)
 
 [DALL-E 2, by OpenAI](https://cdn.openai.com/papers/dall-e-2.pdf)
 
 : DALL-E 2, a hugely impressive leap forward in image synthesis. [Here's an article I wrote about it](/2022/dalle2)
+
+[GPT 3: NLP Model for Text Generation](https://en.wikipedia.org/wiki/GPT-3)
+
+: State of the art in text generation, at 176 billion parameters
+
+: Here's a [walkthrough of GPT architecture](https://dugas.ch/artificial_curiosity/GPT_architecture.html). Read this!
+
 
 [WebGPT, by OpenAI](https://openai.com/blog/webgpt/)
 
