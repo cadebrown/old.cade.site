@@ -19,6 +19,7 @@ html[data-theme='none'] {
     --col-link: #366fca;
 }
 
+
 /* 'whiteboard' theme, i.e. default light theme */
 html[data-theme='whiteboard'] {
 
@@ -180,6 +181,10 @@ h5::before {
     content: '#### ';
 }
 
+header > h1 {
+    margin-top: 0.7em;
+    margin-bottom: 0.4em;
+}
 
 /* class for auto-generated links for headers */
 .header-link {
