@@ -115,7 +115,7 @@ https://github.com/nateraw/stable-diffusion-videos
 
 ## Computer Science Books
 
-[The Art of Computer Programmin, by Donald Knuth](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
+[The Art of Computer Programming, by Donald Knuth](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
 
 : Possibly the best book on computer science ever written, deals primarily with algorithms and their implementations
 
@@ -180,6 +180,10 @@ https://github.com/nateraw/stable-diffusion-videos
 : **Even if you have heard about Smalltalk, READ THIS**. Unfortunately, if you just believe the common view that "Smalltalk is an object oriented language" you have fallen victim to the propaganda. The best contributions of Smalltalk are the fact that the objects send messages to each other, and that atomistic communication between objects is actually the benefit of OOP. To quote the paper: "Purpose of Language: To provide a framework for communication". 
 
 : All OOP languages that came after but don't implement message passing are failing to realize the true benefit of OOP.
+
+[Blub Paradox, by Paul Graham](https://wiki.c2.com/?BlubParadox)
+
+: You can't trust the opinions of the others, because of the Blub paradox: they're satisfied with whatever language they happen to use, because it dictates the way they think about programs.
 
 [One VM to Rule Them All](https://dl.acm.org/doi/10.1145/2509578.2509581)
 

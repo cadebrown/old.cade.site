@@ -17,7 +17,7 @@ Instead of using the [primary repository](https://github.com/CompVis/stable-diff
 
 The post thumbnail at the beginning of this blog is the web interface to the application.
 
-The setup instructions are [located here](https://github.com/lstein/stable-diffusion/blob/main/README-Mac-MPS.md); they worked as is. However, some of the original scripts didn't work so I just used the "web" interface:
+The setup instructions are [located here](https://github.com/lstein/stable-diffusion/blob/main/docs/installation/INSTALL_MAC.md); they worked as is. However, some of the original scripts didn't work so I just used the "web" interface:
 
 ```shell
 # run the web interface
