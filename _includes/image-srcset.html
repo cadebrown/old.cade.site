@@ -1,0 +1,4 @@
+{% assign lowres = include.src | replace:'/img','/img-lowres' %}
+{% assign lowres_exists = site.static_files | where: "path", lowres %}
+
+<a href="{{ include.src }}">{% if lowres_exists.size != 0 %}<img class="{{ include.class }}" src="{{ include.src }}" alt="{{ include.alt }}" srcset="{{ lowres }} 2400w" sizes="(max-width: 2400px) 2400px, 2400px">{% else %}<img class="{{ include.class }}" src="{{ include.src }}" alt="{{ include.alt }}"">{% endif %}</a>

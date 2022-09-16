@@ -82,10 +82,6 @@ kramdown:
   # disable the default syntax highligher (since we use Prism.js)
   syntax_highlighter_opts:
     disable: true
-plugins:
-  - jekyll-paginate
-  - jekyll-feed
-
 
 # the default theme to use for the site (see 'css/main.css')
 # other nice values are: 'chalkboard' (dark theme), 'whiteboard' (light theme)
@@ -111,7 +107,6 @@ paginate_path: "/blog/page:num/"
 sep_more: <!--more-->
 
 plugins:
+  - jekyll-paginate
+  - jekyll-feed
   - jekyll-redirect-from
-#  - jekyll-paginate
-#  - jekyll-feed
-
