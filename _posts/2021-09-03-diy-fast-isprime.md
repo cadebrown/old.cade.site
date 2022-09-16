@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "DIY: Fast 'isprime()' for Primality Testing (using Miller-Rabin)"
-categories: [math]
-tags: [math, kata]
+tags: [math]
 thumb: /files/diy-fast-isprime-0.webp
 ---
 

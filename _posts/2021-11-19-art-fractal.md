@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Art: Fractals"
-categories: [art]
 tags: [art, math]
 thumb: /files/art-fractal/mand-3d.webp
 ---

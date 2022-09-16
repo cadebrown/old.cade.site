@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SMCEFR Dataset (Data Challenge)"
-tags: [code, data, ml]
+tags: [work]
 thumb: /files/smcefr/miniset.jpg
 ---
 

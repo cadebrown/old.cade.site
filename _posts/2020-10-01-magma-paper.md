@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Dense Linear Algebra Algorithms on AMD GPUs"
-categories: [math]
-tags: [math, icl]
+tags: [math, work]
 thumb: /files/magma-figure2.webp
 ---
 

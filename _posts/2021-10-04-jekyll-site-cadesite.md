@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Jekyll Project: cade.site"
-categories: [meta]
-tags: [meta, jekyll, html]
+tags: [meta]
 thumb: /files/jekyllproject-cadesite.webp
 ---
 

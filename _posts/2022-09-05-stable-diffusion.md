@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Guide to Stable Diffusion"
-categories: [art]
-tags: [art, ai, ml]
+tags: [art, ml]
 thumb: /img/screen-sd-web.png
 ---
 

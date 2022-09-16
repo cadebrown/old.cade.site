@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "DIY: Gamma and Zeta Function Implementation"
-categories: [math]
-tags: [math, kscript]
+tags: [math, lang]
 thumb: /files/diy-gamma-zeta.webp
 ---
 
