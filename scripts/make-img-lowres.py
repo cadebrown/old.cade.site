@@ -20,7 +20,6 @@ parser.add_argument('--size', type=int, default=2400, help='Maximum dimension of
 
 args = parser.parse_args()
 
-
 # remove output!!
 def rrmdir(path):
     for entry in os.scandir(path):
@@ -33,7 +32,6 @@ rrmdir(args.output)
 
 # create output
 os.makedirs(args.output, exist_ok=True)
-
 
 def resize(fi, fo):
     img = PIL.Image.open(fi)
@@ -61,8 +59,3 @@ for path, dirs, files in os.walk(args.input):
 
             # create output directory
             resize(fi, fo)
-
-            # convert image
-            #print(f'$ ')
-            #resize()
-            #os.system('convert -resize %dx%d "%s" "%s"' % (args.size, args.size, os.path.join(path, f), opath))
