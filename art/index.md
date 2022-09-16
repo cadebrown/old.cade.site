@@ -9,8 +9,8 @@ tag: art
 
 Here's a list of my art projects:
 
+  * [Phone Wallpapers](/art/phone-wallpapers) for download
   * [All Stable Diffusion images](/art/all-stable-diffusion) I've generated
-
 
 ## Images
 
