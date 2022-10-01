@@ -4,67 +4,102 @@ title: Links
 permalink: /links
 ---
 
-# Useful Tools
+These are links to things I've found on the web. This page is mainly for my reference, to keep track of useful apps, cool papers, and other places on the web that are hard to find again.
 
-[CLIP image retrieval: really good image search that has a better understanding of exact semantics than google](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=polyhedral+art+with+geometric+fractal+patterns)
+# Awesome Apps
 
-: I use this to find "stock images" (of course, check the [dataset terms](https://laion.ai/blog/laion-5b/)) which are good for artistic references
+[CLIP Image Retrieval: semantic image search using AI](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=polyhedral+art+with+geometric+fractal+patterns)
 
+: Useful for finding reference images for art or for searching for specific images that you can't remember the name of (I use it for finding [memes](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=meme+of+a+dog+in+a+bed)).
 
+[pandoc: free document conversion online, no BS](https://pandoc.org/try/)
 
-[pandoc: quickly convert documents between formats (.md, .rst, .pptx, $\LaTeX$, and more)](https://pandoc.org/try/)
+: Useful for quickly converting between markdown, HTML, $\LaTeX$, and other formats in the browser.
 
-: Since I've been using this tool, I just write every document up in markdown and use this when I need to convert it. 
+[WolframAlpha: computational knowledge engine (google on steroids)](https://www.wolframalpha.com/)
 
-# Art/Style
+: Understands math, natural language, web queries and more. Seriously just ask it anything. Saves a lot of time and effort instead of having to program and google things.
 
-[coolors.co/](https://coolors.co/) - A color palette generator
+[NumCalc: numerical/scientific web calculator](http://numcalc.com/)
 
-[paletton.com/](https://paletton.com/) - A color palette generator, using mathematical relationships
+: Useful for quick calculating when you need arbitrary precision, symbolic computation, or special functions quickly.
 
-[gaugan.org/gaugan2/](http://gaugan.org/gaugan2/) - GauGAN online application that you can sketch and generate great images from very little information
+# ML/AI Models You Can Use
 
+These are the current "best" models for various tasks that you can actually use in some way right now.
 
-# Math/Programming
+[StableDiffusion: high fidelity Text-To-Image model (open source!)](https://stability.ai/blog/stable-diffusion-announcement)
 
-[numcalc.com/](http://numcalc.com/) - Online numerical calculator, with arbitrary precision and symbolic computation
+: A godsend for generating art, reference images, and anything else you could want. Runs on ~4GB of VRAM and fairly fast too. Check out my [art](/art) page for some examples
 
-[sod.pixlab.io/](https://sod.pixlab.io/) - Embedded computer vision library
+: [High-Resolution Image Synthesis with Latent Diffusion Models (A.K.A. LDM & Stable Diffusion)](https://ommer-lab.com/research/latent-diffusion-models/): Website and paper that gives technical explanations
 
+: If you're a non-programmer, or you just want a simple interface check these out:
+: * [gradio: free and simple StableDiffusion web interface](https://huggingface.co/spaces/stabilityai/stable-diffusion)
+: * [deforum: StableDiffusion colab notebook and resources](https://deforum.github.io/#about)
 
-# Blogs/Websites
+: For actually running the model, there are many forks each with their own features. Here's a short list of ones I've used:
+: * [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) 
+: * [invoke-ai/InvokeAI](https://github.com/invoke-ai/InvokeAI)
+: * [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion): official source code, but not as feature rich as the forks
 
-[pollylabs.org/](https://pollylabs.org/) - Polyhedral compilation curator
+[DALL-E 2: Text-To-Image model API](https://openai.com/dall-e-2/)
 
-# Slides/Talks
+: Now in open access with a token system, you can generate very good imagery using OpenAI's API and web interface. Good if you aren't looking to setup a ML developer environment and run StableDiffusion yourself
 
-[Polyhedral compilation, great for the diagrams and tiling explanation](https://pliss2019.github.io/albert_cohen_slides.pdf) - polyhedral compilation diagrams and tiling
+: [DALL-E 2: Hierarchical Text-Conditional Image Generation with CLIP Latents](https://cdn.openai.com/papers/dall-e-2.pdf): the paper from OpenAI
 
-# Code/Software
+[VQGAN+CLIP: Text-To-Image modular architecture](https://ljvmiranda921.github.io/notebook/2021/08/11/vqgan-list/)
 
+: A bit "old school" at this point since StableDiffusion and DALL-E 2, but VQGAN+CLIP models will always have a place in my heart for being the first to really show the power of multimodal ML art architectures. And, in my opinion, the VQGAN+CLIP models have a unique artistic style that is just not found in the more "photorealistic" models (especially for pixel art)
 
-[Stable Diffusion, open-source AI image generator](https://stability.ai/blog/stable-diffusion-announcement)
+: [Use PyTTI-Tools if you are or aren't a programmer](https://pytti-tools.github.io/pytti-book/intro.html)
 
-: WOW! Amazing results and freely available code. I'm using this for my personal projects I have in the works
-
-: Best code is a non-official fork: [lstein/stable-diffusion](https://github.com/lstein/stable-diffusion) (has extra features, and runs on M1 mac). Official code is [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
-
-: Visual explanation of [diffusion and implementation](https://huggingface.co/blog/annotated-diffusion)
-
-: Also, check out [stable diffusion video generation](https://github.com/nateraw/stable-diffusion-videos)
-
-[DALL-E 2, by OpenAI](https://cdn.openai.com/papers/dall-e-2.pdf)
-
-: DALL-E 2, a hugely impressive leap forward in image synthesis. [Here's an article I wrote about it](/2022/dalle2)
 
 [GPT 3: NLP Model for Text Generation](https://en.wikipedia.org/wiki/GPT-3)
 
-: State of the art in text generation, at 176 billion parameters
+: State of the art in text generation, at 176 billion parameters this model is just too large to run yourself. You can run it using [OpenAI's API to GPT-3](https://openai.com/api/)
 
-: Here's a [walkthrough of GPT architecture](https://dugas.ch/artificial_curiosity/GPT_architecture.html). Read this!
+: Here's a [walkthrough of GPT architecture](https://dugas.ch/artificial_curiosity/GPT_architecture.html). This is the best overall explanation I've seen
+
+[Real-ESRGAN: Image Super Resolution](https://github.com/xinntao/Real-ESRGAN)
+
+: For image super resolution (just say: AI, enhance and zoom image!), this is the best deployed general solution I've seen
+
+[RIFE: Real-Time Intermediate Flow Estimation for Video Frame Interpolation](https://github.com/megvii-research/ECCV2022-RIFE) 
+
+: For video frame interpolation (just say: AI, increase frame rate fluidly!), this is the best downloadable model out there. This is kind of controversial because different models do different things better but I like RIFE the best
+
+: [I use hzwer/Practical-RIFE](https://github.com/hzwer/Practical-RIFE), which promises better aesthetics and is easier to use
+
+: [I also use nihui/rife-cnn-vulkan](https://github.com/nihui/rife-ncnn-vulkan), which runs on Apple Silicon and has a nice interface (although you'll have to use FFMPEG in addition)
+
+[HIFIC: High-Fidelity Generative Image Compression](https://hific.github.io/)
+
+: This model can be used to get insane results in image compression (much better than JPEG)
+
+: [PyTorch implementation, since TensorFlow is so 2019](https://github.com/Justin-Tan/high-fidelity-generative-compression)
+
+[AIVC: Artificial Intelligence-based Video Coding](https://github.com/Orange-OpenSource/AIVC)
+
+: Although not as much of a upgrade as HIFIC is for images (relative to existing codecs), this is still interesting research as we wait for a superior one to emerge...
+
+: [Check out the interactive slides](https://theoladune.github.io/AIVC-Seminar/)
+
+[NNCP: Lossless Data Compression with Neural Networks](https://bellard.org/nncp/)
+
+: Neural networks typically aren't easily made into lossless compressors, but this implementation gives state-of-the-art results (albeit with slow compression speed) for text compression
 
 
-[WebGPT, by OpenAI](https://openai.com/blog/webgpt/)
+# ML/AI Research Papers/Models
+
+[ACT-1: Transformer for Actions](https://www.adept.ai/act)
+
+: A very ambitious research/product that aims to create a transformer that "can do anything a human can do in front of a computer"
+
+: This is a first of it's kind that I think will end up being the primary way we interact with computers in the future. Seriously this thing is cool AF!
+
+[WebGPT: Improving the Factual Accuracy of Language Models through Web Browsing](https://openai.com/blog/webgpt/)
 
 : [Interesting article about WebGPT](https://www.infoq.com/news/2022/01/openai-webgpt/), a model meant to surf the web to answer questions
 
@@ -72,47 +107,33 @@ permalink: /links
 
 : Chinchilla, better and smaller than GPT-3. Also, this paper has a great introduction that explains broad ideas in ML/AI. Notable for also considering compute efficiency (LLMs are getting expensive, so this is becoming more important)
 
-[AIVC, AI-powered image/video compression](https://theoladune.github.io/AIVC-Seminar/)
+[Video Diffusion Models](https://video-diffusion.github.io/)
 
-[NNCP: Lossless Data Compression with Neural Networks](https://bellard.org/nncp/)
+: Soon-to-be-outdated, but an interesting paper about using diffusion models for video generation
 
-: This guy is a legend... Has some of the best text compression, built with his own library
+[Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image](https://infinite-nature.github.io/)
 
-[Tensorflow compression models](https://github.com/tensorflow/compression) - Tensorflow compression models
-  
-: [HIFIC](https://hific.github.io/) - AI-based image compression (wow!)
+: Basically an infinite 3D fractal zoom into landscapes, works fairly well
 
-[Video Diffusion](https://video-diffusion.github.io/)
 
-: Generates decent quality short videos from text conditioning
+# Software Libraries
 
-[Real-ESRGAN: Image Super Resolution](https://github.com/xinntao/Real-ESRGAN)
+[SOD: An Embedded Computer Vision & Machine Learning Library](https://sod.pixlab.io)
 
-: Good tool for upping quality of images
+: Edge computing is awesome! For IoT/embedded needs this is way easier than OpenCV
 
-[Real-Time Intermediate Flow Estimation for Video Frame Interpolation (RIFE)](https://github.com/hzwer/arXiv2020-RIFE) 
 
-: AI-powered video interpolation (i.e. increases frame rate, with fluidity). I personally use this model all the time, and it's great for making videos look smoother or for interpolating between individual frames generated by another AI model to bring coherence
+# Color/Art Utilities
 
-: New, practical RIFE promises better subjective results: [Practical-RIFE](https://github.com/hzwer/Practical-RIFE)
+[coolors.co/](https://coolors.co/) - A color palette generator
 
-: I wrote some instructions for setting it up [here](https://gist.github.com/cadebrown/54052d919ae7153eab6c57aeab6f0a36)
+[paletton.com/](https://paletton.com/) - A color palette generator, using mathematical relationships
 
-[NVIDIA FastPhotoStyle](https://github.com/NVIDIA/FastPhotoStyle) - Style transfer model for images
+# Talks/Slides
 
-[GLOVE word embeddings](https://nlp.stanford.edu/projects/glove/) - NLP word encoding method
+[Polyhedral compilation, great for the diagrams and tiling explanation](https://pliss2019.github.io/albert_cohen_slides.pdf) - polyhedral compilation diagrams and tiling
 
-[NVIDIA AI Denoiser](https://github.com/DeclanRussell/NvidiaAIDenoiser) - Denoising model for images, useful for Blender rendering and restoring low quality videos
-
-[Google: Infinite Nature](https://infinite-nature.github.io/) - AI-powered nature videos, combining a lot of different approaches
-
-[Wikipedia: Database download](https://en.wikipedia.org/wiki/Wikipedia:Database_download) - Wikipedia database dumps (I'm working on a personal project with this...)
-
-[nerdyrodent: VQGAN-CLIP](https://github.com/nerdyrodent/VQGAN-CLIP)
-
-: VQGAN+CLIP AI art generation script, for running locally. Very important part of art history
-
-# Datasets
+# Online Datasets
 
 [Vimeo-90k](http://toflow.csail.mit.edu/)
 
@@ -126,10 +147,7 @@ permalink: /links
 
 [DeepVideo, with Sports-1M](https://cs.stanford.edu/people/karpathy/deepvideo/) - Sports-1M dataset, scraped from YT
 
-
-# Books
-
-## Computer Science Books
+# Books (Programming, Math, Philosophy)
 
 [The Art of Computer Programming, by Donald Knuth](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
 
@@ -143,9 +161,6 @@ permalink: /links
 
 : Heavily recommended for C programming, teaches the C standard library for UNIX OSes. I've got the physical book and it's great for perusing
 
-
-## Math Books
-
 [The Elements](https://en.wikipedia.org/wiki/Euclid%27s_Elements)
 
 : Written by Euclid around 300BC, this book is a good introduction to the basics of mathematics starting with the basics of geometry
@@ -156,38 +171,38 @@ permalink: /links
 
 : Very useful book, for people of all backgrounds (not just mathematicians) that explains prime numbers, number theory, and the Riemann Hypothesis. Gives multiple formulations, diagrams, and explanations. My favorite book on my favorite problem in all of mathematics (so far)!
 
-# Papers/Articles
+# Papers
 
-[The Humble Programmer, by Edsger Dijkstra](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD03xx/EWD340.html)
-
-: Dijkstra has almost all the correct opinions about programming... A must read!
-
-## Machine Learning Papers
-
-[Inverse Graphics GAN: Learning to Generate 3D Shapes from Unstructured 2D Data](https://arxiv.org/pdf/2002.12674.pdf)
-
-
-[What Do NLP Researchers Believe? Results of the NLP Community Metasurvey](https://arxiv.org/pdf/2208.12852v1.pdf)
-
-: It's important to at least know  what experts in the field believe about AGI, scalability, and so forth. Some takeaways are that overall, 89% say their job is "publication-oriented" (academic and industry), and the split on whether language models actually understand human language is split 50-50
-
-
-## Math/Numerical Papers
+## Papers (Math)
 
 [On the Number of Primes Less Than a Given Magnitude](https://en.wikipedia.org/wiki/On_the_Number_of_Primes_Less_Than_a_Given_Magnitude)
 
 : Possibly the most influential (and yet still underrated) paper in all of mathematics, I highly recommend this paper. Check out [my blog post](/2020/08/05/diy-gamma-zeta) on the Gamma/Zeta function implementations
 
-[Design, Optimization, and Benchmarking of Dense Linear Algebra Algorithms on AMD GPUs](https://www.icl.utk.edu/files/publications/2020/icl-utk-1405-2020.pdf)
-
-: My paper, which discusses my work on porting and performance tuning the [MAGMA](https://icl.cs.utk.edu/magma/) library
 
 [Counterexample To Euler's Conjecture on Sums of Like Powers](https://www.ams.org/journals/bull/1966-72-06/S0002-9904-1966-11654-3/S0002-9904-1966-11654-3.pdf)
 
 : One of my favorite papers, although not particularly explanative. A computer-assisted dis-proof of one of Euler's conjectures
 
 
-## Compilers/Programming Language Papers
+## Papers (Programming)
+
+[The Humble Programmer, by Edsger Dijkstra](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD03xx/EWD340.html)
+
+: Dijkstra has almost all the correct opinions about programming... A must read!
+
+[What Do NLP Researchers Believe? Results of the NLP Community Metasurvey](https://arxiv.org/pdf/2208.12852v1.pdf)
+
+: It's important to at least know  what experts in the field believe about AGI, scalability, and so forth. Some takeaways are that overall, 89% say their job is "publication-oriented" (academic and industry), and the split on whether language models actually understand human language is split 50-50
+
+[Inverse Graphics GAN: Learning to Generate 3D Shapes from Unstructured 2D Data](https://arxiv.org/pdf/2002.12674.pdf)
+
+[Design, Optimization, and Benchmarking of Dense Linear Algebra Algorithms on AMD GPUs](https://www.icl.utk.edu/files/publications/2020/icl-utk-1405-2020.pdf)
+
+: My paper, which discusses my work on porting and performance tuning the [MAGMA](https://icl.cs.utk.edu/magma/) library
+
+
+## Papers (Programming Language Theory)
 
 [Design Principles Behind Smalltalk, by Daniel H. H. Ingalls](https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html)
 
@@ -257,17 +272,3 @@ permalink: /links
 
 [Structure and Interpretation of Computer Programs](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
 
-
-# People
-
-[Gregory Croisdale](https://gregory.croisdale.us/)
-
-: A frequent collaborator, we've worked together on [Avocat](https://github.com/utk-pairs/avocat), [CARVE](https://carve.chemicaldevelopment.us/), and many, many, more
-
-[Stan Tomov](http://www.icl.utk.edu/~tomov/)
-
-: My research advisor for ~2 years at ICL, who researches linear algebra and GPU computing
-
-[Paul Zimmerman](https://en.wikipedia.org/wiki/Paul_Zimmermann_(mathematician))
-
-: MPFR author, also the author of Modern Computer Arithmetic (a very very useful book). Also part of the team that factored [RSA 240 and 250](https://en.wikipedia.org/wiki/RSA_Factoring_Challenge)

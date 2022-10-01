@@ -15,13 +15,13 @@ redirect_from:
 
 # About Me - Cade Brown
 
-Hey! My name is Cade Brown and I'm a software developer, mathematician, and researcher. Outside of my work and studies, I have personal interests in [digital art](/art), music, and philosophy. Check out [my blog](https://cade.site/blog)!
+Hey! My name is Cade Brown and I'm a software developer, mathematician, and researcher. Outside of my work and studies, I have personal interests in [digital art](/art), music, and philosophy. Check out [my blog](https://cade.site/blog) for more!
 
 Currently, I'm studying at [UTK](https://utk.edu) for a bachelors in Computer Science, while working as a Research Assistant at the [Innovative Computing Laboratory (ICL)](https://icl.utk.edu), and a Research Intern at [NVIDIA](https://nvidia.com). My main areas of interest are [Machine Learning (ML)](https://en.wikipedia.org/wiki/Machine_learning), [High Performance Computing (HPC)](https://en.wikipedia.org/wiki/High-performance_computing), and [Programming Language Theory (PLT)](https://en.wikipedia.org/wiki/Programming_language_theory).
 
 Feel free to reach out! My email is [me@cade.site](mailto:me@cade.site).
 
-Recruiters: here's [my Linkedin](https://www.linkedin.com/in/cade-brown/) and [my resume (PDF)](/resume-CadeBrown.pdf).
+**Recruiters: here's [my resume](/resume-CadeBrown.pdf), [my CV](/cv-CadeBrown.pdf), and [my Linkedin](https://www.linkedin.com/in/cade-brown/)**.
 
 <div class="clear"></div>
 
