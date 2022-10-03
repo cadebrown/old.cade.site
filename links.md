@@ -6,11 +6,9 @@ permalink: /links
 
 These are links to things I've found on the web. This page is mainly for my reference, to keep track of useful apps, cool papers, and other places on the web that are hard to find again.
 
+But, there's a lot of cool stuff here, especially if you're into machine learning research, productivity tools, and interesting books/papers/articles. Check them out, you might find something useful!
+
 # Awesome Apps
-
-[CLIP Image Retrieval: semantic image search using AI](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=polyhedral+art+with+geometric+fractal+patterns)
-
-: Useful for finding reference images for art or for searching for specific images that you can't remember the name of (I use it for finding [memes](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=meme+of+a+dog+in+a+bed)).
 
 [pandoc: free document conversion online, no BS](https://pandoc.org/try/)
 
@@ -23,6 +21,36 @@ These are links to things I've found on the web. This page is mainly for my refe
 [NumCalc: numerical/scientific web calculator](http://numcalc.com/)
 
 : Useful for quick calculating when you need arbitrary precision, symbolic computation, or special functions quickly.
+
+[Artvee: Discover Classical Art](https://artvee.com/)
+
+: A cool website for discovering classical art. You can search by artist, time period, or even by color palette.
+
+[CLIP Image Retrieval: semantic image search using AI](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=polyhedral+art+with+geometric+fractal+patterns)
+
+: Useful for finding reference images for art or for searching for specific images that you can't remember the name of (I use it for finding [memes](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=meme+of+a+dog+in+a+bed)).
+
+: Also, check out the very interesting article about it: [Semantic search at billions scale](https://rom1504.medium.com/semantic-search-at-billions-scale-95f21695689a)
+
+[Latent Loops: make electronic music with machine learning](https://teampieshop.github.io/latent-loops/)
+
+: Interpolates melodies and makes new combinations of them in the browser
+
+# Informative Pages
+
+[Feature Visualization: How neural networks build up their understanding of images](https://distill.pub/2017/feature-visualization/)
+
+# Talks/Slides
+
+[Polyhedral Compilation as a Design Pattern for Compiler Construction](https://pliss2019.github.io/albert_cohen_slides.pdf) 
+
+# Software Libraries
+
+[SOD: An Embedded Computer Vision & Machine Learning Library](https://sod.pixlab.io)
+
+: Edge computing is awesome! For IoT/embedded needs this is way easier than OpenCV
+
+[DEODR: PyTorch differentiable 3D rendering](https://github.com/martinResearch/DEODR)
 
 # ML/AI Models You Can Use
 
@@ -43,6 +71,10 @@ These are the current "best" models for various tasks that you can actually use 
 : * [invoke-ai/InvokeAI](https://github.com/invoke-ai/InvokeAI)
 : * [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion): official source code, but not as feature rich as the forks
 
+: In addition to direct implementations, also check out some projects that use StableDiffusion:
+
+: * [jquesnelle/txt2imghd](https://github.com/jquesnelle/txt2imghd): making highquality image by upscaling and diffusion
+
 [DALL-E 2: Text-To-Image model API](https://openai.com/dall-e-2/)
 
 : Now in open access with a token system, you can generate very good imagery using OpenAI's API and web interface. Good if you aren't looking to setup a ML developer environment and run StableDiffusion yourself
@@ -54,7 +86,6 @@ These are the current "best" models for various tasks that you can actually use 
 : A bit "old school" at this point since StableDiffusion and DALL-E 2, but VQGAN+CLIP models will always have a place in my heart for being the first to really show the power of multimodal ML art architectures. And, in my opinion, the VQGAN+CLIP models have a unique artistic style that is just not found in the more "photorealistic" models (especially for pixel art)
 
 : [Use PyTTI-Tools if you are or aren't a programmer](https://pytti-tools.github.io/pytti-book/intro.html)
-
 
 [GPT 3: NLP Model for Text Generation](https://en.wikipedia.org/wiki/GPT-3)
 
@@ -90,6 +121,20 @@ These are the current "best" models for various tasks that you can actually use 
 
 : Neural networks typically aren't easily made into lossless compressors, but this implementation gives state-of-the-art results (albeit with slow compression speed) for text compression
 
+[Magenta Colab Notebooks: ML music resources](https://magenta.tensorflow.org/demos/colab/)
+
+[LAVIS: A one-stop library for language-vision intelligence](https://github.com/salesforce/LAVIS)
+
+: This library can do anything from image captioning to image classification to image generation. It's great to quickly integrate into your own projects
+
+[bRigNet: Automatic neural net 3D character rigging in Blender](https://zhan-xu.github.io/rig-net/)
+
+: Check out the [code here: pKrime/brignet](https://github.com/pKrime/brignet)
+
+[Deep Motion Editing: deep learning for 3D character motion](https://github.com/DeepMotionEditing/deep-motion-editing)
+
+: Motion style transfer, retargetting, and more 3D animation features
+
 
 # ML/AI Research Papers/Models
 
@@ -115,27 +160,21 @@ These are the current "best" models for various tasks that you can actually use 
 
 : Basically an infinite 3D fractal zoom into landscapes, works fairly well
 
+[Dream Fusion Paper: Text-to-3D using 2D Diffusion](https://dreamfusionpaper.github.io/)
 
-# Software Libraries
+: Interesting proof of concept of using diffusion models to generate 3D scenes from text, with no 3D data or training required! Uses optimization like DeepDreaming, unlike typical ML models which train then use inference
 
-[SOD: An Embedded Computer Vision & Machine Learning Library](https://sod.pixlab.io)
+# Datasets 
 
-: Edge computing is awesome! For IoT/embedded needs this is way easier than OpenCV
+[Google Dataset Search](https://datasetsearch.research.google.com/)
 
+[LAION-5B: A new era of open large-scale multi-modal datasets](https://laion.ai/blog/laion-5b/)
 
-# Color/Art Utilities
+: A new large dataset, used to train Stable Diffusion, but also freely available as subsets for individuals who don't have 240TB of storage for the full dataset
 
-[coolors.co/](https://coolors.co/) - A color palette generator
+: Also, has lots of good metadata on the considerations that went into it, and the challenges of creating a large dataset
 
-[paletton.com/](https://paletton.com/) - A color palette generator, using mathematical relationships
-
-# Talks/Slides
-
-[Polyhedral compilation, great for the diagrams and tiling explanation](https://pliss2019.github.io/albert_cohen_slides.pdf) - polyhedral compilation diagrams and tiling
-
-# Online Datasets
-
-[Vimeo-90k](http://toflow.csail.mit.edu/)
+[Vimeo-90k](http://etoflow.csail.mit.edu/)
 
 : High quality dataset from Vimeo videos
 
@@ -171,19 +210,17 @@ These are the current "best" models for various tasks that you can actually use 
 
 : Very useful book, for people of all backgrounds (not just mathematicians) that explains prime numbers, number theory, and the Riemann Hypothesis. Gives multiple formulations, diagrams, and explanations. My favorite book on my favorite problem in all of mathematics (so far)!
 
-# Papers
-
 ## Papers (Math)
 
 [On the Number of Primes Less Than a Given Magnitude](https://en.wikipedia.org/wiki/On_the_Number_of_Primes_Less_Than_a_Given_Magnitude)
 
 : Possibly the most influential (and yet still underrated) paper in all of mathematics, I highly recommend this paper. Check out [my blog post](/2020/08/05/diy-gamma-zeta) on the Gamma/Zeta function implementations
 
-
 [Counterexample To Euler's Conjecture on Sums of Like Powers](https://www.ams.org/journals/bull/1966-72-06/S0002-9904-1966-11654-3/S0002-9904-1966-11654-3.pdf)
 
 : One of my favorite papers, although not particularly explanative. A computer-assisted dis-proof of one of Euler's conjectures
 
+[Fast constant-time GCD computation and moular inversion](https://eprint.iacr.org/2019/266.pdf)
 
 ## Papers (Programming)
 
@@ -200,7 +237,6 @@ These are the current "best" models for various tasks that you can actually use 
 [Design, Optimization, and Benchmarking of Dense Linear Algebra Algorithms on AMD GPUs](https://www.icl.utk.edu/files/publications/2020/icl-utk-1405-2020.pdf)
 
 : My paper, which discusses my work on porting and performance tuning the [MAGMA](https://icl.cs.utk.edu/magma/) library
-
 
 ## Papers (Programming Language Theory)
 

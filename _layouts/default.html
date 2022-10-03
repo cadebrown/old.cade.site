@@ -9,11 +9,12 @@
         <div class="main">
             <!-- Header section -->
             <header>
-                <h1><a href='{{ site.url }}'>{{ site.displayurl }}</a> 
-                {% if page.title %}
-                    &mdash; {{ page.title }}
-                {% else %}
+                <h1>
                 
+                {% if page.title %}
+                <a href='{{ site.url }}'>{{ site.displayurl }}</a> ⇒ {{ page.title }}
+                {% else %}
+                <a href='{{ site.url }}'>{{ site.displayurl }}</a>
                 {% endif %}
                 </h1>
             

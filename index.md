@@ -8,42 +8,50 @@ redirect_from:
 ---
 
 <!-- make the home page text bigger -->
-<div style="font-size: 107%">
+<div style="font-size: 106%">
 
-<!--![A Picture of My Face](/files/face.webp)-->
-![A Picture of My Face](/files/cade-face-2.webp){: .img-left .img-ZZZ }
+![A Picture of Me](/files/cade-face-2.webp){: .img-right .img-ZZZ }
 
-# About Me - Cade Brown
+# Hey! I'm Cade Brown
 
-Hey! My name is Cade Brown and I'm a software developer, mathematician, and researcher. Outside of my work and studies, I have personal interests in [digital art](/art), music, and philosophy. Check out [my blog](https://cade.site/blog) for more!
+I'm a programmer, researcher, and artist based in Knoxville, TN, USA. Currently, I'm studying at [UTK](https://utk.edu) for a Computer Science degree, while working at [ICL](https://icl.utk.edu) as a research assistant. Previously, I've worked at [NVIDIA](https://nvidia.com), [ORNL](https://ornl.gov), and [PAIRS @ UTK](https://pairs.eecs.utk.edu/).
 
-Currently, I'm studying at [UTK](https://utk.edu) for a bachelors in Computer Science, while working as a Research Assistant at the [Innovative Computing Laboratory (ICL)](https://icl.utk.edu), and a Research Intern at [NVIDIA](https://nvidia.com). My main areas of interest are [Machine Learning (ML)](https://en.wikipedia.org/wiki/Machine_learning), [High Performance Computing (HPC)](https://en.wikipedia.org/wiki/High-performance_computing), and [Programming Language Theory (PLT)](https://en.wikipedia.org/wiki/Programming_language_theory).
+My main interests are Machine Learning and Artificial Intelligence (ML/AI), High-Performance Computing (HPC), and Programming Language Theory (PLT). On this site:
 
-Feel free to reach out! My email is [me@cade.site](mailto:me@cade.site).
+: [/blog](/blog): research, artwork, and other things I've worked on
 
-**Recruiters: here's [my resume](/resume-CadeBrown.pdf), [my CV](/cv-CadeBrown.pdf), and [my Linkedin](https://www.linkedin.com/in/cade-brown/)**.
+: [/links](/links): useful apps, sites, and info found on the web
+
+Also, here's [my resume](/resume-CadeBrown.pdf), [my CV](/cv-CadeBrown.pdf), and [my Linkedin](https://www.linkedin.com/in/cade-brown/).
+
+My email is [me@cade.site](mailto:me@cade.site); please send any questions or ideas!
+
+
 
 <div class="clear"></div>
 
-## Digital Art
+## My Artwork
 
 [Check out more of my art, here!](/art)
 
 {% include gallery.html filenames="/img/sd-space-0.png;/img/sd-space-2.png;/files/art-fractal/fr-print-1.webp;/files/art-aigen/god.webp" %}
 
+
 ## Find Me Online
 
 You can find me on the following sites:
 
-  * [linkedin.com/in/cade-brown](https://www.linkedin.com/in/cade-brown/) - professional life updates
   * [github.com/cadebrown](https://github.com/cadebrown) - my code, organizations, and misc resources
-  * [reddit.com/u/Sm0oth_kriminal](https://reddit.com/u/Sm0oth_kriminal) - programming, art, music, and philsoophy discussions
-  * [instagram.com/dev_ceb](https://instagram.com/dev_ceb) - personal life updates
   * [twitter.com/dev_ceb](https://twitter.com/dev_ceb) - personal life updates
+  * [instagram.com/dev_ceb](https://instagram.com/dev_ceb) - personal life updates
+  * [reddit.com/u/Sm0oth_kriminal](https://reddit.com/u/Sm0oth_kriminal) - programming, art, music, and philsoophy discussions
 
-And, places I've popped up:
+And, places I've popped up online:
 
   * [LWN: Python and the Infinite](https://lwn.net/Articles/833624/) - someone wrote an article about my opinions
+
+<!--
+
 
 ## Experience
 
@@ -70,6 +78,7 @@ You can check out [my Linkedin](https://www.linkedin.com/in/cade-brown/) or [my 
   * GH Pages/Jekyll/WASM stack proficiency 
   * Python/NumPy/SciPy/Tensorflow stack proficiency
 
+-->
 
 </div>
 
