@@ -18,14 +18,13 @@ I'm a programmer, researcher, and artist based in Knoxville, TN, USA. Currently,
 
 My main interests are Machine Learning and Artificial Intelligence (ML/AI), High-Performance Computing (HPC), and Programming Language Theory (PLT). On this site:
 
-: [/blog](/blog): research, artwork, and other things I've worked on
-
-: [/links](/links): useful apps, sites, and info found on the web
+* [/blog](/blog): research, artwork, and other things I've worked on
+* [/links](/links): useful apps, sites, and info found on the web
+* [/art](/art): my artwork, including ML/AI-generated and data art
 
 Also, here's [my resume](/resume-CadeBrown.pdf), [my CV](/cv-CadeBrown.pdf), and [my Linkedin](https://www.linkedin.com/in/cade-brown/).
 
 My email is [me@cade.site](mailto:me@cade.site); please send any questions or ideas!
-
 
 
 <div class="clear"></div>
@@ -34,7 +33,11 @@ My email is [me@cade.site](mailto:me@cade.site); please send any questions or id
 
 [Check out more of my art, here!](/art)
 
-{% include gallery.html filenames="/img/sd-space-0.png;/img/sd-space-2.png;/files/art-fractal/fr-print-1.webp;/files/art-aigen/god.webp" %}
+![Table View Of Artwork](/img/thumb/sd-posters.webp){: .img-full }
+
+<!--
+{ % include gallery.html filenames="/img/sd-space-0.png;/img/sd-space-2.png;/files/art-fractal/fr-print-1.webp;/files/art-aigen/god.webp" %}
+-->
 
 
 ## Find Me Online

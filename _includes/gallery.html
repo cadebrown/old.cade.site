@@ -1,6 +1,7 @@
 <div class ="gallery">
 {% assign filenames = include.filenames | split: ";" %}
-{% for name in filenames %}
+{% for name_ in filenames %}
+{% assign name = name_ | prepend:include.prefix %}
 {% assign ext = name | split:'.' | last %}
 <div class="gallery-box">
 {% if "png,jpg,jpeg,webp" contains ext %}

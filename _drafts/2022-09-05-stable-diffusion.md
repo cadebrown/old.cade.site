@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "StableDiffusion: Open-Source Text-To-Image"
+title: "Guide to Stable Diffusion"
 tags: [art, ml]
-thumb: /img/thumb/stable-diffusion.webp
+thumb: /img/screen-sd-web.png
 ---
 
 [Stable Diffusion](https://stability.ai/blog/stable-diffusion-announcement), an open-source AI text-image model, was recently released. It's notable for being the first "big-boy" (i.e. high fidelity, state-of-the-art quality) model that is completely freely available. 

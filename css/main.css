@@ -476,6 +476,15 @@ footer a {
     flex-direction: column;
 }
 
+.img-full {
+    float: none;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    max-width: none !important;
+    max-height: none !important;
+}
+
 /* media query for very wide displays (i.e. most desktops) */
 @media screen and (min-aspect-ratio: 4/3) {
 

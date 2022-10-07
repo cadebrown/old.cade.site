@@ -56,6 +56,10 @@ But, there's a lot of cool stuff here, especially if you're into machine learnin
 
 These are the current "best" models for various tasks that you can actually use in some way right now.
 
+[pharmapsyhchotic's Tools and Resources for AI Art](https://pharmapsychotic.com/tools.html)
+
+: A great list of models, notebooks, and more for using AI to make art
+
 [StableDiffusion: high fidelity Text-To-Image model (open source!)](https://stability.ai/blog/stable-diffusion-announcement)
 
 : A godsend for generating art, reference images, and anything else you could want. Runs on ~4GB of VRAM and fairly fast too. Check out my [art](/art) page for some examples

@@ -6,8 +6,7 @@ use_jquery: true
 use_katex: true
 ---
 
-If you're looking for the TL;DR, check out [my resume (PDF)](/resume-CadeBrown.pdf).
-
+This is a complete timeline of my personal and professional projects I've worked on throughout my life. You may be more interested in [my resume](/resume-CadeBrown.pdf), [my CV](/cv-CadeBrown.pdf), and [my Linkedin](https://www.linkedin.com/in/cade-brown/).
 
 # Timeline
 
