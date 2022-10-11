@@ -71,13 +71,18 @@ These are the current "best" models for various tasks that you can actually use 
 : * [deforum: StableDiffusion colab notebook and resources](https://deforum.github.io/#about)
 
 : For actually running the model, there are many forks each with their own features. Here's a short list of ones I've used:
+: * [invoke-ai/InvokeAI](https://github.com/invoke-ai/InvokeAI): overall best version, has a cool web UI, CLI REPL, and more! 
 : * [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) 
-: * [invoke-ai/InvokeAI](https://github.com/invoke-ai/InvokeAI)
-: * [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion): official source code, but not as feature rich as the forks
+: * [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion): official code, but not efficient or feature-rich
 
 : In addition to direct implementations, also check out some projects that use StableDiffusion:
 
 : * [jquesnelle/txt2imghd](https://github.com/jquesnelle/txt2imghd): making highquality image by upscaling and diffusion
+
+: Outside of ML models, there are other tools that help the process of animation:
+
+: * [Keyframe string generator for AI animation notebooks](https://www.chigozie.co.uk/keyframe-string-generator/)
+: * [Audio to keyframe string generator](https://www.chigozie.co.uk/audio-keyframe-generator/)
 
 [DALL-E 2: Text-To-Image model API](https://openai.com/dall-e-2/)
 
