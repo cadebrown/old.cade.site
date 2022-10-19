@@ -36,6 +36,14 @@ But, there's a lot of cool stuff here, especially if you're into machine learnin
 
 : Interpolates melodies and makes new combinations of them in the browser.
 
+# Informative Pages
+
+[Feature Visualization: How neural networks build up their understanding of images](https://distill.pub/2017/feature-visualization/)
+
+# Talks/Slides
+
+[Polyhedral Compilation as a Design Pattern for Compiler Construction](https://pliss2019.github.io/albert_cohen_slides.pdf) 
+
 # Programming Libraries
 
 [PyTorch: Machine Learning Framework](https://pytorch.org/)
@@ -73,18 +81,6 @@ But, there's a lot of cool stuff here, especially if you're into machine learnin
 [FLINT: Fast Library for Number Theory](https://flintlib.org/)
 
 : Symbolic computing library for solving/evaluating number theory problems.
-
-
-
-# Informative Pages
-
-[Feature Visualization: How neural networks build up their understanding of images](https://distill.pub/2017/feature-visualization/)
-
-# Talks/Slides
-
-[Polyhedral Compilation as a Design Pattern for Compiler Construction](https://pliss2019.github.io/albert_cohen_slides.pdf) 
-
-
 
 # ML/AI Models You Can Use
 
@@ -178,6 +174,7 @@ These are the current "best" models for various tasks that you can actually use 
 [Deep Motion Editing: deep learning for 3D character motion](https://github.com/DeepMotionEditing/deep-motion-editing)
 
 : Motion style transfer, retargetting, and more 3D animation features
+
 
 
 # ML/AI Research Papers/Models
