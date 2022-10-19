@@ -47,7 +47,7 @@ You can find me on the following sites:
   * [github.com/cadebrown](https://github.com/cadebrown) - my code, organizations, and misc resources
   * [twitter.com/dev_ceb](https://twitter.com/dev_ceb) - personal life updates
   * [instagram.com/dev_ceb](https://instagram.com/dev_ceb) - personal life updates
-  * [reddit.com/u/Sm0oth_kriminal](https://reddit.com/u/Sm0oth_kriminal) - programming, art, music, and philsoophy discussions
+  * [reddit.com/u/Sm0othasdfasdf_kriminal](https://reddit.com/u/Sm0oth_kriminal) - programming, art, music, and philsoophy discussions
 
 And, places I've popped up online:
 

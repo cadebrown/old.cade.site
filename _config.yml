@@ -1,6 +1,6 @@
 # _config.yml - configuration for my personal blog (cade.site)
 #
-# feel free to copy my entire project, under terms of the KPL (https://kata.tools/kpl):
+# feel free to copy my entire project:
 #   * https://github.com/cadebrown/cadebrown.github.io
 #
 # @author: Cade Brown <me@cade.site>
@@ -16,7 +16,7 @@ name: "cade.site"
 displayurl: "cade.site"
 
 # description of this blog (i.e. a medium text for SEO)
-desc: "i write about programming, music, and math with DIY-tutorials and language design"
+desc: "My personal website and blog, covering my programming, research, and digital artistry"
 
 # the shell prompt to use while highlighting
 shellprompt: "sh $"

@@ -12,7 +12,7 @@
                 <h1>
                 
                 {% if page.title %}
-                <a href='{{ site.url }}'>{{ site.displayurl }}</a> ⇒ {{ page.title }}
+                <a class='hidden-mobile' href='{{ site.url }}'>{{ site.displayurl }}</a> <a href='{{ site.url }}'>⇒</a>  {{ page.title }}
                 {% else %}
                 <a href='{{ site.url }}'>{{ site.displayurl }}</a>
                 {% endif %}
@@ -21,12 +21,14 @@
             </header>
             
             <!-- TODO: make a Nx3 grid on mobile -->
+            <div class="hidden-mobile">
             <a href='/'> About</a>
             | <a href='/blog'>Blog</a> 
             | <a href='/links'> Links</a> 
             | <a href='/art'> Art</a> 
             | <a href='/timeline'> Timeline</a> 
             | <a href='/archive'> Archive</a> 
+            </div>
 
             <hr>
 

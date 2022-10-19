@@ -8,7 +8,7 @@ These are links to things I've found on the web. This page is mainly for my refe
 
 But, there's a lot of cool stuff here, especially if you're into machine learning research, productivity tools, and interesting books/papers/articles. Check them out, you might find something useful!
 
-# Awesome Apps
+# Applications and Tools
 
 [pandoc: free document conversion online, no BS](https://pandoc.org/try/)
 
@@ -24,17 +24,57 @@ But, there's a lot of cool stuff here, especially if you're into machine learnin
 
 [Artvee: Discover Classical Art](https://artvee.com/)
 
-: A cool website for discovering classical art. You can search by artist, time period, or even by color palette.
+: Discover classical art and navigate y artist, time period, or color palette.
 
 [CLIP Image Retrieval: semantic image search using AI](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=polyhedral+art+with+geometric+fractal+patterns)
 
-: Useful for finding reference images for art or for searching for specific images that you can't remember the name of (I use it for finding [memes](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=meme+of+a+dog+in+a+bed)).
+: Find reference images for art or for searching for specific images that you can't remember the name of (I use it for finding [memes](https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false&query=meme+of+a+dog+in+a+bed)).
 
-: Also, check out the very interesting article about it: [Semantic search at billions scale](https://rom1504.medium.com/semantic-search-at-billions-scale-95f21695689a)
+: Also, check out this article: [Semantic search at billions scale](https://rom1504.medium.com/semantic-search-at-billions-scale-95f21695689a)
 
 [Latent Loops: make electronic music with machine learning](https://teampieshop.github.io/latent-loops/)
 
-: Interpolates melodies and makes new combinations of them in the browser
+: Interpolates melodies and makes new combinations of them in the browser.
+
+# Programming Libraries
+
+[PyTorch: Machine Learning Framework](https://pytorch.org/)
+
+: Flexible and easy to use, more generalizable than Tensorflow and better for research. Includes automatic differentiation, GPU support, and a large ecosystem of libraries.
+
+: Some extra PyTorch packages I use:
+: * [PyTorch3D](https://pytorch3d.org/): 3D differentiable rendering and geometry for deep learning
+: * [DEODR](https://github.com/martinResearch/DEODR): Another differentiable renderer
+
+[OpenCV: Computer Vision Library](https://opencv.org/)
+
+: Bulky but comprehensive library for computer vision, uses Python bindings.
+
+[SOD: An Embedded Computer Vision & Machine Learning Library](https://sod.pixlab.io)
+
+: Edge computing is awesome! For IoT/embedded needs this is way easier than OpenCV.
+
+[MAGMA: Matrix Algebra on GPU and Multicore Architectures](https://icl.utk.edu/magma/overview/index.html)
+
+: GPU-accelerated library for linear algebra (BLAS & LAPACK) that I worked on, also includes some sparse linear algebra.
+
+[libbf: Arbitrary Precision Floating Point Library](https://bellard.org/libbf/)
+
+[GMP: GNU Multiple Precision Arithmetic Library](https://gmplib.org/)
+
+: Arbitrary precision arithmetic library for C, which is very popular but not the best in my opinion.
+
+: See also:
+: * [gmpy2: Python bindings for GMP/MPFR](https://pypi.org/project/gmpy2/)
+: * [MPFR: GNU Multiple Precision Floating-Point Reliable Library](https://www.mpfr.org/)
+: * [MPC: GNU Multiple Precision Complex Arithmetic Library](https://www.multiprecision.org/mpc/)
+:   * Also, check out all the other math libraries at [multiprecision.org](https://www.multiprecision.org/)
+
+[FLINT: Fast Library for Number Theory](https://flintlib.org/)
+
+: Symbolic computing library for solving/evaluating number theory problems.
+
+
 
 # Informative Pages
 
@@ -44,13 +84,7 @@ But, there's a lot of cool stuff here, especially if you're into machine learnin
 
 [Polyhedral Compilation as a Design Pattern for Compiler Construction](https://pliss2019.github.io/albert_cohen_slides.pdf) 
 
-# Software Libraries
 
-[SOD: An Embedded Computer Vision & Machine Learning Library](https://sod.pixlab.io)
-
-: Edge computing is awesome! For IoT/embedded needs this is way easier than OpenCV
-
-[DEODR: PyTorch differentiable 3D rendering](https://github.com/martinResearch/DEODR)
 
 # ML/AI Models You Can Use
 
@@ -81,6 +115,7 @@ These are the current "best" models for various tasks that you can actually use 
 
 : Outside of ML models, there are other tools that help the process of animation:
 
+: * [MagicPrompt, for automatically generating/completing StableDiffusion prompts](https://huggingface.co/spaces/Gustavosta/MagicPrompt-Stable-Diffusion): 
 : * [Keyframe string generator for AI animation notebooks](https://www.chigozie.co.uk/keyframe-string-generator/)
 : * [Audio to keyframe string generator](https://www.chigozie.co.uk/audio-keyframe-generator/)
 

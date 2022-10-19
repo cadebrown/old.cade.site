@@ -5,17 +5,24 @@ permalink: /art
 tag: art
 ---
 
-I'm [Cade Brown](https://cade.site), and this page is a portfolio of my personal artwork! I try to focus on the intersection of math, programming, and aesthetics, and explore machine-generated and data-oriented art. I'm interested in demonstrating how machine understanding can be utilized to create art that is both visually striking and meaningful to humans, using a variety of techniques (latent representations, diffusion, GANs, mathematical modelling).
+![Art Preview](/img/thumb/sd-posters.webp)
 
-Our society is becoming increasingly digitized, and our technology is progressing at an ever increasing rate; so much so that there is a notable lack of artistic commentary on technology itself (most art deals with historical ideas, which are more or less fixed with respect to a generation of people). My artwork attempts to remedy this by showcasing the state of the art in artificial intelligence and digital artwork. Enjoy!
 
-## Art Projects
+# Art of Cade Brown
 
-It's hard to organize and categorize some of my artwork, but here are some general projects I've been working on:
+Our society is becoming increasingly digitized, and our technology is progressing at an ever increasing rate. My art explores the autocomplexification of society through the lens of compute and data based artistic techniques. 
 
-  * [Beautiful HD Phone Wallpapers](/sd-phone) for download
-  * [HD 24x36 inch Posters](/ai-posters-24x36) for download
-  * [All Stable Diffusion images](/art/all-stable-diffusion) I've generated
+For example, most of my art is generated using [Machine Learning (ML)](https://en.wikipedia.org/wiki/Machine_learning) and [Artificial Intelligence (AI)](https://en.wikipedia.org/wiki/Artificial_intelligence), utilizing various technologies:
+
+  * [Stable Diffusion, an open source diffusion model](https://stability.ai/blog/stable-diffusion-public-release)
+  * [DALL-E 2, a API-restricted diffusion model](https://openai.com/dall-e-2/)
+  * [Generative Adversarial Networks (GANs)](https://en.wikipedia.org/wiki/Generative_adversarial_network)
+
+
+Just scroll through this page for an overview of all my artwork, or check specific project's I've worked on:
+
+  * [Downloadable HD Poster Designs](/sd-posters) (via Stable Diffusion)
+  * [Downloadable HD Phone Wallpapers](/sd-phone) (via Stable Diffusion)
 
 ## Images
 

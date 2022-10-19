@@ -32,7 +32,10 @@ function theme_set(name) {
             if (!id) return
             
             // now, actually generate a clickable link with an icon
-            return el.append($("<a/>").addClass("header-link").attr("href", "#" + id).html('<i class="fa fa-link"></i>'))
+            console.log(el.html())
+            let name = el.html()
+            el.html('<a href="#' + id + '" class="header-link">' + name + '<i class="fas fa-link header-link-icon"></i></a>')
+            //return el.append($("<a/>").addClass("header-link").attr("href", "#" + id).html('<i class="fa fa-link"></i>'))
         })
     })
 })()
