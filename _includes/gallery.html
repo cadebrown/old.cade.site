@@ -1,17 +1,27 @@
 <div class ="gallery">
 {% assign filenames = include.filenames | split: ";" %}
+{% assign ctr = 0 %}
 {% for name_ in filenames %}
 {% assign name = name_ | prepend:include.prefix %}
+{% if include.urls %}
+{% assign vurl = include.urls | split:";" %}
+{% assign vurl = vurl[ctr] %}
+{% else %}
+{% assign vurl = name %}
+{% endif %}
+
 {% assign ext = name | split:'.' | last %}
 <div class="gallery-box">
 {% if "png,jpg,jpeg,webp" contains ext %}
-{% include image-srcset.html src=name class="gallery-img" alt=name %}
+{% include image-srcset.html src=name vurl=vurl class="gallery-img" alt=name %}
 <!--<a href="{{ name }}"><img src="{{ name }} " alt="{{ name }}"  class="gallery-img" /></a>-->
 {% elsif name contains "youtube.com" %}
 <iframe width="100%" height="400px" src="{{ name }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {% elsif "mp4,gif,mov" contains ext %}
-<a href="{{ name }}"><video controls loop><source src="{{ name }}" type="video/{{ext}}"></video></a>
+<a href="{{ url }}"><video controls loop><source src="{{ name }}" type="video/{{ext}}"></video></a>
 {% else %}{% endif %}
 </div>
+
+{% assign ctr = ctr | plus: 1 %}
 {% endfor %}
 </div>

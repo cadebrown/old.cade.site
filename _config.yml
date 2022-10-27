@@ -21,38 +21,6 @@ desc: "My personal website and blog, covering my programming, research, and digi
 # the shell prompt to use while highlighting
 shellprompt: "sh $"
 
-# here's some default settings (these can be overridden by specific pages)
-defaults:
-  # default settings for all pages (i.e. /about, ...)
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      blahblahblah: myval
-      #use_jquery: true
-  # default settings for all posts
-  -
-    scope:
-      # apply to all posts
-      path: ""
-      type: "posts"
-    values:
-      use_katex: true
-      use_prism: true
-      use_disqus: true
-  # default settings for all drafts
-  -
-    scope:
-      # apply to all posts
-      path: ""
-      type: "drafts"
-    values:
-      use_katex: true
-      use_prism: true
-      use_disqus: true
-
-
 # -*- ACCOUNTS/LINKS -*-
 
 links:

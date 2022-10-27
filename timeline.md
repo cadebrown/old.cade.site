@@ -2,21 +2,33 @@
 layout: default
 title: Timeline
 permalink: /timeline
-use_jquery: true
-use_katex: true
 ---
 
-This is a complete timeline of my personal and professional projects I've worked on throughout my life. You may be more interested in [my resume](/resume-CadeBrown.pdf), [my CV](/cv-CadeBrown.pdf), and [my Linkedin](https://www.linkedin.com/in/cade-brown/).
+This is a complete timeline of my personal and professional projects I've worked on throughout my life. 
+
+You may be more interested in [my resume](/resume-CadeBrown.pdf), [my CV](/cv-CadeBrown.pdf), and [my Linkedin](https://www.linkedin.com/in/cade-brown/).
 
 # Timeline
 
-2022-05 - [NVIDIA Internship](https://nvidia.com)
+2022-07 - [Dysmorphic Demiurge - The Great And Terrible War](https://dysmorphicdemiurge.bandcamp.com/album/the-great-and-terrible-war-2)
 
-  : At my NVIDIA internship, I worked on the Machine Learning Compiler team’s internal projects that improve compute performance for popular AI workloads (matrix multiplication, convolution, tensor operations). We use polyhedral compilation techniques mapped directly to NVIDIA GPU hardware, which takes advantage of warp communication, shared memory, memory pipelining, and hardware tensor cores (MMA). I wrote performance tuning software to search and select optimizations to compete with cuBLAS on modern NVIDIA GPUs.
+  : A high concept death metal album about a fantasy war between humans and an interdimensional hivemind army. I'm the vocalist, part producer, and part animator. Check out some of our videos:
+
+  : Released on [Miasma Records](https://miasmarecords.com/collections/dysmorphic-demiurge)
+
+  : [AI Video - Derangement Syndrome](https://www.youtube.com/watch?v=QDMUjin1kQM)
+
+  : [AI Video - Beneath the Catacombs of Celephais](https://www.youtube.com/watch?v=wWBboUDMPw4)
+
+  : ![Album Art for "The Great and Terrible War"](/img/TGATW.webp)
+
+2022-05 - [NVIDIA Internship - ML Compilers](https://nvidia.com)
+
+  : At my NVIDIA internship, I worked on the Machine Learning Compiler team’s internal projects that improve compute performance for popular AI workloads (matrix multiplication, convolution, tensor operations). We use polyhedral compilation techniques mapped directly to NVIDIA GPU hardware accelerators, which takes advantage of warp communication, shared memory, memory pipelining, and hardware tensor cores (MMA). I wrote performance tuning software to search and select optimizations to compete with cuBLAS on modern NVIDIA GPUs.
 
   : Using large performance datasets I generated, I trained a Machine Learning model to learn how to compile efficient GPU kernels, based on millions of performance data points. This work can be integrated into an ML runtime (such as PyTorch) to optimize computations in real time via a Just-In-Time (JIT) interface for GPU kernel compilation.
 
-  : Most of this internship is under a NDA
+  : Most of this internship is under a NDA, so I can't share much more unfortunately...
   
 <!--
 
@@ -35,6 +47,7 @@ This is a complete timeline of my personal and professional projects I've worked
   
   : I wrote the core execution logic, and my colleague [Gregory Croisdale](https://gregory.croisdale.us/) also worked on the project
 
+<!--
 2021-06 - [ML/AI Art](https://github.com/cadebrown/cmlart)
 
   : Check out my [art page (/art)](/art)
@@ -45,6 +58,8 @@ This is a complete timeline of my personal and professional projects I've worked
 
   : ![Album Art for "Societas de Machinarum XIII"](/files/album-societas-de-machinarum-xiii.webp)
 
+-->
+
 2021-05 - [Dysmorphic Demiurge - DEREALIZATION](https://www.youtube.com/watch?v=ugiHrij0CfY)
 
   : My death metal band, [Dysmorphic Demiurge](https://www.facebook.com/DysmorphicDemiurge/) released an album, [DEREALIZATION](https://www.youtube.com/watch?v=ugiHrij0CfY). I'm the primary vocalist, and I do some of the production elements
@@ -53,9 +68,9 @@ This is a complete timeline of my personal and professional projects I've worked
 
   : Released on [Miasma Records](https://miasmarecords.com/collections/dysmorphic-demiurge)
 
-  : ![Album Art for "DEREALIZATION"](/files/DDD.webp)
+  : ![Album Art for "DEREALIZATION"](/img/DDD.webp)
 
-2021-02 - [CARVE (Cade Andgreg's Risc-V Emulator)](https://carve.chemicaldevelopment.us/)
+2021-02 - [CARVE (Cade Andgreg's Risc-V Emulator)](https://carve.cade.site)
 
   : CARVE is a RISC-V emulator for the web, written by me and Gregory Croisdale. Features a debugger
 
@@ -65,11 +80,11 @@ This is a complete timeline of my personal and professional projects I've worked
 
   : My death metal band, [Dysmorphic Demiurge](https://www.facebook.com/DysmorphicDemiurge/) released an album, [As You Hunger For Pardon](https://www.youtube.com/watch?v=R-aQyCgwTpk)
 
-  : I'm the primary vocalist, and I do some of the production elements. This was our first album, released on Inherited Suffering Records
+  : I'm the primary vocalist, and I do some of the production elements. This was our first album, released on [Inherited Suffering Records](https://www.inheritedsufferingrecords.com/index.php?route=product/product&product_id=643&search=dysmorphic)
 
-2020-06 - [HEARO (Qardian Labs)](https://www.qardianlabs.net/)
+2020-06 - [HEARO - ML for Healthcare (Qardian Labs)](https://www.qardianlabs.net/)
 
-  : I designed and trained a machine learning model for 14-point evaluations of heart disease risk, scoring ~91% accuracy on the test set (with 80/20 validation and shuffling), as well as a web interface for the model
+  : I designed and trained a machine learning model for 14-point evaluations of heart disease risk, scoring ~91% accuracy on test data, as well as a web interface for the model for healthcare professionals to use
 
   : [Here's a working demo](https://radiant-mesa-06241.herokuapp.com/HEARO14/)
 
@@ -115,14 +130,13 @@ This is a complete timeline of my personal and professional projects I've worked
 
   : ![screenshot of scratch](/files/art-fractal/scratch.webp)
 
-2017-05 - [SimpleSummit / Bubbles](https://github.com/simplesummit)
+2017-05 - [SimpleSummit / Bubbles @ ORNL](https://github.com/simplesummit)
 
   : SimpleSummit is a cluster computer made of NVIDIA Jetson hardware, used to run a realtime interactive fractal simulation
 
   : I was the primary software developer for the fractal application, and assisted with the physical design as well
 
   : ![screenshot of fractalexplorer](/files/fractalexplorer0.webp)
-
 
   : ![cluster setup](/files/simplesummit-0.webp)
 
@@ -152,7 +166,7 @@ This is a complete timeline of my personal and professional projects I've worked
 
 2015-08 - [L&N STEMpunks FRC #3966 team (robotics)](https://www.youtube.com/c/LNSTEMpunksorg/videos)
 
-  : I was the leader of the programming department for 2 years, a member for 3 total years
+  : I was the leader of the programming department for 2 years, a member for 3 total years. We designed and built semi-autonomous robots that completed certain tasks and competed in FIRST Robotics competitions. 
   
 <center>
 <iframe width="960" height="540" src="https://www.youtube.com/embed/RBQL_KEJ_q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

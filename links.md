@@ -4,9 +4,7 @@ title: Links
 permalink: /links
 ---
 
-These are links to things I've found on the web. This page is mainly for my reference, to keep track of useful apps, cool papers, and other places on the web that are hard to find again.
-
-But, there's a lot of cool stuff here, especially if you're into machine learning research, productivity tools, and interesting books/papers/articles. Check them out, you might find something useful!
+These are links to things I've found on the web for everything from math, programming, utilities, research, papers, and videos. This page is mainly for my reference (to keep track of everything I use regularly), but maybe it can save you some time as well.
 
 # Applications and Tools
 
@@ -36,6 +34,10 @@ But, there's a lot of cool stuff here, especially if you're into machine learnin
 
 : Interpolates melodies and makes new combinations of them in the browser.
 
+[runway ML studio](https://runwayml.com/)
+
+: Web-based video editing and content studio that uses ML models
+
 # Informative Pages
 
 [Feature Visualization: How neural networks build up their understanding of images](https://distill.pub/2017/feature-visualization/)
@@ -53,6 +55,11 @@ But, there's a lot of cool stuff here, especially if you're into machine learnin
 : Some extra PyTorch packages I use:
 : * [PyTorch3D](https://pytorch3d.org/): 3D differentiable rendering and geometry for deep learning
 : * [DEODR](https://github.com/martinResearch/DEODR): Another differentiable renderer
+: * [xFormers](https://github.com/facebookresearch/xformers): PyTorch implementation of Transformer models
+
+: And, if you're interested in "hacking" PyTorch or writing your own backend, check these out:
+: * [Writing a Toy Backend Compiler for PyTorch](https://jott.live/markdown/Writing%20a%20Toy%20Backend%20Compiler%20for%20PyTorch)
+
 
 [OpenCV: Computer Vision Library](https://opencv.org/)
 
@@ -81,6 +88,16 @@ But, there's a lot of cool stuff here, especially if you're into machine learnin
 [FLINT: Fast Library for Number Theory](https://flintlib.org/)
 
 : Symbolic computing library for solving/evaluating number theory problems.
+
+[AITemplate: Efficient AI Compiler](https://github.com/facebookincubator/AITemplate)
+
+: For example, check out how to [speed up StableDiffusion](https://github.com/facebookincubator/AITemplate/tree/main/examples/05_stable_diffusion)
+
+[click: Python Option Parsing](https://click.palletsprojects.com/en/8.1.x/)
+
+[youtube-dl: Download YouTube videos](https://github.com/ytdl-org/youtube-dl)
+
+[zstd: Fast Compression Algorithm](http://facebook.github.io/zstd/)
 
 # ML/AI Models You Can Use
 
@@ -115,6 +132,12 @@ These are the current "best" models for various tasks that you can actually use 
 : * [Keyframe string generator for AI animation notebooks](https://www.chigozie.co.uk/keyframe-string-generator/)
 : * [Audio to keyframe string generator](https://www.chigozie.co.uk/audio-keyframe-generator/)
 
+: And finally, some more related research:
+: * [Textual Inversion](https://textual-inversion.github.io/)
+
+
+[EbSynth](https://ebsynth.com/): 3D-aware style transfer
+
 [DALL-E 2: Text-To-Image model API](https://openai.com/dall-e-2/)
 
 : Now in open access with a token system, you can generate very good imagery using OpenAI's API and web interface. Good if you aren't looking to setup a ML developer environment and run StableDiffusion yourself
@@ -126,6 +149,10 @@ These are the current "best" models for various tasks that you can actually use 
 : A bit "old school" at this point since StableDiffusion and DALL-E 2, but VQGAN+CLIP models will always have a place in my heart for being the first to really show the power of multimodal ML art architectures. And, in my opinion, the VQGAN+CLIP models have a unique artistic style that is just not found in the more "photorealistic" models (especially for pixel art)
 
 : [Use PyTTI-Tools if you are or aren't a programmer](https://pytti-tools.github.io/pytti-book/intro.html)
+
+[GLM-130B: NLP Model for Text Generation](https://arxiv.org/pdf/2210.02414.pdf)
+
+: Better than GPT-3 at most things, available in different sizes, and [free to download and use](https://github.com/THUDM/GLM-130B)
 
 [GPT 3: NLP Model for Text Generation](https://en.wikipedia.org/wiki/GPT-3)
 
@@ -161,6 +188,8 @@ These are the current "best" models for various tasks that you can actually use 
 
 : Neural networks typically aren't easily made into lossless compressors, but this implementation gives state-of-the-art results (albeit with slow compression speed) for text compression
 
+[Consistent Video Depth Estimation](https://roxanneluo.github.io/Consistent-Video-Depth-Estimation/)
+
 [Magenta Colab Notebooks: ML music resources](https://magenta.tensorflow.org/demos/colab/)
 
 [LAVIS: A one-stop library for language-vision intelligence](https://github.com/salesforce/LAVIS)
@@ -174,6 +203,10 @@ These are the current "best" models for various tasks that you can actually use 
 [Deep Motion Editing: deep learning for 3D character motion](https://github.com/DeepMotionEditing/deep-motion-editing)
 
 : Motion style transfer, retargetting, and more 3D animation features
+
+[torch-ngp: Neural Graphics Primitives](https://github.com/ashawkey/torch-ngp)
+
+[Awesome Neural Rendering (curated)](https://github.com/weihaox/awesome-neural-rendering)
 
 
 
@@ -204,6 +237,8 @@ These are the current "best" models for various tasks that you can actually use 
 [Dream Fusion Paper: Text-to-3D using 2D Diffusion](https://dreamfusionpaper.github.io/)
 
 : Interesting proof of concept of using diffusion models to generate 3D scenes from text, with no 3D data or training required! Uses optimization like DeepDreaming, unlike typical ML models which train then use inference
+
+[Deep Positron: A Deep Neural Network Using the Posit Number System](https://arxiv.org/pdf/1812.01762.pdf)
 
 # Datasets 
 
@@ -262,6 +297,12 @@ These are the current "best" models for various tasks that you can actually use 
 : One of my favorite papers, although not particularly explanative. A computer-assisted dis-proof of one of Euler's conjectures
 
 [Fast constant-time GCD computation and moular inversion](https://eprint.iacr.org/2019/266.pdf)
+
+[Machine Learning-Aided Numerical Linear Algebra: Convolutional Neural Networks for the Efficient Preconditioner Generation](https://sc18.supercomputing.org/proceedings/workshops/workshop_files/ws_lasalss102s2-file1.pdf)
+
+: And associated [talk/slides](https://icl.utk.edu/~hanzt/talks/ICL_nov2018.pdf)
+
+[The FBHHRBNRSSSHK-Algorithm For Multiplication in Z_{2}^{5x5} is Still Not The End of the Story](https://arxiv.org/pdf/2210.04045.pdf)
 
 ## Papers (Programming)
 

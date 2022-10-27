@@ -10,6 +10,7 @@ redirect_from:
 <!-- make the home page text bigger -->
 <div style="font-size: 106%">
 
+<!--![A Picture of Me](/files/cade-face-2.webp){: .img-right .img-ZZZ }-->
 ![A Picture of Me](/files/cade-face-2.webp){: .img-right .img-ZZZ }
 
 # Hey! I'm Cade Brown

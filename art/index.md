@@ -7,10 +7,19 @@ tag: art
 
 ![Art Preview](/img/thumb/sd-posters.webp)
 
-
-# Art of Cade Brown
+# My Artwork
 
 Our society is becoming increasingly digitized, and our technology is progressing at an ever increasing rate. My art explores the autocomplexification of society through the lens of compute and data based artistic techniques. 
+
+
+
+Just scroll through this page for an overview of all my artwork, or check specific project's I've worked on:
+
+  * [SDV: Stable Diffusion Visions](/sdv), a series of AI-generated images assigned to integers
+  * [Downloadable HD Poster Designs](/sd-posters) (via Stable Diffusion)
+  * [Downloadable HD Phone Wallpapers](/sd-phone) (via Stable Diffusion)
+
+
 
 For example, most of my art is generated using [Machine Learning (ML)](https://en.wikipedia.org/wiki/Machine_learning) and [Artificial Intelligence (AI)](https://en.wikipedia.org/wiki/Artificial_intelligence), utilizing various technologies:
 
@@ -18,11 +27,6 @@ For example, most of my art is generated using [Machine Learning (ML)](https://e
   * [DALL-E 2, a API-restricted diffusion model](https://openai.com/dall-e-2/)
   * [Generative Adversarial Networks (GANs)](https://en.wikipedia.org/wiki/Generative_adversarial_network)
 
-
-Just scroll through this page for an overview of all my artwork, or check specific project's I've worked on:
-
-  * [Downloadable HD Poster Designs](/sd-posters) (via Stable Diffusion)
-  * [Downloadable HD Phone Wallpapers](/sd-phone) (via Stable Diffusion)
 
 ## Images
 

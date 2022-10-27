@@ -2,8 +2,6 @@
 layout: default
 title: Code
 permalink: /code
-use_jquery: true
-use_katex: true
 ---
 
 This page contains links to programming projects that you can use or read about:

@@ -6,11 +6,9 @@ $ pip3 install pillow
 @author: Cade Brown <me@cade.site>
 """
 
-
 import argparse
 import os
 import PIL.Image
-
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--input', type=str, default='./img', help='Directory containing images to convert')
@@ -28,11 +26,13 @@ def rrmdir(path):
         else:
             os.remove(entry)
     os.rmdir(path)
-rrmdir(args.output)
+if os.path.exists(args.output):
+    rrmdir(args.output)
 
 # create output
 os.makedirs(args.output, exist_ok=True)
 
+# opens and resizes an input image (fi) and saves to output image
 def resize(fi, fo):
     img = PIL.Image.open(fi)
     sz = img.size
@@ -52,10 +52,13 @@ def resize(fi, fo):
 
 for path, dirs, files in os.walk(args.input):
     for f in files:
-        if f.split('.')[-1] in ['png', 'jpg', 'jpeg', 'webp']:
+        ext = f.split('.')[-1]
+        if ext in ['png', 'jpg', 'jpeg', 'webp']:
             # create output path
             fi = os.path.join(path, f)
             fo = os.path.join(args.output, os.path.relpath(os.path.join(path, f), args.input))
+            # always save as webp
+            fo = os.path.splitext(fo)[0] + '.webp'
 
             # create output directory
             resize(fi, fo)
